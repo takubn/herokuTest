@@ -31,7 +31,7 @@ $stmt->execute($data);
 $db = null;
 
 
-header('Location: index.php.php');
+header('Location: index.php');
 exit();
 
 } catch(PDOException $e){
