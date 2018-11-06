@@ -152,6 +152,12 @@ input:focus, textarea:focus {
     transition: .3s ease;
 }
 
+
+.red{
+  color: red;
+}
+
+
 .submit:hover .ease{
   width:100%;
   background-color:white;

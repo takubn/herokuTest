@@ -10,7 +10,7 @@
 
 <div id="form-main">
 
-  <p>掲示板</p>
+  <p class="red">掲示板</p>
 
   <form class="form" id="form1" method="POST" action="write.php">
   <input type="text" name="name"><br><br>
