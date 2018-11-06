@@ -2,19 +2,25 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>dc-board</title>
   </head>
 
 <body>
 
+<div id="form-main">
+
   <p>掲示板</p>
 
-  <form method="POST" action="write.php">
+  <form class="form" id="form1" method="POST" action="write.php">
   <input type="text" name="name"><br><br>
   <textarea name="contents" rows="8" cols="40">
   </textarea><br><br>
   <input type="submit" name="btn1" value="投稿する">
   </form>
+
+</div>
+
 
 
 
