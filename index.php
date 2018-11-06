@@ -20,9 +20,9 @@
 
   <?php
   //データベースに接続。
-  $dsn = 'mysql:host=localhost; dbname=board;charset=utf8';
-  $user = 'boarduser';
-  $password = 'password';
+  $dsn = 'mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_b24bf788d9d54e3;charset=utf8';
+  $user = 'b35095427bfc9e';
+  $password = '5efb2b8e';
 
   try{
 

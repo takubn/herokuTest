@@ -4,17 +4,17 @@
 $name = $_POST['name'];
 $contents = $_POST['contents'];
 
-//バリデーションチェック（未入力ならtest.phpへ遷移）
+//バリデーションチェック（未入力ならindex.phpへ遷移）
 if($name == '' || $contents == ''){
-  header('Location: test.php');
+  header('Location: index.php');
   exit();
 }
 
 
 //データベースに接続
-$dsn = 'mysql:host=localhost; dbname=board;charset=utf8';
-$user = 'boarduser';
-$password = 'password';
+$dsn = 'mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_b24bf788d9d54e3;charset=utf8';
+$user = 'b35095427bfc9e';
+$password = '5efb2b8e';
 
 
 //例外処理
@@ -31,7 +31,7 @@ $stmt->execute($data);
 $db = null;
 
 
-header('Location: test.php');
+header('Location: index.php.php');
 exit();
 
 } catch(PDOException $e){
