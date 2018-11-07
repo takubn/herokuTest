@@ -85,10 +85,10 @@
    ?>
 
 <!-- 出力部分 -->
-<div class="box-write">
+<div class="box-display">
   <?php for($i=1; $i<=$max; $i++):?>
-    <div><?php echo $result_name[$i] ?></div>
-    <div><?php echo $result_contents[$i] ?></div>
+    <?php echo $result_name[$i] ?>
+    <?php echo $result_contents[$i] ?>
   <?php endfor; ?>
 </div>
 
