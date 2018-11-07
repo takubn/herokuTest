@@ -14,7 +14,7 @@
   </p>
 
 <!-- 入力部分始まり -->
-<div class="box-write">
+<div id="box-write">
   <div id="form-main">
     <div id="form-div">
       <form class="form" id="form1" method="POST" action="write.php">
@@ -85,7 +85,7 @@
    ?>
 
 <!-- 出力部分 -->
-<div class="box-display">
+<div id="box-display">
   <?php for($i=1; $i<=$max; $i++):?>
     <?php echo $result_name[$i] ?>
     <?php echo $result_contents[$i] ?>
