@@ -8,17 +8,27 @@
 
 <body>
 
+<p class="red">掲示板</p>
+
 <div id="form-main">
+  <div id="form-div">
 
-  <p class="red">掲示板</p>
+    <form class="form" id="form1" method="POST" action="write.php">
 
-  <form class="form" id="form1" method="POST" action="write.php">
-  <input type="text" name="name"><br><br>
-  <textarea name="contents" rows="8" cols="40">
-  </textarea><br><br>
-  <input type="submit" name="btn1" value="投稿する">
-  </form>
+      <!-- 名前入力欄 -->
+      <p class="name">
+         <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+       </p>
 
+
+      <textarea name="contents" rows="8" cols="40">
+      </textarea><br><br>
+      <input type="submit" name="btn1" value="投稿する">
+
+    </form>
+
+
+  </div>
 </div>
 
 
