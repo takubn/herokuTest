@@ -182,6 +182,8 @@ input:focus, textarea:focus {
  RERUN
 
 
-p.tac{
-  text-align: center;
+.tac{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
