@@ -8,34 +8,39 @@
   </head>
 
 <body>
-<p style="text-align: center;">
-<img src="logo4.png" alt="">
-</p>
 
-<div id="form-main">
-  <div id="form-div">
-    <form class="form" id="form1" method="POST" action="write.php">
-      <!-- 名前入力欄 -->
-      <p class="name">
-         <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-       </p>
+<!-- 入力部分始まり -->
+  <p style="text-align: center;">
+  <img src="logo.png" alt="">
+  </p>
 
-       <!-- 投稿内容欄 -->
-       <p class="text">
-         <textarea name="contents" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
-       </p>
+  <div id="form-main">
+    <div id="form-div">
+      <form class="form" id="form1" method="POST" action="write.php">
+        <!-- 名前入力欄 -->
+        <p class="name">
+           <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+         </p>
 
-       <!-- 投稿ボタン -->
-       <div class="submit">
-               <input type="submit" value="SEND" id="button-blue"/>
-               <div class="ease"></div>
-             </div>
-    </form>
+         <!-- 投稿内容欄 -->
+         <p class="text">
+           <textarea name="contents" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+         </p>
+
+         <!-- 投稿ボタン -->
+         <div class="submit">
+                 <input type="submit" value="SEND" id="button-blue"/>
+                 <div class="ease"></div>
+               </div>
+      </form>
+    </div>
   </div>
-</div>
+  <!-- 入力部分終わり -->
 
 
 
+
+<!-- データ表示部分始まり -->
   <?php
   //データベースに接続。
   $dsn = 'mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_b24bf788d9d54e3;charset=utf8';
@@ -55,20 +60,25 @@
   $db = null;
 
     while(true){
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+      $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    //取り出したデータがなければ、ループ処理終了。
-    if($result==false){
-        break;
-    }
+      //取り出したデータがなければ、ループ処理終了。
+      if($result==false){
+          break;
+      }
 
+      $result_name = $result['name'];
+      $result_contents = $result['contents'];
 
-  //取得した情報を出力
-  echo '<hr><br>';
-  echo '投稿者:'.$result['name'];
-  echo '<br>';
-  echo '内容:<br><br>'.$result['contents'];
+  // //取得した情報を出力
+  // echo '<hr><br>';
+  // echo '投稿者:'.$result['name'];
+  // echo '<br>';
+  // echo '内容:<br><br>'.$result['contents'];
   }
+
+
+
 
 
   } catch(PDOException $e){
@@ -76,6 +86,19 @@
   }
 
   ?>
+
+
+<!-- テスト -->
+<h2><?php echo $result_name ?></h2>
+
+
+
+<!-- 表示データ部分終わり -->
+
+
+
+
+
 
 
 
