@@ -8,7 +8,7 @@
 
 <body>
 <p class="tac">
-<img src="logo2.png" alt="">
+<img src="logo.png" alt="">
 </p>
 
 <div id="form-main">
