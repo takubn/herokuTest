@@ -34,7 +34,7 @@ EDIT ON
 
 
 #form-main{
-    /* width:100%; */
+    width:100%;
     /* text-align: center; */
     padding-top:0px;
 }
@@ -46,7 +46,7 @@ EDIT ON
     padding-right:35px;
     padding-top:35px;
     padding-bottom:50px;
-    /* width: 450px; */
+    width: 450px;
     /* float: left; */
     /* left: 50%; */
     /* position: absolute; */
