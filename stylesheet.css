@@ -14,7 +14,7 @@ EDIT ON
 /* --------------------------manual------------------------------------------- */
 
 #box-write{
-        float: left;
+        float: left !important;;
 }
 
 #box-display{
@@ -49,7 +49,7 @@ EDIT ON
     /* margin-top:30px; */
     /* margin-left: -260px; */
     margin-bottom: 30px;
-    display: inline-block;
+    /* display: inline-block; */
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
@@ -173,8 +173,6 @@ input:focus, textarea:focus {
     -ms-transition: .3s ease;
     transition: .3s ease;
 }
-
-
 
 
 .submit:hover .ease{

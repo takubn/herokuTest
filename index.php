@@ -10,7 +10,7 @@
 <body>
 <!-- 入力部分始まり -->
   <div id="box-write">
-
+    
     <p>
     <img src="logo.png" alt="">
     </p>
