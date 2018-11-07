@@ -31,8 +31,6 @@
   </div>
 </div>
 
-<div id="form-main">
-  <div id="form-div">
 
 
   <?php
@@ -76,8 +74,7 @@
 
   ?>
 
-  </div>
-</div>
+
 
 </body>
 </html>
