@@ -7,7 +7,7 @@
   </head>
 
 <body>
-<p class="tac">
+<p style="text-align: center;">
 <img src="logo.png" alt="">
 </p>
 
