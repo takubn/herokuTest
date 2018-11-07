@@ -10,7 +10,7 @@
 <body>
 <!-- 入力部分始まり -->
   <div id="box-write">
-    
+
     <p>
     <img src="logo.png" alt="">
     </p>
@@ -87,8 +87,8 @@
 <!-- 出力部分 -->
 <div id="box-display">
   <?php for($i=1; $i<=$max; $i++):?>
-    <p>名前：<?php echo $result_name[$i] ?></p>
-    <p>内容：<?php echo $result_contents[$i] ?><p>
+    <p class="white">名前：<?php echo $result_name[$i] ?></p>
+    <p class="white">内容：<?php echo $result_contents[$i] ?><p>
   <?php endfor; ?>
 </div>
 
