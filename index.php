@@ -87,22 +87,15 @@
 
   ?>
 
-
-<!-- テスト -->
-
+<!-- ループ処理のために、最大値を定義する -->
 <?php
-var_dump($result_name);
-
 $max = count($result_name);
-
-echo $max;
-
  ?>
 
-
-<!-- <h2><?php echo $result_name ?></h2>
-
-<h2><?php echo $result_contents ?></h2> -->
+<?php for($i = 1; $i =< $max; $i++; ):?>
+  <h1><?php echo $result_name ?></h1>
+  <h2><?php echo $result_contents ?></h2>
+<?php endfor; ?>
 
 
 <!-- 表示データ部分終わり -->
