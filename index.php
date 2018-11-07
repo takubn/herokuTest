@@ -97,10 +97,8 @@
 <!-- 表示データ部分終わり -->
 
 
-
-
-
-
+<p id="box-write">float test</p>
+<p id="box-display">float test</p>
 
 
 </body>
