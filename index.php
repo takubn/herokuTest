@@ -9,11 +9,12 @@
 
 <body>
 
-<!-- 入力部分始まり -->
   <p style="text-align: center;">
   <img src="logo.png" alt="">
   </p>
 
+<!-- 入力部分始まり -->
+<div class="box-write">
   <div id="form-main">
     <div id="form-div">
       <form class="form" id="form1" method="POST" action="write.php">
@@ -35,6 +36,7 @@
       </form>
     </div>
   </div>
+</div>
   <!-- 入力部分終わり -->
 
 
@@ -66,20 +68,10 @@
       if($result==false){
           break;
       }
-
+      // 一行ずつ変数に入れる
       $result_name[]= $result['name'];
       $result_contents[]= $result['contents'];
-
-  // //取得した情報を出力
-  // echo '<hr><br>';
-  // echo '投稿者:'.$result['name'];
-  // echo '<br>';
-  // echo '内容:<br><br>'.$result['contents'];
   }
-
-
-
-
 
   } catch(PDOException $e){
   die('エラー：'. $e->getMessage());
@@ -88,14 +80,18 @@
   ?>
 
 <!-- ループ処理のために、最大値を定義する -->
-<?php
-$max = count($result_name);
- ?>
+  <?php
+    $max = count($result_name);
+   ?>
 
-<?php for($i=1; $i<=$max; $i++):?>
-  <h1><?php echo $result_name[$i] ?></h1>
-  <h2><?php echo $result_contents[$i] ?></h2>
-<?php endfor; ?>
+<!-- 出力部分 -->
+<div class="box-write">
+  <?php for($i=1; $i<=$max; $i++):?>
+    <div><?php echo $result_name[$i] ?></div>
+    <div><?php echo $result_contents[$i] ?></div>
+  <?php endfor; ?>
+</div>
+
 
 
 <!-- 表示データ部分終わり -->

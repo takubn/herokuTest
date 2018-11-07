@@ -161,9 +161,6 @@ input:focus, textarea:focus {
 }
 
 
-.red{
-  color: red;
-}
 
 
 .submit:hover .ease{
@@ -185,3 +182,16 @@ input:focus, textarea:focus {
 0.5×
 0.25×
  RERUN
+
+
+
+
+/* --------------------------manual------------------------------------------- */
+
+.box-write{
+        float: left;
+}
+
+.box-display{
+        float: right;
+}
