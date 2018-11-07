@@ -7,7 +7,7 @@
   </head>
 
 <body>
-<img src="logo.test" class="tac" alt="">
+<img src="logo.png" class="tac" alt="">
 
 <div id="form-main">
   <div id="form-div">
@@ -73,7 +73,6 @@
   }
 
   ?>
-
 
 
 
