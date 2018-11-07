@@ -24,6 +24,15 @@ EDIT ON
         width: 500px;
 }
 
+
+.test-left{
+  float:left;
+}
+
+.test-rigtht{
+  float:right;
+}
+
 .white{
   color: #FFFFFF;
 }
