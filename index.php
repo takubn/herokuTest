@@ -11,9 +11,7 @@
 
 <div id="form-main">
   <div id="form-div">
-
     <form class="form" id="form1" method="POST" action="write.php">
-
       <!-- 名前入力欄 -->
       <p class="name">
          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
@@ -30,12 +28,11 @@
                <div class="ease"></div>
              </div>
     </form>
-
-
   </div>
 </div>
 
-
+<div id="form-main">
+  <div id="form-div">
 
 
   <?php
@@ -78,6 +75,9 @@
   }
 
   ?>
+
+  </div>
+</div>
 
 </body>
 </html>
