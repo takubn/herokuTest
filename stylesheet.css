@@ -15,12 +15,13 @@ EDIT ON
 
 #box-write{
         float: left !important;
+        width: 300px;
 }
 
 #box-display{
         float: right;
         background: url(http://thekitemap.com/images/feedback-img.jpg) center center / cover no-repeat fixed;
-
+        width: 200px;
 }
 
 .white{

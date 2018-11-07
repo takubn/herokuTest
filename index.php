@@ -86,7 +86,7 @@
 
 <!-- 出力部分 -->
 <div id="box-display">
-  <?php for($i=1; $i<=$max; $i++):?>
+  <?php for($i=1; $i<$max; $i++):?>
     <hr>
     <p class="white">名前：<?php echo $result_name[$i] ?></p>
     <p class="white">内容：<?php echo $result_contents[$i] ?><p>
