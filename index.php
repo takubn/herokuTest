@@ -20,9 +20,13 @@
          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
        </p>
 
+       <!-- 投稿内容欄 -->
+       <p class="text">
+         <textarea name="contents" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+       </p>
 
-      <textarea name="contents" rows="8" cols="40">
-      </textarea><br><br>
+
+
       <input type="submit" name="btn1" value="投稿する">
 
     </form>
