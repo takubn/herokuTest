@@ -183,7 +183,5 @@ input:focus, textarea:focus {
 
 
 .tac{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
