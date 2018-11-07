@@ -92,7 +92,7 @@
 $max = count($result_name);
  ?>
 
-<?php for($i = 1; $i =< $max; $i++; ):?>
+<?php for($i=1; $i<=$max; $i++):?>
   <h1><?php echo $result_name ?></h1>
   <h2><?php echo $result_contents ?></h2>
 <?php endfor; ?>
