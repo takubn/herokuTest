@@ -7,7 +7,9 @@
   </head>
 
 <body>
-<img src="logo.png" class="tac" alt="">
+<p class="tac">
+<img src="logo2.png" alt="">
+</p>
 
 <div id="form-main">
   <div id="form-div">
