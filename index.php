@@ -89,6 +89,15 @@
 
 
 <!-- テスト -->
+
+<?php
+$max = count($result_name);
+
+echo $max;
+
+ ?>
+
+
 <h2><?php echo $result_name ?></h2>
 
 <h2><?php echo $result_contents ?></h2>
