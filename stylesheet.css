@@ -7,6 +7,10 @@ html{background-image: url(http://thekitemap.com/images/feedback-img.jpg) no-rep
   height:100%;
 }
 
+body {
+  background: url(http://thekitemap.com/images/feedback-img.jpg) center center / cover no-repeat fixed;
+}
+
 #feedback-page{
     text-align:center;
 }
