@@ -8,7 +8,6 @@
 
 <body>
 
-<p class="red">掲示板</p>
 
 <div id="form-main">
   <div id="form-div">
@@ -25,10 +24,11 @@
          <textarea name="contents" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
        </p>
 
-
-
-      <input type="submit" name="btn1" value="投稿する">
-
+       <!-- 投稿ボタン -->
+       <div class="submit">
+               <input type="submit" value="SEND" id="button-blue"/>
+               <div class="ease"></div>
+             </div>
     </form>
 
 
