@@ -91,6 +91,7 @@
 <!-- テスト -->
 <h2><?php echo $result_name ?></h2>
 
+<h2><?php echo $result_contents ?></h2>
 
 
 <!-- 表示データ部分終わり -->
