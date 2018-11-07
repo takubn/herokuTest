@@ -67,8 +67,8 @@
           break;
       }
 
-      $result_name = $result['name'];
-      $result_contents = $result['contents'];
+      $result_name .= $result['name'];
+      $result_contents .= $result['contents'];
 
   // //取得した情報を出力
   // echo '<hr><br>';
@@ -92,6 +92,9 @@
 
 <?php
 var_dump($result_name);
+
+
+
 $max = count($result_name);
 
 echo $max;
