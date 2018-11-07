@@ -8,13 +8,13 @@
   </head>
 
 <body>
-
-  <p style="text-align: center;">
-  <img src="logo.png" alt="">
-  </p>
-
 <!-- 入力部分始まり -->
 <div id="box-write">
+
+    <p style="text-align: center;">
+    <img src="logo.png" alt="">
+    </p>
+
   <div id="form-main">
     <div id="form-div">
       <form class="form" id="form1" method="POST" action="write.php">

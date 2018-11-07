@@ -190,6 +190,8 @@ input:focus, textarea:focus {
 
 #box-write{
         float: left;
+        text-align: center;
+        width: 100%;
 }
 
 #box-display{
