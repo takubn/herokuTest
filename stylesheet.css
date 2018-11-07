@@ -28,8 +28,9 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
     /* float: left; */
     /* left: 50%; */
     /* position: absolute; */
-    margin-top:30px;
+    /* margin-top:30px; */
     /* margin-left: -260px; */
+    margin-bottom: 30px;
     display: inline-block;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
