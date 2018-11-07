@@ -9,9 +9,9 @@
 
 <body>
 <!-- 入力部分始まり -->
-<div id="box-write">
+  <div id="box-write">
 
-    <p style="text-align: center;">
+    <p>
     <img src="logo.png" alt="">
     </p>
 
@@ -87,11 +87,10 @@
 <!-- 出力部分 -->
 <div id="box-display">
   <?php for($i=1; $i<=$max; $i++):?>
-    <?php echo $result_name[$i] ?>
-    <?php echo $result_contents[$i] ?>
+    <p>名前：<?php echo $result_name[$i] ?></p>
+    <p>内容：<?php echo $result_contents[$i] ?><p>
   <?php endfor; ?>
 </div>
-
 
 
 <!-- 表示データ部分終わり -->
