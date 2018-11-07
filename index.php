@@ -91,6 +91,7 @@
 <!-- テスト -->
 
 <?php
+var_dump($result_name);
 $max = count($result_name);
 
 echo $max;
