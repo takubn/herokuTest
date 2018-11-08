@@ -118,7 +118,10 @@
 
 <!-- js記述部分　 -->
 
-<script type="text/javascript" src="scroll.js"></script>
+<script type="text/javascript" src="scroll.js">
+  alert();
+  scroll();
+</script>
 
 
 </body>

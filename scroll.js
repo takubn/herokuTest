@@ -1,4 +1,9 @@
-window.scrollTo(0,document.body.scrollHeight);
-
 // test
-alert('JavaScriptのアラート');
+function alert{
+  alert('JavaScriptのアラート');
+}
+
+function scroll{
+  window.scrollTo(0,document.body.scrollHeight);
+
+}
