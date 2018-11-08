@@ -119,9 +119,8 @@
 
   <script>
   // ページ最下部に初期位置を飛ばす
-    window.scrollTo(0,document.body.scrollHeight);
+  window.scrollTo(0,document.body.scrollHeight);
   </script>
-
 
 
 
