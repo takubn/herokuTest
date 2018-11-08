@@ -9,7 +9,7 @@
 
 <body>
 <!-- 入力部分始まり -->
-  <div class="box-write">
+  <div class="input">
 
     <p>
     <img src="logo.png" alt="">
@@ -97,8 +97,8 @@
 <!-- 表示データ部分終わり -->
 
 
-<p class="test-right">float test</p>
-<p class="test-left">float test</p>
+<!-- <p class="test-right">float test</p>
+<p class="test-left">float test</p> -->
 
 
 </body>
