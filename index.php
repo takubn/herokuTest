@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="shortcut icon" href="favicon.ico">
-    <script type="text/javascript" src="scroll.js"></script>
     <title>dc-board</title>
 
   </head>
@@ -119,7 +118,7 @@
 
 <!-- js記述部分　 -->
 
-<script>window.scrollTo(0,document.body.scrollHeight);</script>
+<script type="text/javascript" src="scroll.js"></script>
 
 
 
