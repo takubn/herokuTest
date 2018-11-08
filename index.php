@@ -89,8 +89,8 @@
     <?php
       $max = count($result_name);
       //連想配列を逆順にする
-      $result_name = array_reverse($result_name);
-      $result_contents = array_reverse($result_contents);
+      // $result_name = array_reverse($result_name);
+      // $result_contents = array_reverse($result_contents);
      ?>
 
   <!-- 出力部分 -->
