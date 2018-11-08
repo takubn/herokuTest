@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="shortcut icon" href="favicon.ico">
     <title>dc-board</title>
-    <script>window.scrollTo(0,document.body.scrollHeight);</script>
+
   </head>
 
 <body>
