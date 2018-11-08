@@ -28,6 +28,7 @@ EDIT ON
   margin-left: 50px;
   height: 638px;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 
@@ -54,6 +55,8 @@ EDIT ON
 
 .white{
   color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 
