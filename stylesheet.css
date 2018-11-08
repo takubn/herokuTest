@@ -17,13 +17,15 @@ EDIT ON
   display: flex;
 }
 
-.item-display{
-
-}
-
 .item-input{
 
 }
+
+.item-display{
+  background: url(http://thekitemap.com/images/feedback-img.jpg) center center / cover no-repeat fixed;
+}
+
+
 
 
 
