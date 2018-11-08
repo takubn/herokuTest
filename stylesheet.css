@@ -26,6 +26,8 @@ EDIT ON
 .item-display{
   background: url(http://thekitemap.com/images/feedback-img.jpg) center center / cover no-repeat fixed;
   margin-left: 50px;
+  height: 638px;
+  overflow: scroll;
 }
 
 
