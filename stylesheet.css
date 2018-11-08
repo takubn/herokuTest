@@ -14,9 +14,15 @@ EDIT ON
 /* --------------------------manual------------------------------------------- */
 
 .box-write{
-        float: left !important;
-        width: 300px;
+  float:left;
 }
+
+.test-left{
+  float:left;
+}
+
+
+
 
 #box-display{
         float: right;

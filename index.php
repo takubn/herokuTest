@@ -9,7 +9,7 @@
 
 <body>
 <!-- 入力部分始まり -->
-  <div class="test-left">
+  <div class="box-write">
 
     <p>
     <img src="logo.png" alt="">
