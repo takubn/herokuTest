@@ -2,13 +2,13 @@ HTML  CSS Result
 EDIT ON
  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-/* html{background-image: url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+/* html{background-image: url(feedback-img.jpg) no-repeat;
   background-size: cover;
   height:100%;
 } */
 
 /* body {
-  background: url(http://thekitemap.com/images/feedback-img.jpg) center center / cover no-repeat fixed;
+  background: url(feedback-img.jpg) center center / cover no-repeat fixed;
 } */
 
 /* --------------------------manual------------------------------------------- */
@@ -24,7 +24,7 @@ EDIT ON
 }
 
 .item-display{
-  background: url(http://thekitemap.com/images/feedback-img.jpg) center center / cover no-repeat fixed;
+  background: url(feedback-img.jpg) center center / cover no-repeat fixed;
   margin-left: 50px;
   height: 638px;
   overflow: scroll;
@@ -41,7 +41,7 @@ EDIT ON
 
 #box-display{
         float: right;
-        background: url(http://thekitemap.com/images/feedback-img.jpg) center center / cover no-repeat fixed;
+        background: url(feedback-img.jpg) center center / cover no-repeat fixed;
         width: 600px;
 }
 
@@ -146,7 +146,7 @@ EDIT ON
     background-repeat: no-repeat;
 }
 
-#email{
+/* #email{
     background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
     background-size: 30px 30px;
     background-position: 11px 8px;
@@ -158,10 +158,10 @@ EDIT ON
     background-size: 30px 30px;
   background-position: 11px 8px;
     background-repeat: no-repeat;
-}
+} */
 
 #comment{
-    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-image: url(comment.svg);
     background-size: 30px 30px;
     background-position: 11px 8px;
     background-repeat: no-repeat;
