@@ -13,7 +13,7 @@ EDIT ON
 
 /* --------------------------manual------------------------------------------- */
 
-.container{
+#container{
   display: flex;
 }
 
@@ -28,7 +28,7 @@ EDIT ON
 
 
 
-
+/*
 .test-left{
   float:left;
 }
@@ -41,7 +41,7 @@ EDIT ON
 
 .test-left{
   float:left;
-}
+} */
 
 .input-logo{
   text-align: center;
