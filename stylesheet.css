@@ -13,7 +13,7 @@ EDIT ON
 
 /* --------------------------manual------------------------------------------- */
 
-#box-write{
+.box-write{
         float: left !important;
         width: 300px;
 }
