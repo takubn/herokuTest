@@ -13,7 +13,9 @@ EDIT ON
 
 /* --------------------------manual------------------------------------------- */
 
-#container{
+
+
+.container{
   display: flex;
 }
 
@@ -23,6 +25,7 @@ EDIT ON
 
 .item-display{
   background: url(http://thekitemap.com/images/feedback-img.jpg) center center / cover no-repeat fixed;
+  margin-right: 50px;
 }
 
 

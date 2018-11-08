@@ -10,7 +10,7 @@
 <body>
 
 <!-- flexbox始まり -->
-<div id="container">
+<div class="container" style="display: inline-flex;">
 
 
   <!-- 入力部分始まり -->
