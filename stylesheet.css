@@ -13,6 +13,19 @@ EDIT ON
 
 /* --------------------------manual------------------------------------------- */
 
+.container{
+  display: flex;
+}
+
+.item-display{
+
+}
+
+.item-input{
+
+}
+
+
 
 .test-left{
   float:left;
