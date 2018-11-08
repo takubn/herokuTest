@@ -115,6 +115,14 @@
 </div>
 <!-- flexbox終わり -->
 
+<!-- js記述部分　 -->
+
+  <script>
+  // ページ最下部に初期位置を飛ばす
+    window.scrollTo(0,documtent.body.scrollHeight);
+  </script>
+
+
 
 
 </body>
