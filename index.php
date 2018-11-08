@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript" src="scroll.js"></script>
     <title>dc-board</title>
 
   </head>
