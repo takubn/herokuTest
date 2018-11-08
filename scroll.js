@@ -1,4 +1,4 @@
-window.scrollTo(0,100000000000000);
+window.scrollTo(0,document.body.scrollHeight);
 
 //test
 alert("Hello");
