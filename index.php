@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="shortcut icon" href="favicon.ico">
     <title>dc-board</title>
+    <script>window.scrollTo(0,document.body.scrollHeight);</script>
   </head>
 
 <body>
@@ -117,10 +118,7 @@
 
 <!-- js記述部分　 -->
 
-  <script>
-  // ページ最下部に初期位置を飛ばす
-  window.scrollTo(0,document.body.scrollHeight);
-  </script>
+<script>window.scrollTo(0,document.body.scrollHeight);</script>
 
 
 
