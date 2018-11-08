@@ -13,35 +13,35 @@ EDIT ON
 
 /* --------------------------manual------------------------------------------- */
 
-.input{
-  float:left;
-}
 
 .test-left{
   float:left;
 }
-
-
-
 
 #box-display{
         float: right;
         background: url(http://thekitemap.com/images/feedback-img.jpg) center center / cover no-repeat fixed;
-        width: 500px;
+        width: 900px;
 }
-
 
 .test-left{
   float:left;
 }
 
-.test-right{
-  float:right;
+.input-logo{
+  text-align: center;
 }
 
-.white{
-  color: #FFFFFF;
-}
+
+
+
+
+/* .test-right{
+  float:right;
+} */
+
+
+
 
 #feedback-page{
     text-align:center;

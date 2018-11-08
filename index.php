@@ -9,9 +9,9 @@
 
 <body>
 <!-- 入力部分始まり -->
-  <div class="input">
+  <div class="test-left">
 
-    <p>
+    <p class="input-logo">
     <img src="logo.png" alt="">
     </p>
 
