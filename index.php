@@ -6,9 +6,17 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>dc-board</title>
 
+    <!-- js記述部分　 -->
+    <script>
+      function scroll(){
+        window.scrollTo(0,document.body.scrollHeight);
+      }
+    </script>
+    
+
   </head>
 
-<body>
+<body onload="scroll();">
 
 <!-- flexbox始まり -->
 <div class="container" style="display: inline-flex;">
@@ -116,9 +124,6 @@
 </div>
 <!-- flexbox終わり -->
 
-<!-- js記述部分　 -->
-
-<script type="text/javascript" src="scroll.js"></script>
 
 
 </body>
