@@ -105,11 +105,11 @@
 
     <?php for($i=0; $i<$max; $i++):?>
       <div class="display-box">
-        <div class="white display-name">
-          <div><?php echo $result_name[$i] ?></div>
+        <div class="display-name">
+          <div class="white"><?php echo $result_name[$i] ?></div>
           </div>
-        <div class="white display-contents">
-          <div><?php echo $result_contents[$i] ?></div>
+        <div class="display-contents">
+          <div class="white"><?php echo $result_contents[$i] ?></div>
         </div>
       </div>
     <?php endfor; ?>
