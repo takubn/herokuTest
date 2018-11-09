@@ -8,7 +8,7 @@
 
     <!-- js記述部分　 -->
     <script>
-      function test(){
+      function scroll(){
         var a = document.documentElement;
         var y = a.scrollHeight - a.clientHeight;
         window.scroll(0, y);
@@ -18,7 +18,7 @@
 
   </head>
 
-<body onload="test();">
+<body onload="scroll();">
 
 <!-- flexbox始まり -->
 <!-- <div class="container" style="display: inline-flex;"> -->
