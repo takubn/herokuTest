@@ -8,7 +8,7 @@
 
     <!-- js記述部分　 -->
     <script>
-      function scroll(){
+      function scr(){
         var a = document.documentElement;
         var y = a.scrollHeight - a.clientHeight;
         window.scroll(0, y);
@@ -18,7 +18,7 @@
 
   </head>
 
-<body onload="scroll();">
+<body onload="scr;">
 
 <!-- flexbox始まり -->
 <!-- <div class="container" style="display: inline-flex;"> -->
@@ -26,7 +26,7 @@
 
   <!-- 入力部分始まり -->
     <!-- <div class="test-left"> -->
-  <div class="item-input" style="position: fixed;width: 35%;">
+  <div class="item-input" style="position: fixed;">
 
       <p class="input-logo">
       <img src="logo.png" alt="">
