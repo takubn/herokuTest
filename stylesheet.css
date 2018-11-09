@@ -35,7 +35,7 @@ float:right;
 /* item-display部分の装飾 */
 .display-box{
   display: flex;
-  padding:20px;
+  padding: 50px 20px;
   justify-content: space-between;
   border-top: solid white 4px;
   align-items: center;
