@@ -2,22 +2,12 @@ HTML  CSS Result
 EDIT ON
  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-/* html{background-image: url(feedback-img.jpg) no-repeat;
-  background-size: cover;
-  height:100%;
-} */
 
-/* body {
-  background: url(feedback-img.jpg) center center / cover no-repeat fixed;
-} */
 
 /* --------------------------manual------------------------------------------- */
 
 
 
-/* .container{
-  display: flex;
-} */
 
 .item-input{
   position:fixed;
@@ -25,32 +15,11 @@ EDIT ON
 }
 
 .item-display{
-  background: url(feedback-img.jpg) center center / cover no-repeat fixed;
-  /* margin-left: 50px;
-  height: 638px;
-  overflow: scroll;
-  overflow-x: hidden; */
+background: url(feedback-img.jpg) center center / cover no-repeat fixed;
 float:right;
  width:60%;
 }
 
-
-
-
-/*
-.test-left{
-  float:left;
-}
-
-#box-display{
-        float: right;
-        background: url(feedback-img.jpg) center center / cover no-repeat fixed;
-        width: 600px;
-}
-
-.test-left{
-  float:left;
-} */
 
 .input-logo{
   text-align: center;
@@ -62,13 +31,26 @@ float:right;
   font-weight: bold;
 }
 
+/* item-display部分の装飾 */
+.display-box{
+  display: flex;
+  padding:5px;
+  background: #eee;
+  justify-content: space-between;
+  border-bottom: solid 1px;
+}
 
+.display-name{
+  background-color: #0FF;
+  width: 30%;
+  border-radius: 50%;
+  text-align: center;
+}
 
-/* .test-right{
-  float:right;
-} */
-
-
+.display-contents{
+  background: #FFFF66;
+  width: 70%;
+}
 
 
 #feedback-page{
@@ -77,8 +59,6 @@ float:right;
 
 
 #form-main{
-    /* width:100%; */
-    /* text-align: center; */
     padding-top:0px;
 }
 
@@ -89,14 +69,7 @@ float:right;
     padding-right:35px;
     padding-top:35px;
     padding-bottom:50px;
-    /* width: 450px; */
-    /* float: left; */
-    /* left: 50%; */
-    /* position: absolute; */
-    /* margin-top:30px; */
-    /* margin-left: -260px; */
     margin-bottom: 30px;
-    /* display: inline-block; */
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
@@ -149,19 +122,6 @@ float:right;
     background-repeat: no-repeat;
 }
 
-/* #email{
-    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-    background-size: 30px 30px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
-}
-
-#email:focus{
-    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-    background-size: 30px 30px;
-  background-position: 11px 8px;
-    background-repeat: no-repeat;
-} */
 
 #comment{
     background-image: url(comment.svg);

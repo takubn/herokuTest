@@ -21,11 +21,9 @@
 <body onload="scr();">
 
 <!-- flexbox始まり -->
-<!-- <div class="container" style="display: inline-flex;"> -->
 
 
   <!-- 入力部分始まり -->
-    <!-- <div class="test-left"> -->
   <div class="item-input" style="position: fixed;width: 35%;">
 
       <p class="input-logo">
@@ -99,32 +97,20 @@
   <!-- ループ処理のために、最大値を定義する -->
     <?php
       $max = count($result_name);
-      //連想配列を逆順にする
-      // $result_name = array_reverse($result_name);
-      // $result_contents = array_reverse($result_contents);
      ?>
 
   <!-- 出力部分 -->
-  <!-- <div id="box-display"> -->
   <div class="item-display">
 
 
     <?php for($i=0; $i<$max; $i++):?>
-      <hr>
-      <p class="white">名前：<?php echo $result_name[$i] ?></p>
-      <p class="white">内容：<?php echo $result_contents[$i] ?><p>
+      <div class="display-box">
+        <div class="white display-name">名前：<?php echo $result_name[$i] ?></div>
+        <div class="white display-contents">内容：<?php echo $result_contents[$i] ?></div>
+      </div>
     <?php endfor; ?>
   </div>
-
-
   <!-- 出力部分終わり -->
-
-
-  <!-- <p class="test-right">float test</p>
-  <p class="test-left">float test</p> -->
-
-<!-- </div> -->
-<!-- flexbox終わり -->
 
 
 
