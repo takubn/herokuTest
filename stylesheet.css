@@ -21,7 +21,7 @@ EDIT ON
 
 .item-input{
   position:fixed;
-  width: 30%;
+  width: 35%;
 }
 
 .item-display{
@@ -31,7 +31,7 @@ EDIT ON
   overflow: scroll;
   overflow-x: hidden; */
 float:right;
- width:40%;
+ width:60%;
 }
 
 
