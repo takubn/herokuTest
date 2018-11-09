@@ -15,20 +15,22 @@ EDIT ON
 
 
 
-.container{
+/* .container{
   display: flex;
-}
+} */
 
 .item-input{
-
+  position:fixed;
 }
 
 .item-display{
-  background: url(feedback-img.jpg) center center / cover no-repeat fixed;
+  /* background: url(feedback-img.jpg) center center / cover no-repeat fixed;
   margin-left: 50px;
   height: 638px;
   overflow: scroll;
-  overflow-x: hidden;
+  overflow-x: hidden; */
+  float:right;
+ width:300px;
 }
 
 

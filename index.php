@@ -21,7 +21,7 @@
 <body onload="test();">
 
 <!-- flexbox始まり -->
-<div class="container" style="display: inline-flex;">
+<!-- <div class="container" style="display: inline-flex;"> -->
 
 
   <!-- 入力部分始まり -->
@@ -123,7 +123,7 @@
   <!-- <p class="test-right">float test</p>
   <p class="test-left">float test</p> -->
 
-</div>
+<!-- </div> -->
 <!-- flexbox終わり -->
 
 
