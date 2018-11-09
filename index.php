@@ -2,15 +2,15 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
     <link rel="shortcut icon" href="favicon.ico">
     <title>dc-board</title>
 
     <!-- js記述部分　 -->
     <script>
       function scroll(){
-        // window.scrollTo(0,document.body.scrollHeight);
-        alert("aaa");
+        window.scrollTo(0,document.body.scrollHeight);
+        // alert("aaa");
       }
     </script>
 
