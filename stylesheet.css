@@ -37,7 +37,7 @@ float:right;
   display: flex;
   padding:20px;
   justify-content: space-between;
-  border-top: dotted white 2px;
+  border-top: solid white 4px;
   align-items: center;
 }
 
