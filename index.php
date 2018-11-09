@@ -2,22 +2,23 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="shortcut icon" href="favicon.ico">
     <title>dc-board</title>
 
     <!-- js記述部分　 -->
     <script>
-      function scroll(){
-        window.scrollTo(0,document.body.scrollHeight);
-        // alert("aaa");
+      function test(){
+        var a = document.documentElement;
+        var y = a.scrollHeight - a.clientHeight;
+        window.scroll(0, y);
       }
-    </script>
+</script>
 
 
   </head>
 
-<body onload="scroll();">
+<body onload="test();">
 
 <!-- flexbox始まり -->
 <div class="container" style="display: inline-flex;">
