@@ -29,6 +29,7 @@ float:right;
   color: #FFFFFF;
   font-size: 25px;
   font-weight: bold;
+  padding: 20px 0;
 }
 
 /* item-display部分の装飾 */
@@ -38,6 +39,7 @@ float:right;
   justify-content: space-between;
   border-bottom: solid white 2px;
   height: 80px;
+  align-items: center;
 }
 
 .display-name{
