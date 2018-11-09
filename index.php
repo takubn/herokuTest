@@ -9,10 +9,11 @@
     <!-- js記述部分　 -->
     <script>
       function scroll(){
-        window.scrollTo(0,document.body.scrollHeight);
+        // window.scrollTo(0,document.body.scrollHeight);
+        alert("aaa");
       }
     </script>
-    
+
 
   </head>
 
