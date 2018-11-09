@@ -18,7 +18,7 @@
 
   </head>
 
-<body onload="scr;">
+<body onload="scr();">
 
 <!-- flexbox始まり -->
 <!-- <div class="container" style="display: inline-flex;"> -->
