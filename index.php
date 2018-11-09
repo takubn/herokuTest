@@ -26,7 +26,7 @@
 
   <!-- 入力部分始まり -->
     <!-- <div class="test-left"> -->
-  <div class="item-input">
+  <div class="item-input" style="position: fixed;">
 
       <p class="input-logo">
       <img src="logo.png" alt="">
