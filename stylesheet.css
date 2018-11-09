@@ -27,29 +27,28 @@ float:right;
 
 .white{
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 /* item-display部分の装飾 */
 .display-box{
   display: flex;
-  padding:5px;
-  background: #eee;
+  padding:20px;
   justify-content: space-between;
-  border-bottom: solid 1px;
+  border-bottom: solid white 2px;
+  height: 80px;
 }
 
 .display-name{
-  background-color: #0FF;
   width: 30%;
   border-radius: 50%;
   text-align: center;
+  border: solid 4px;
 }
 
 .display-contents{
-  background: #FFFF66;
-  width: 70%;
+  width: 65%;
 }
 
 

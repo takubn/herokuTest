@@ -105,8 +105,8 @@
 
     <?php for($i=0; $i<$max; $i++):?>
       <div class="display-box">
-        <div class="white display-name">名前：<?php echo $result_name[$i] ?></div>
-        <div class="white display-contents">内容：<?php echo $result_contents[$i] ?></div>
+        <div class="white display-name"><?php echo $result_name[$i] ?></div>
+        <div class="white display-contents"><?php echo $result_contents[$i] ?></div>
       </div>
     <?php endfor; ?>
   </div>
