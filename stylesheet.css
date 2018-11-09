@@ -25,10 +25,10 @@ EDIT ON
 
 .item-display{
   background: url(feedback-img.jpg) center center / cover no-repeat fixed;
-  margin-left: 50px;
+  /* margin-left: 50px;
   height: 638px;
   overflow: scroll;
-  overflow-x: hidden;
+  overflow-x: hidden; */
   float:right;
  width:40%;
 }
