@@ -86,6 +86,7 @@
         // 一行ずつ変数に入れる
         $result_name[]= $result['name'];
         $result_contents[]= $result['contents'];
+        $result_date[]=$result['date'];
     }
 
     } catch(PDOException $e){
@@ -111,6 +112,7 @@
         <div class="display-contents">
           <div class="white"><?php echo $result_contents[$i] ?></div>
         </div>
+        <p><?php echo $result_date[$i] ?></p>
       </div>
     <?php endfor; ?>
   </div>
