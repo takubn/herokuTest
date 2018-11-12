@@ -107,7 +107,8 @@
     <?php for($i=0; $i<$max; $i++):?>
       <div class="display-box">
         <div class="display-name">
-          <div class="white"><?php echo $result_name[$i] ?></div>
+          <!-- 名前の文字数を制限する。 -->
+          <div class="white"><?php echo substr($result_name[$i],0,6) ?></div>
           </div>
         <div class="display-contents">
           <div class="white"><?php echo $result_contents[$i] ?></div>
