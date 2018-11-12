@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php echo now(); ?>
+
 <html lang="ja">
   <head>
     <meta charset="utf-8">
@@ -103,6 +103,7 @@
 
   <!-- 出力部分 -->
   <div class="item-display">
+    <?php echo now(); ?>
 
 
     <?php for($i=0; $i<$max; $i++):?>
