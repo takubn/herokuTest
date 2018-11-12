@@ -114,7 +114,7 @@
         <div class="display-contents">
           <div class="white"><?php echo $result_contents[$i] ?></div>
         </div>
-        <p><?php echo $result_date[$i] ?></p>
+        <p class="date"><?php echo $result_date[$i] ?></p>
       </div>
     <?php endfor; ?>
   </div>
