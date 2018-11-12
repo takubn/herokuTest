@@ -1,7 +1,7 @@
 {
 	"require": {
-		"php": "5.5.12",
+		/* "php": "5.5.12",
 		"ext-memcached": "*",
-		"ext-mbstring": "*"
+		"ext-mbstring": "*" */
 	}
 }
