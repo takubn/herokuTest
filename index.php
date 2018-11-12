@@ -103,8 +103,6 @@
 
   <!-- 出力部分 -->
   <div class="item-display">
-    <?php echo now(); ?>
-
 
     <?php for($i=0; $i<$max; $i++):?>
       <div class="display-box">
