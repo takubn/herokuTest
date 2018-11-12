@@ -22,7 +22,7 @@ try{
 $db = new PDO($dsn, $user, $password);
 $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-$sql = 'INSERT INTO bbs(name,contents,date) VALUES(?,?)';
+$sql = 'INSERT INTO bbs(name,contents) VALUES(?,?)';
 $stmt = $db->prepare($sql);
 $data[] = $name;
 $data[] = $contents;
