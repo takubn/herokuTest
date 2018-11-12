@@ -108,7 +108,7 @@
       <div class="display-box">
         <div class="display-name">
           <!-- 名前の文字数を制限する。 -->
-          <div class="white"><?php echo mb_substr($result_name[$i],0,15,"UTF-8");?></div>
+          <div class="white"><?php echo mb_strimwidth($result_name[$i],0,8,"UTF-8");?></div>
           </div>
         <div class="display-contents">
           <div class="white"><?php echo $result_contents[$i] ?></div>
