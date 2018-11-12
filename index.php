@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!-- エラー文を出す -->
-<!-- <?php
-ini_set("display_errors", On);
-error_reporting(E_ALL);
-?> -->
+
 <html lang="ja">
   <head>
     <meta charset="utf-8">
