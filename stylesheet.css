@@ -44,7 +44,7 @@ float:right;
   font-size: 18px;
   font-weight: bold;
   padding: 20px 0;
-  position: relative;
+  /* position: relative; */
 }
 
 /* item-display部分の装飾 */
