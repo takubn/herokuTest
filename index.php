@@ -113,9 +113,9 @@
           <div class="white"><?php echo mb_substr($result_name[$i],0,5,"UTF-8");?></div>
           </div>
         <div class="display-contents">
-          <div class="white"><?php echo $result_contents[$i] ?></div>
+          <div class="interior"><?php echo $result_contents[$i] ?></div>
+          <p class="date"><?php echo $result_date[$i] ?></p>
         </div>
-        <p class="date"><?php echo $result_date[$i] ?></p>
       </div>
     <?php endfor; ?>
   </div>

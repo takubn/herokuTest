@@ -39,6 +39,14 @@ float:right;
   padding: 20px 0;
 }
 
+.interior{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 0;
+  position: relative;
+}
+
 /* item-display部分の装飾 */
 .display-box{
   display: flex;
@@ -46,7 +54,7 @@ float:right;
   justify-content: space-between;
   border-top: solid white 4px;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .display-name{
