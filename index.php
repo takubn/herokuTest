@@ -88,6 +88,8 @@
         $result_name[]= $result['name'];
         $result_contents[]= $result['contents'];
         $result_date[]=$result['date'];
+
+         $jsonResultName = json_encode($result_name);
     }
 
     } catch(PDOException $e){
