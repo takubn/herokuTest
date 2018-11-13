@@ -1,5 +1,6 @@
 {
-	"require": {
-
-	}
+  "require": {
+		"ext-memcached": "*",
+		"ext-mbstring": "*"
+  }
 }
