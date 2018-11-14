@@ -26,8 +26,14 @@ try{
   $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
   //すべてのデータを取得。
-  $sql = "UPDATE bbs SET name=?,contents=? where id = $id ";
+  $sql = "UPDATE bbs SET name=:name,contents=:contents where id = $id ";
   $stmt = $db->prepare($sql);
+
+
+  $stmt->bindParam(':name', $name, PDO::PARAM_STR);
+  $stmt->bindParam(':contents', $contents, PDO::PARAM_STR);
+
+
   $stmt->execute();
 
   $db = null;
