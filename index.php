@@ -88,6 +88,9 @@
         $result_name[]= $result['name'];
         $result_contents[]= $result['contents'];
         $result_date[]=$result['date'];
+        // odbc_primarykeysを取得
+        $result_id[]=$result['id'];
+
 
          $jsonResultName = json_encode($result_name);
     }
@@ -115,6 +118,7 @@
         <div class="display-contents">
           <div class="white"><?php echo $result_contents[$i] ?></div>
           <p class="date"><?php echo $result_date[$i] ?></p>
+          <p class="date"><?php echo $result_id[$i] ?></p>
         </div>
       </div>
     <?php endfor; ?>
