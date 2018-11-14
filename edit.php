@@ -49,9 +49,12 @@ $id = $_POST['id'];
      <div class="white"><?php echo mb_substr($result_name,0,5,"UTF-8");?></div>
      <div class="white"><?php echo $result_contents ?></div>
 
-
-     <input type="text" name="name" value="<?php echo mb_substr($result_name,0,5,"UTF-8");?>">
-     <input type="textarea" name="contents" value="<?php echo $result_contents ?>">
+     <form  action="edit_done.php" method="post">
+       <div class="white"><input type="hidden" name="id" value="<?php echo $id ?>">></div>
+       <div class="white"><input type="text" name="name" value="<?php echo mb_substr($result_name,0,5,"UTF-8");?>"></div>
+       <div class="white"><input type="textarea" name="contents" value="<?php echo $result_contents ?>"></div>
+       <input type="submit"  value="変更する">
+     </form>
 
   </body>
 </html>
