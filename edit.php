@@ -48,8 +48,10 @@ $id = $_POST['id'];
 
      <div class="white"><?php echo mb_substr($result_name,0,5,"UTF-8");?></div>
      <div class="white"><?php echo $result_contents ?></div>
-     <p class="date"><?php echo $result_date ?></p>
 
+
+     <input type="text" name="name" value="<?php echo mb_substr($result_name,0,5,"UTF-8");?>">
+     <input type="textarea" name="contents" value="<?php echo $result_contents ?>">
 
   </body>
 </html>
