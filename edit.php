@@ -27,7 +27,7 @@ $id = $_POST['id'];
       $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
       //すべてのデータを取得。
-      $sql = "SELECT * FROM bbs where $id ";
+      $sql = "SELECT * FROM bbs where id = $id ";
       $stmt = $db->prepare($sql);
       $stmt->execute();
 
