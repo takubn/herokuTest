@@ -119,12 +119,12 @@
           <div class="white"><?php echo $result_contents[$i] ?></div>
           <p class="date"><?php echo $result_date[$i] ?></p>
           <p class="date"><?php echo $result_id[$i] ?></p>
-            <!-- 値を渡すテスト -->
-            <form  action="edit.php" method="post">
-              <label><input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label>
-              <input type="submit"  value="修正">
-            </form>
         </div>
+        <!-- 値を渡すテスト -->
+        <form  action="edit.php" method="post">
+          <label><input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label>
+          <input type="submit"  value="修正">
+        </form>
       </div>
     <?php endfor; ?>
   </div>

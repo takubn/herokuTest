@@ -8,11 +8,13 @@ $id = $_POST['id'];
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>dc-board</title>
   </head>
   <body>
-    <h1>test</h1>
-    <?php echo $id ?>
+    <h1>投稿修正</h1>
+    <!-- <?php echo $id ?> -->
 
 
     <?php
@@ -46,15 +48,15 @@ $id = $_POST['id'];
     }
      ?>
 
-     <div class="white"><?php echo mb_substr($result_name,0,5,"UTF-8");?></div>
-     <div class="white"><?php echo $result_contents ?></div>
-
+  <div class="display-contents">
      <form  action="edit_done.php" method="post">
-       <div class="white"><input type="hidden" name="id" value="<?php echo $id ?>">></div>
+       <input type="hidden" name="id" value="<?php echo $id ?>">
        <div class="white"><input type="text" name="name" value="<?php echo mb_substr($result_name,0,5,"UTF-8");?>"></div>
        <div class="white"><input type="textarea" name="contents" value="<?php echo $result_contents ?>"></div>
        <input type="submit"  value="変更する">
      </form>
+  </div>
+
 
   </body>
 </html>
