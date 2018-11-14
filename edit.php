@@ -19,6 +19,6 @@ $id = $_POST['id'];
   </head>
   <body>
     <h1>test</h1>
-    <?php echo $id ?>;
+    <?php echo $id ?>
   </body>
 </html>
