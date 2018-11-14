@@ -121,7 +121,7 @@
           <p class="date"><?php echo $result_id[$i] ?></p>
             <!-- 値を渡すテスト -->
             <form  action="edit.php" method="post">
-              <label><input type="radio" name="id" value="<?php echo $result_id[$i] ?>"><label>
+              <label><input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label>
               <input type="submit"  value="修正">
             </form>
         </div>
