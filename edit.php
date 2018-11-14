@@ -51,9 +51,9 @@ $id = $_POST['id'];
   <div class="display-contents">
      <form  action="edit_done.php" method="post">
        <input type="hidden" name="id" value="<?php echo $id ?>">
-       <div class="white"><input type="text" name="name" value="<?php echo mb_substr($result_name,0,5,"UTF-8");?>"></div>
-       <div class="white"><input type="textarea" name="contents" value="<?php echo $result_contents ?>"></div>
-       <input type="submit"  value="変更する">
+       <div class="edit"><input type="text" name="name" value="<?php echo mb_substr($result_name,0,5,"UTF-8");?>"></div>
+       <div class="edit"><input type="textarea" name="contents" value="<?php echo $result_contents ?>"></div>
+       <input type="submit" class="button"  value="変更する">
      </form>
   </div>
 

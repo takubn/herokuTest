@@ -118,12 +118,12 @@
         <div class="display-contents">
           <div class="white"><?php echo $result_contents[$i] ?></div>
           <p class="date"><?php echo $result_date[$i] ?></p>
-          <p class="date"><?php echo $result_id[$i] ?></p>
+          <!-- <p class="date"><?php echo $result_id[$i] ?></p> -->
         </div>
         <!-- 値を渡すテスト -->
         <form  action="edit.php" method="post">
           <label><input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label>
-          <input type="submit"  value="修正">
+          <input type="submit" class="button" value="編集">
         </form>
       </div>
     <?php endfor; ?>
