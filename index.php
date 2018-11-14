@@ -119,6 +119,11 @@
           <div class="white"><?php echo $result_contents[$i] ?></div>
           <p class="date"><?php echo $result_date[$i] ?></p>
           <p class="date"><?php echo $result_id[$i] ?></p>
+            <!-- 値を渡すテスト -->
+            <form  action="edit.php" method="post">
+              <input type="radio" name="id" value="<?php echo $result_id[$i] ?>">
+              <input type="submit"  value="修正">
+            </form>
         </div>
       </div>
     <?php endfor; ?>
