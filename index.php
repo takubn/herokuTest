@@ -120,7 +120,7 @@
         <div class="display-contents">
           <div class="white"><?php echo $result_contents[$i] ?></div>
           <p class="date"><?php echo $result_date[$i] ?></p>
-          <!-- <p class="date"><?php echo $result_id[$i] ?></p> -->
+          <p class="date"><?php echo $result_id[$i] ?></p>
         </div>
           <!-- <input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label> -->
           <button class="button" id="edit">編集</button>
