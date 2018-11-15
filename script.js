@@ -8,4 +8,5 @@ var recontents = document.getElementById('comment');
 rename.style.backgroundColor = 'pink';
 recontents.style.backgroundColor = 'pink';
 
+
 }
