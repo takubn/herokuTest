@@ -123,7 +123,7 @@
           <!-- <p class="date"><?php echo $result_id[$i] ?></p> -->
         </div>
           <!-- <input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label> -->
-          <!-- <button class="button" id="edit">編集</button> -->
+          <button class="button" id="edit">編集</button>
         </div>
     <?php endfor; ?>
   </div>
