@@ -123,7 +123,7 @@
         <!-- 値を渡すテスト -->
         <form  action="edit.php" method="post">
           <label><input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label>
-          <input type="submit" class="button" value="編集">
+          <input type="submit" class="button" id="edit" value="edit">
         </form>
       </div>
     <?php endfor; ?>
@@ -131,6 +131,6 @@
   <!-- 出力部分終わり -->
 
 
-
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -50,7 +50,3 @@ die('エラー：'. $e->getMessage());
 }
 
  ?>
-<p>修正完了</p>
-<a href="index.php">戻る</a>
-</body>
-</html>
