@@ -122,11 +122,12 @@
         </div>
           <!-- <input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label> -->
           <button class="button" onclick="edit();">edit</button>
+          <p class="date"><?php echo $result_date[841]?></p>
         </div>
     <?php endfor; ?>
   </div>
   <!-- 出力部分終わり -->
-  <p><?php echo $result_date[831];?></p>
+
 
 <script type="text/javascript" src="script.js"></script>
 </body>
