@@ -30,8 +30,6 @@
       <p class="input-logo">
       <img src="logo.png" alt="">
       </p>
-      <!-- ボタンテスト -->
-      <button class="button" id="edit">編集</button>
 
       <div id="form-main">
         <div id="form-div">
@@ -123,7 +121,7 @@
           <p class="date"><?php echo $result_id[$i] ?></p>
         </div>
           <!-- <input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label> -->
-          <button class="button" id="edit">編集</button>
+          <button class="button" onclick="edit();">edit</button>
         </div>
     <?php endfor; ?>
   </div>
