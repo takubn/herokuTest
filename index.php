@@ -126,7 +126,7 @@
     <?php endfor; ?>
   </div>
   <!-- 出力部分終わり -->
-  <?php echo $result_date[831] ?>
+  <p><?php echo $result_date[831];?></p>
 
 <script type="text/javascript" src="script.js"></script>
 </body>
