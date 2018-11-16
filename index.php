@@ -117,7 +117,12 @@
           <div class="white"><?php echo mb_substr($result_name[$i],0,5,"UTF-8");?></div>
           </div>
         <div class="display-contents">
-          <div class="white"><?php echo $result_contents[$i] ?></div>
+          
+          <!-- コンテンツ部分でIDの動的付与を実行する -->
+          <!-- <div class="white"><?php echo $result_contents[$i] ?></div> -->
+
+          <?php echo "<div class=\"white\" id=\"name$i\">$result_contents[$i]</div> "?>
+
           <p class="date"><?php echo $result_date[$i] ?></p>
           <p class="date"><?php echo $result_id[$i] ?></p>
           <p><?php var_dump($result_id[$i],$result_name[$i],$result_contents[$i]) ?></p>
