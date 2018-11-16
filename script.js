@@ -21,7 +21,7 @@ function getId(get){
 
 
   // フォームのIDを取得する。
-var rename = document.getElementById('rewriteName');
+var rename = document.getElementById('comment');
 
 
 
