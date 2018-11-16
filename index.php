@@ -129,7 +129,11 @@
 
         </div>
           <!-- <input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label> -->
-          <button class="button" onclick="edit();">edit</button>
+          <!-- <button class="button" onclick="edit();">edit</button> ボタン変更 -->
+          <?php echo "<button class=\"button\" id=\"name$i\" onclick=\"getId(this);\">edit</button>"?>
+
+
+
           <!-- <p class="date"><?php echo $result_date[841]?></p> -->
         </div>
     <?php endfor; ?>
