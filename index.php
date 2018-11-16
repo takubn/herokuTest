@@ -113,13 +113,15 @@
       <div class="display-box">
         <div class="display-name">
           <!-- 名前の文字数を制限する。 -->
+          <!-- ここにidを付与する -->
           <div class="white"><?php echo mb_substr($result_name[$i],0,5,"UTF-8");?></div>
           </div>
         <div class="display-contents">
           <div class="white"><?php echo $result_contents[$i] ?></div>
           <p class="date"><?php echo $result_date[$i] ?></p>
           <p class="date"><?php echo $result_id[$i] ?></p>
-          <p><?php var_dump($result_id[$i]) ?></p>
+          <p><?php var_dump($result_id[$i],$result_name[$i],$result_contents[$i]) ?></p>
+
         </div>
           <!-- <input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label> -->
           <button class="button" onclick="edit();">edit</button>
