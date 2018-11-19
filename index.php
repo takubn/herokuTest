@@ -114,24 +114,20 @@
         <div class="display-name">
           <!-- 名前を5文字で切り捨て、それを変数に格納 -->
           <?php $str_name[] = mb_substr($result_name[$i],0,5,"UTF-8");  ?>
+          <!-- 上記を出力 -->
 
           <?php echo "<div class=\"white\" id=\"name$i\">$str_name[$i]</div>"?>
-
-          <!-- <?php echo var_dump(str_name[$i]) ?> -->
-      
-          <!-- <div class="white"><?php echo mb_substr($result_name[$i],0,5,"UTF-8");?></div> -->
           </div>
         <div class="display-contents">
           
           <!-- コンテンツ部分でIDの動的付与を実行する -->
-          <!-- <div class="white"><?php echo $result_contents[$i] ?></div> -->
+ 
 
           <?php echo "<div class=\"white\" id=\"contents$i\">$result_contents[$i]</div> "?>
 
           <p class="date"><?php echo $result_date[$i] ?></p>
           <!-- <p class="date"><?php echo $result_id[$i] ?></p> -->
-          <!-- <p><?php var_dump($result_id[$i],$result_name[$i],$result_contents[$i]) ?></p> -->
-
+ 
         </div>
           <!-- <input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label> -->
           <!-- <button class="button" onclick="edit();">edit</button> ボタン変更 -->
