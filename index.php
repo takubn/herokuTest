@@ -121,7 +121,7 @@
           <!-- コンテンツ部分でIDの動的付与を実行する -->
           <!-- <div class="white"><?php echo $result_contents[$i] ?></div> -->
 
-          <?php echo "<div class=\"white\" id=\"name$i\">$result_contents[$i]</div> "?>
+          <?php echo "<div class=\"white\" id=\"contents$i\">$result_contents[$i]</div> "?>
 
           <p class="date"><?php echo $result_date[$i] ?></p>
           <!-- <p class="date"><?php echo $result_id[$i] ?></p> -->
@@ -130,7 +130,7 @@
         </div>
           <!-- <input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label> -->
           <!-- <button class="button" onclick="edit();">edit</button> ボタン変更 -->
-          <?php echo "<button class=\"button\" id=\"name$i\" onclick=\"getId(this);\">edit</button>"?>
+          <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(contents$i);\">edit</button>"?>
 
 
 
