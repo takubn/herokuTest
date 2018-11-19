@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <title>dc-board</title>
 
     <!-- js記述部分　 -->
@@ -22,7 +22,7 @@
   <!-- 入力部分始まり -->
   <div class="item-input" style="position: fixed;width: 35%;">
       <p class="input-logo">
-       <img src="logo.png" alt="">
+       <img src="img/logo.png" alt="">
       </p>
 
       <div id="form-main">
