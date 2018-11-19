@@ -55,7 +55,7 @@ function getDirect(name,content){
   
   
           // フォームのIDを取得する。(コンテンツ部分)
-          var recontent = document.getElementById('rewriteContents');
+          var recontent = document.getElementById('comment');
   
           //フォームの初期値に取ってきた文字情報（content部分）を挿入
   
