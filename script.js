@@ -31,27 +31,27 @@ var rename = document.getElementById('comment');
 }
 
 
-function getDirect(name,content){
+function getDirect(content){
   //編集ボタンを押すと入力フォームにその値が挿入されるメソッド
   
           // 引数で受け取った値(id)を変数に代入
-          var name = name;
+          // var name = name;
           var content = content;
   
           // idから文字情報を取得し、変数に代入
-          var nameText = name.textContent;
+          // var nameText = name.textContent;
           var contentText = content.textContent;
   
   
-          // フォームのIDを取得する。(名前部分)
-              var rename = document.getElementById('rewriteName');
+          // // フォームのIDを取得する。(名前部分)
+          //     var rename = document.getElementById('rewriteName');
   
-              //フォームの初期値に取ってきた文字情報(name部分)を挿入
+          //     //フォームの初期値に取ってきた文字情報(name部分)を挿入
   
-              rename.value = nameText;
+          //     rename.value = nameText;
   
-              // //フォームの背景色を変更する
-              rename.style.backgroundColor = 'pink';
+          //     // //フォームの背景色を変更する
+          //     rename.style.backgroundColor = 'pink';
   
   
           // フォームのIDを取得する。(コンテンツ部分)
