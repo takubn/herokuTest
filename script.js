@@ -44,7 +44,7 @@ function getDirect(name,content){
   
   
           // フォームのIDを取得する。(名前部分)
-              var rename = document.getElementById('rewriteName');
+              var rename = document.getElementById('name');
   
               //フォームの初期値に取ってきた文字情報(name部分)を挿入
   
