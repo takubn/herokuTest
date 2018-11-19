@@ -113,10 +113,11 @@
       <div class="display-box">
         <div class="display-name">
           <!-- 名前を5文字で切り捨て、それを変数に格納 -->
-          <?php $result_name[] = mb_substr($result_name[$i],0,5,"UTF-8");  ?>
+          <?php $str_name[] = mb_substr($result_name[$i],0,5,"UTF-8");  ?>
 
-          <?php echo "<div class=\"white\" id=\"name$i\">$result_name[$i]</div>"   ?>
+          <?php echo "<div class=\"white\" id=\"name$i\">$str_name[$i]</div>"?>
 
+          <?php echo var_dump(str_name[$i]) ?>
       
           <!-- <div class="white"><?php echo mb_substr($result_name[$i],0,5,"UTF-8");?></div> -->
           </div>
