@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>dc-board</title>
 
@@ -121,6 +121,6 @@
         </div>
   <!-- 出力部分(display)終わり -->
 
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
