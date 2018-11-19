@@ -12,7 +12,6 @@ EDIT ON
   font-style: italic;
 }
 
-
 .button {
   display       : inline-block;
   border-radius : 5%;          /* 角丸       */
@@ -45,9 +44,6 @@ float:right;
 }
 
 .date{
-  /* position: absolute;
-  bottom: 10px;
-  right: 10px; */
   color: white;
 }
 
@@ -68,17 +64,15 @@ float:right;
   font-size: 18px;
   font-weight: bold;
   padding: 20px 0;
-  /* position: relative; */
+ 
 }
 
-/* item-display部分の装飾 */
 .display-box{
   display: flex;
   padding: 10px 20px;
   justify-content: space-between;
   border-top: solid white 4px;
   align-items: center;
-  /* position: relative; */
 }
 
 .display-name{
@@ -87,7 +81,6 @@ float:right;
   border-radius: 110%;
   text-align: center;
   border: solid white 4px;
-  /* padding: 20px; */
   margin-right: 60px;
   display: flex;
   align-items: center;

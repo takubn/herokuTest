@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ja">
   <head>
     <meta charset="utf-8">
@@ -8,27 +7,22 @@
     <title>dc-board</title>
 
     <!-- js記述部分　 -->
-    <script>
-      function scr(){
-        var a = document.documentElement;
-        var y = a.scrollHeight - a.clientHeight;
-        window.scroll(0, y);
-      }
-</script>
-
-
+      <script>
+        function scr(){
+          var a = document.documentElement;
+          var y = a.scrollHeight - a.clientHeight;
+          window.scroll(0, y);
+        }
+      </script>
   </head>
 
 <body onload="scr();">
 
-<!-- flexbox始まり -->
-
 
   <!-- 入力部分始まり -->
   <div class="item-input" style="position: fixed;width: 35%;">
-
       <p class="input-logo">
-      <img src="logo.png" alt="">
+       <img src="logo.png" alt="">
       </p>
 
       <div id="form-main">
@@ -55,92 +49,77 @@
   </div>
     <!-- 入力部分終わり -->
 
-
-
-
-  <!-- データ表示部分始まり -->
+  <!-- DBに接続し、各種データを取得 -->
     <?php
-    //データベースに接続。
-    $dsn = 'mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_b24bf788d9d54e3;charset=utf8';
-    $user = 'b35095427bfc9e';
-    $password = '5efb2b8e';
+    
+        $dsn = 'mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_b24bf788d9d54e3;charset=utf8';
+        $user = 'b35095427bfc9e';
+        $password = '5efb2b8e';
 
-    try{
+      try{
+        $db = new PDO($dsn,$user,$password);
+        $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-    $db = new PDO($dsn,$user,$password);
-    $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+        //すべてのデータを取得。
+        $sql = 'SELECT * FROM bbs';
+        $stmt = $db->prepare($sql);
+        $stmt->execute();
 
-    //すべてのデータを取得。
-    $sql = 'SELECT * FROM bbs';
-    $stmt = $db->prepare($sql);
-    $stmt->execute();
+        $db = null;
 
-    $db = null;
+          while(true){
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-      while(true){
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            //取り出したデータがなければ、ループ処理終了。
+            if($result==false){
+                break;
+            }
+            // 一行ずつ変数に入れる
+            $result_name[]= $result['name'];
+            $result_contents[]= $result['contents'];
+            $result_date[]=$result['date'];
+            // primarykeysを取得
+            $result_id[]=$result['id'];
+      }
 
-        //取り出したデータがなければ、ループ処理終了。
-        if($result==false){
-            break;
-        }
-        // 一行ずつ変数に入れる
-        $result_name[]= $result['name'];
-        $result_contents[]= $result['contents'];
-        $result_date[]=$result['date'];
-        // odbc_primarykeysを取得
-        $result_id[]=$result['id'];
+          } catch(PDOException $e){
+            die('エラー：'. $e->getMessage());
+          }
+      ?>
 
+  <!-- 出力部分(display)始まり-->
+        <div class="item-display">
 
-         $jsonResultName = json_encode($result_name);
-    }
-
-    } catch(PDOException $e){
-    die('エラー：'. $e->getMessage());
-    }
-
-    ?>
-
-  <!-- ループ処理のために、最大値を定義する -->
-    <?php
-      $max = count($result_name);
-     ?>
-
-  <!-- 出力部分 -->
-  <div class="item-display">
-
-    <?php for($i=0; $i<$max; $i++):?>
-      <div class="display-box">
-        <div class="display-name">
-          <!-- 名前を5文字で切り捨て、それを変数に格納 -->
-          <?php $str_name[] = mb_substr($result_name[$i],0,5,"UTF-8");  ?>
-          <!-- 上記を出力 -->
-
-          <?php echo "<div class=\"white\" id=\"name$i\">$str_name[$i]</div>"?>
-          </div>
-        <div class="display-contents">
+          <!-- ループ処理のために、最大値を定義 -->
+        　<?php $max = count($result_name);?>      
           
-          <!-- コンテンツ部分でIDの動的付与を実行する -->
- 
+          <?php for($i=0; $i<$max; $i++):?>
+               
+            <div class="display-box">
+                <!-- 名前の表示部分 -->
+                <div class="display-name">
+                  <!-- 5文字で切り捨て、それを変数に格納 -->
+                    <?php $str_name[] = mb_substr($result_name[$i],0,5,"UTF-8");  ?>
+                  
+                  <!-- 文字列として一行（名前）を出力。idを自動付与する意図-->
+                    <?php echo "<div class=\"white\" id=\"name$i\">$str_name[$i]</div>"?>
+                </div>
+                
+                <!-- 投稿内容の表示部分 -->
+                <div class="display-contents">
+                  <!-- 文字列として一行（投稿内容）を出力。idを自動付与する意図-->
+                    <?php echo "<div class=\"white\" id=\"contents$i\">$result_contents[$i]</div> "?>
+                    <p class="date"><?php echo $result_date[$i] ?></p>
+                </div>
 
-          <?php echo "<div class=\"white\" id=\"contents$i\">$result_contents[$i]</div> "?>
+                <!-- 編集ボタン -->
+                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i);\">edit</button>"?>
+    
+              </div>
 
-          <p class="date"><?php echo $result_date[$i] ?></p>
-          <!-- <p class="date"><?php echo $result_id[$i] ?></p> -->
- 
+          <?php endfor; ?>
         </div>
-          <!-- <input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label> -->
-          <!-- <button class="button" onclick="edit();">edit</button> ボタン変更 -->
-          <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i);\">edit</button>"?>
-
-
-
-          <!-- <p class="date"><?php echo $result_date[841]?></p> -->
-        </div>
-    <?php endfor; ?>
-  </div>
-  <!-- 出力部分終わり -->
-
+  <!-- 出力部分(display)終わり -->
 
 <script type="text/javascript" src="script.js"></script>
 </body>

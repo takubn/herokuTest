@@ -1,38 +1,6 @@
 
-function getId(get){
-
-  // フォームのIDを取得する。
-var rename = document.getElementById('comment');
-
-
-  // 引数で受け取ったidを変数へ
-  var targetid = get.id;
-
-      //ここまではできている
-      // console.log(targetid);
-
-  // idからオブジェクトを取得
-  var target = document.getElementById(targetid);
-  
-      // //オブジェクト入っているので成功
-      // console.log(target);
-
-  //オブジェクトからテキストコンテントを取得
-
-  var text = target.textContent;
-
-  //フォームの初期値に取ってきたテキストコンテントを挿入
-
-  rename.value = text;
-
-  //フォームの背景色を変更する
-  rename.style.backgroundColor = 'pink';
-
-}
-
-
+//編集ボタンを押すと入力フォームにその値が挿入されるメソッド
 function getDirect(name,content){
-  //編集ボタンを押すと入力フォームにその値が挿入されるメソッド
   
           // 引数で受け取った値(id)を変数に代入
           var name = name;
