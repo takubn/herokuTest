@@ -124,8 +124,8 @@
           <?php echo "<div class=\"white\" id=\"name$i\">$result_contents[$i]</div> "?>
 
           <p class="date"><?php echo $result_date[$i] ?></p>
-          <p class="date"><?php echo $result_id[$i] ?></p>
-          <p><?php var_dump($result_id[$i],$result_name[$i],$result_contents[$i]) ?></p>
+          <!-- <p class="date"><?php echo $result_id[$i] ?></p> -->
+          <!-- <p><?php var_dump($result_id[$i],$result_name[$i],$result_contents[$i]) ?></p> -->
 
         </div>
           <!-- <input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label> -->

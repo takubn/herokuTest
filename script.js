@@ -24,7 +24,6 @@ function getId(get){
 var rename = document.getElementById('comment');
 
 
-
   // 引数で受け取ったidを変数へ
   var targetid = get.id;
 
