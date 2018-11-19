@@ -112,9 +112,13 @@
     <?php for($i=0; $i<$max; $i++):?>
       <div class="display-box">
         <div class="display-name">
-          <!-- 名前の文字数を制限する。 -->
-          <!-- ここにidを付与する -->
-          <div class="white"><?php echo mb_substr($result_name[$i],0,5,"UTF-8");?></div>
+          <!-- 名前を5文字で切り捨て、それを変数に格納 -->
+          <?php $result_name[] = mb_substr($result_name[$i],0,5,"UTF-8");  ?>
+
+          <?php echo "<div class=\"white\" id=\"name$i\">$result_name[$i]</div>"   ?>
+
+      
+          <!-- <div class="white"><?php echo mb_substr($result_name[$i],0,5,"UTF-8");?></div> -->
           </div>
         <div class="display-contents">
           
@@ -130,7 +134,7 @@
         </div>
           <!-- <input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label> -->
           <!-- <button class="button" onclick="edit();">edit</button> ボタン変更 -->
-          <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(contents$i);\">edit</button>"?>
+          <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i);\">edit</button>"?>
 
 
 
