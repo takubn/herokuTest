@@ -117,7 +117,7 @@
 
           <?php echo "<div class=\"white\" id=\"name$i\">$str_name[$i]</div>"?>
 
-          <?php echo var_dump(str_name[$i]) ?>
+          <!-- <?php echo var_dump(str_name[$i]) ?> -->
       
           <!-- <div class="white"><?php echo mb_substr($result_name[$i],0,5,"UTF-8");?></div> -->
           </div>
