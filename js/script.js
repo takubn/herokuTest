@@ -31,4 +31,14 @@ function getDirect(name,content){
   
           //フォームの背景色を変更する
           recontent.style.backgroundColor = 'pink';
-  }
+
+        //   ---------sendボタンのデザインを動的に変える------------
+
+        var elem = document.getElementById('button-blue');
+
+        //初期値をchangeの文字列に
+        elem.value = "CHANGE";
+        elem.style.backgroundColor = '#FFC0CB'; 
+  
+  
+    }
