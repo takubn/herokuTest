@@ -38,7 +38,6 @@ function getDirect(name,content){
 
         //初期値をchangeの文字列に
         elem.value = "CHANGE";
-        // elem.style.backgroundColor = '#FFC0CB'; 
   
   
     }
