@@ -62,6 +62,11 @@
       <div id="form-main">
         <div id="form-div">
           <form class="form" id="form1" method="POST" action="write.php">
+            
+             <!-- id受け渡しテスト始まり -->
+             <button id="change" value="get!"></button>
+                        <div id="result"></div>
+                      <!-- id受け渡しテスト終了 -->
             <!-- 名前入力欄 -->
             <p class="name">
                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
@@ -77,10 +82,7 @@
                      <input type="submit" value="SEND" id="button-blue"/>
                      <div class="ease"></div>
                      
-                      <!-- id受け渡しテスト始まり -->
-                      <input type="button" id="change" value="get!">
-                        <div id="result"></div>
-                      <!-- id受け渡しテスト終了 -->
+                
 
               </div>
           </form>
