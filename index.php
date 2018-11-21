@@ -153,7 +153,7 @@
                 </div>
 
                 <!-- 編集ボタン -->
-                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,con$i);\">edit</button>"?>
+                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i);\">edit</button>"?>
     
               </div>
 
