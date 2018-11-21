@@ -60,9 +60,9 @@
       </p>
 
         <!-- id受け渡しテスト始まり -->
-        <button id="change">get!</button>
-                        <div id="result"></div>
-                      <!-- id受け渡しテスト終了 -->
+          <button id="change">get!</button>
+          <div id="result"></div>
+        <!-- id受け渡しテスト終了 -->
 
 
 
