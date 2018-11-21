@@ -16,8 +16,8 @@
         }
       </script> -->
   </head>
-
-<body onload="scr();">
+  <!-- <body onload="scr();"> -->
+<body>
 
  <!-- idを取得するメソッド-->
 <script>
