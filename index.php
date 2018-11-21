@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>dc-board</title>
 
@@ -17,6 +18,39 @@
   </head>
 
 <body onload="scr();">
+
+ <!-- idを取得するメソッド-->
+<script>
+    function getId(na,con){
+            var na = na.id;
+            var con = con.id;
+
+        $(function(){
+
+                    //changeのIDを持つ要素がクリックされたら発火。→変数で表現する
+                    $('#change').click(function(){
+                        
+                        
+                        console.log(na,con);
+
+                        // post方式で'greet.php'に送信する。
+                        $.post('catch.php',{
+                            // [key名]と[value]=自分で設定してよい　でidを取得
+                            id: con,
+                            contents: $('#comment').val()
+                            //コールバック関数（postで送った後の戻り値をどうするかの設定）→dataという変数で受け取る
+                        },function(data){
+                            //id="result"のhtml要素に挿入
+                            $('#result').html(data);
+                        });
+
+                    });            
+                });
+
+        }       
+</script>
+
+
 
 
   <!-- 入力部分始まり -->
@@ -42,6 +76,12 @@
              <div class="submit">
                      <input type="submit" value="SEND" id="button-blue"/>
                      <div class="ease"></div>
+                     
+                      <!-- id受け渡しテスト始まり -->
+                      <input type="button" id="change" value="get!">
+                        <div id="result"></div>
+                      <!-- id受け渡しテスト終了 -->
+
               </div>
           </form>
         </div>
@@ -113,7 +153,7 @@
                 </div>
 
                 <!-- 編集ボタン -->
-                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i);\">edit</button>"?>
+                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,con$i);\">edit</button>"?>
     
               </div>
 
