@@ -59,14 +59,16 @@
        <img src="img/logo.png" alt="">
       </p>
 
+        <!-- id受け渡しテスト始まり -->
+        <button id="change">get!</button>
+                        <div id="result"></div>
+                      <!-- id受け渡しテスト終了 -->
+
+
+
       <div id="form-main">
         <div id="form-div">
           <form class="form" id="form1" method="POST" action="write.php">
-            
-             <!-- id受け渡しテスト始まり -->
-             <button id="change">get!</button>
-                        <div id="result"></div>
-                      <!-- id受け渡しテスト終了 -->
             <!-- 名前入力欄 -->
             <p class="name">
                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
