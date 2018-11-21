@@ -7,14 +7,14 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>dc-board</title>
 
-    <!-- js記述部分　 -->
-      <script>
+    
+      <!-- <script>
         function scr(){
           var a = document.documentElement;
           var y = a.scrollHeight - a.clientHeight;
           window.scroll(0, y);
         }
-      </script>
+      </script> -->
   </head>
 
 <body onload="scr();">
@@ -64,7 +64,7 @@
           <form class="form" id="form1" method="POST" action="write.php">
             
              <!-- id受け渡しテスト始まり -->
-             <button id="change" value="get!"></button>
+             <button id="change">get!</button>
                         <div id="result"></div>
                       <!-- id受け渡しテスト終了 -->
             <!-- 名前入力欄 -->
