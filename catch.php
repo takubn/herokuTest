@@ -1,11 +1,9 @@
+    <!-- エラーがあれば出力 -->
+    <?php
+        ini_set('display_errors',1);
+    ?>
 
-<!-- --------------ver2----------- -->
-
-<?php
-ini_set('display_errors',1);
-?>
-
-    <!-- post()でidを受け取る -->
+    <!-- post()でidと書き込み内容（変更後）を受け取る -->
     <?php 
                 if(isset($_POST["id"])){
 
@@ -18,8 +16,6 @@ ini_set('display_errors',1);
                     
                     //PrimaryKeyとの差分を埋める
                     $PrimaryId = $PrimaryId*10+1; 
-                    
-                    var_dump($PrimaryId);
 
                 }    
         ?>
@@ -35,26 +31,15 @@ ini_set('display_errors',1);
                     $db = new PDO($dsn,$user,$password);
                     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 
-                    //PrimaryId（ループ処理の数字）を引き合いにコンテンツ内容を書き換え。
-                    // $sql = "SELECT * FROM bbs where id = $PrimaryId ";
-                    // $stmt = $db->prepare($sql);
-                    // $stmt->execute();
-                
-                    // $db = null;
-                    
+                    //PrimaryId（primalykeyとつじつま合わせ済）を引き合いにコンテンツ内容を書き換え。
 
                     $sql = "UPDATE bbs SET contents=:contents where id = $PrimaryId ";
                     $stmt = $db->prepare($sql);
 
-
                     $stmt->bindParam(':contents', $contents, PDO::PARAM_STR);
-
-
                     $stmt->execute();
 
                     $db = null;
-
-
 
                 } catch(PDOException $e){
                     die('エラー：'. $e->getMessage());
@@ -62,17 +47,14 @@ ini_set('display_errors',1);
             ?>
     
 
-     <?php  
-        echo "名前は......".$result_name;
-        echo "</br>";
-        echo "日時は......".$result_date;
 
+
+    <!-- 変更ができているか確認のためコールバック（削除はいったんしない） -->
+     <?php  
         echo "idは......".$PrimaryId;
         echo "</br>";
         echo "中身は......".$contents;
-
 ?>
-<!-- --------------ver2終わり----------- -->
 
 
 
@@ -80,17 +62,3 @@ ini_set('display_errors',1);
 
 
 
-<?php 
-
-                    //idを数値だけにする
-                    $PrimaryId = preg_replace('/[^0-9]/', '', $nameId);
-                    
-                    //PrimaryKeyとの差分を埋める
-                    $PrimaryId = $PrimaryId*10+1; 
-
-
-
-
-
-                    var_dump($PrimaryId);
-?>

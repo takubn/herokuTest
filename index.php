@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>dc-board</title>
 
-    
+      <!-- 一番下まで自動スクロール -->
       <!-- <script>
         function scr(){
           var a = document.documentElement;
@@ -36,7 +36,7 @@
 
                         // post方式で'catch.php'に送信する。
                         $.post('catch.php',{
-                            // [key名]と[value]=自分で設定してよい　でidを取得
+                            // [key名]と[value]=自分で設定してよい　でidとコメントの変更内容を取得
                             id: con,
                             contents: $('#comment').val()
                             //コールバック関数（postで送った後の戻り値をどうするかの設定）→dataという変数で受け取る
@@ -65,17 +65,6 @@
           <div id="result"></div>
         <!-- id受け渡しテスト終了 -->
 
-        <!-- 編集テスト開始 -->
-        <form action="preEdit.php" method="post">
-          <input type="hidden" name="roopId" value="<?php echo 1 ?>">
-          <input type="hidden" name="roopId" value="<?php echo 1 ?>">
-          <input type="submit"  value="修正">
-        </form>
-
-
-
-
-
       <div id="form-main">
         <div id="form-div">
           <form class="form" id="form1" method="POST" action="write.php">
@@ -93,8 +82,6 @@
              <div class="submit">
                      <input type="submit" value="SEND" id="button-blue"/>
                      <div class="ease"></div>
-                      
-
               </div>
           </form>
         </div>
