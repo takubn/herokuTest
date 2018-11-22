@@ -26,6 +26,16 @@
             var con = con.id;
         console.log(con);
 
+        if(con !==''){
+            
+            $(function(){
+
+            $('#changeworld').replaceWith('<p>変更だ！</p>')
+
+            });
+        }
+
+
         $(function(){
 
                     //指定の要素がクリックされたら発火。→変数で表現する
@@ -78,7 +88,7 @@
 
              <!-- 投稿ボタン -->
              <div class="submit">
-                     <input type="" value="SEND" id="button-blue"/>
+                     <input type="submit" value="SEND" id="button-blue"/>
                      <div class="ease"></div>
               </div>
           </form>
