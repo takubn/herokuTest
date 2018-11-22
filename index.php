@@ -159,11 +159,15 @@
                   <!-- 文字列として一行（投稿内容）を出力。idを自動付与する意図-->
                     <?php echo "<div class=\"white\" id=\"contents$i\">$result_contents[$i]</div> "?>
                     <p class="date"><?php echo $result_date[$i] ?></p>
+
                 </div>
 
                 <!-- 編集ボタン -->
                 <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i);\">edit</button>"?>
-    
+                
+                  <!-- primarykeyを取得 -->
+                  <?php echo "<div id=\"$i\" hidden>primaryKey</div>" ?>
+                  
               </div>
 
           <?php endfor; ?>
