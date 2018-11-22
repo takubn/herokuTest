@@ -33,7 +33,7 @@
                         
                         console.log(na,con);
 
-                        // post方式で'greet.php'に送信する。
+                        // post方式で'catch.php'に送信する。
                         $.post('catch.php',{
                             // [key名]と[value]=自分で設定してよい　でidを取得
                             id: con,
@@ -64,6 +64,12 @@
           <div id="result"></div>
         <!-- id受け渡しテスト終了 -->
 
+        <!-- 編集テスト開始 -->
+        <form action="before.edit.php">
+          <button id="rewrite">rewrite</button>
+        
+        </form>
+
 
 
       <div id="form-main">
@@ -83,8 +89,14 @@
              <div class="submit">
                      <input type="submit" value="SEND" id="button-blue"/>
                      <div class="ease"></div>
-                     
-                
+
+
+                    <!-- 値を渡すテスト -->
+                  <form  action="JustInCase/edit.php" method="post">
+                    <label><input type="radio" name="id" value="<?php echo $result_id[$i] ?>"><label>
+                    <label><input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label>
+                    <input type="submit"  value="修正">
+                      
 
               </div>
           </form>
