@@ -67,7 +67,7 @@
 
         <!-- 編集テスト開始 -->
         <form action="preEdit.php" method="post">
-          <input type="hidden" name="roopId" value="<?php echo 0 ?>">
+          <input type="hidden" name="roopId" value="<?php echo 1 ?>">
           <input type="submit"  value="修正">
         </form>
 
