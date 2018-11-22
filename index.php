@@ -37,7 +37,7 @@
                         // post方式で'catch.php'に送信する。
                         $.post('catch.php',{
                             // [key名]と[value]=自分で設定してよい　でidを取得
-                            id: '1',
+                            id: con,
                             contents: $('#comment').val()
                             //コールバック関数（postで送った後の戻り値をどうするかの設定）→dataという変数で受け取る
                         },function(data){
