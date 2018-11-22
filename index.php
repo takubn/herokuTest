@@ -30,7 +30,7 @@
             
             $(function(){
 
-            $('#button-blue').replaceWith('<p>変更だ！</p>')
+            $('#button-blue').replaceWith('<button class="changeBy">CHANGE</button>')
             // $('#button-blue').$replaceWith('<button value="CHANGE" id="button-blue"/>CHANGE</button>')
             });
         }
@@ -70,8 +70,8 @@
       </p>
 
         <!-- changeボタンの一時的な代わり-->
-          <button id="change" style="width: 150px;height: 50px;font-size: 30px;">Change!</button>
-          <div id="result"></div>
+          <!-- <button id="change" style="width: 150px;height: 50px;font-size: 30px;">Change!</button>
+          <div id="result"></div> -->
 
 
       <div id="form-main">
