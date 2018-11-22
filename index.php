@@ -21,10 +21,9 @@
 
  <!-- idを取得するメソッド-->
 <script>
-    function getId(na,con,primary){
+    function getId(na,con){
             var na = na.id;
             var con = con.id;
-            var primary = primary.id;
         console.log(con);
 
         $(function(){
@@ -165,7 +164,7 @@
                 </div>
 
                 <!-- 編集ボタン -->
-                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i,$i);\">edit</button>"?>
+                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i);\">edit</button>"?>
                 
                   <!-- primarykeyを取得 -->
                   <?php echo "<div id=\"$i\" hidden>primaryKey</div>" ?>
