@@ -52,18 +52,16 @@
 </script>
 
 
-
-
   <!-- 入力部分始まり -->
   <div class="item-input" style="position: fixed;width: 35%;">
       <p class="input-logo">
        <img src="img/logo.png" alt="">
       </p>
 
-        <!-- id受け渡しテスト始まり -->
-          <button id="change">get!</button>
+        <!-- changeボタンの一時的な代わり-->
+          <button id="change" style="width: 150px;height: 50px;font-size: 30px;">Change!</button>
           <div id="result"></div>
-        <!-- id受け渡しテスト終了 -->
+
 
       <div id="form-main">
         <div id="form-div">
