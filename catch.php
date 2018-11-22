@@ -34,7 +34,7 @@
                     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 
                     //PrimaryId（ループ処理の数字）を引き合いにすべてのデータを取得。
-                    $sql = "SELECT * FROM bbs where $PrimaryId ";
+                    $sql = "SELECT * FROM bbs where id = $PrimaryId ";
                     $stmt = $db->prepare($sql);
                     $stmt->execute();
                 
