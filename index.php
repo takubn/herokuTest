@@ -30,7 +30,8 @@
             
             $(function(){
 
-            $('#button-blue').$replaceWith('<button value="CHANGE" id="button-blue"/>CHANGE</button>')
+            $('#button-blue').replaceWith('<p>変更だ！</p>')
+            // $('#button-blue').$replaceWith('<button value="CHANGE" id="button-blue"/>CHANGE</button>')
             });
         }
 
