@@ -34,10 +34,10 @@ function getDirect(name,content){
 
         //   ---------sendボタンのデザインを動的に変える------------
 
-        var elem = document.getElementById('button-blue');
+        // var elem = document.getElementById('button-blue');
 
-        //初期値をchangeの文字列に
-        elem.value = "CHANGE";
+        // //初期値をchangeの文字列に
+        // elem.value = "CHANGE";
   
   
     }

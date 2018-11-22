@@ -229,11 +229,25 @@ input:focus, textarea:focus {
 
 /* ------------submitの代わり-------------- */
 
-.changeBy:hover {
+.changeBy {
   color: #454852;
-  /* 青 */
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float:left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor:pointer;
+  background-color: #454852;
+  color:white;
+  font-size:24px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
 }
-
+/* 
 .ease {
   width: 0px;
   height: 74px;
@@ -249,7 +263,7 @@ input:focus, textarea:focus {
 .changeBy:hover .ease{
 width:100%;
 background-color:white;
-}
+} */
 
 
 
