@@ -28,8 +28,8 @@
 
         $(function(){
 
-                    //changeのIDを持つ要素がクリックされたら発火。→変数で表現する
-                    $('#change').click(function(){
+                    //指定の要素がクリックされたら発火。→変数で表現する
+                    $('#button-blue').click(function(){
                         
                         
                         console.log(na,con);
@@ -78,7 +78,7 @@
 
              <!-- 投稿ボタン -->
              <div class="submit">
-                     <input type="submit" value="SEND" id="button-blue"/>
+                     <input type="" value="SEND" id="button-blue"/>
                      <div class="ease"></div>
               </div>
           </form>
