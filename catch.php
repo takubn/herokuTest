@@ -14,8 +14,11 @@ ini_set('display_errors',1);
                     $contents = $_POST["contents"];
 
                     //idを数値だけにする
-                    // $PrimaryId = preg_replace('/[^0-9]/', '', $nameId);
-                    $PrimaryId = 1;
+                    $PrimaryId = preg_replace('/[^0-9]/', '', $nameId);
+                    
+                    //PrimaryKeyとの差分を埋める
+                    $PrimaryId = $PrimaryId*10+1; 
+                    
                     var_dump($PrimaryId);
 
                 }    
@@ -71,3 +74,23 @@ ini_set('display_errors',1);
 ?>
 <!-- --------------ver2終わり----------- -->
 
+
+
+
+
+
+
+<?php 
+
+                    //idを数値だけにする
+                    $PrimaryId = preg_replace('/[^0-9]/', '', $nameId);
+                    
+                    //PrimaryKeyとの差分を埋める
+                    $PrimaryId = $PrimaryId*10+1; 
+
+
+
+
+
+                    var_dump($PrimaryId);
+?>
