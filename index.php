@@ -66,10 +66,18 @@
         <!-- id受け渡しテスト終了 -->
 
         <!-- 編集テスト開始 -->
-        <form action="preEdit.php">
-          <button id="rewrite">rewrite</button>
-        
+        <form action="preEdit.php" method="post">
+          <input type="hidden" value="<?php echo 0 ?>">
+          <input type="submit" name="roopId" value="修正">
         </form>
+
+
+<!-- <form  action="edit.php" method="post">
+              <input type="radio" name="id" value="<?php echo $result_id[$i] ?>">
+              <label><input type="radio" name="id" value="<?php echo $result_id[$i] ?>"><label>
+              <input type="submit"  value="修正"> -->
+
+
 
 
 
