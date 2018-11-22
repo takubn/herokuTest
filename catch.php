@@ -31,14 +31,14 @@ ini_set('display_errors',1);
                     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 
                     //PrimaryId（ループ処理の数字）を引き合いにコンテンツ内容を書き換え。
-                    $sql = "SELECT * FROM bbs where id = $PrimaryId ";
-                    $stmt = $db->prepare($sql);
-                    $stmt->execute();
+                    // $sql = "SELECT * FROM bbs where id = $PrimaryId ";
+                    // $stmt = $db->prepare($sql);
+                    // $stmt->execute();
                 
-                    $db = null;
+                    // $db = null;
                     
 
-                    $sql = "UPDATE bbs SET contents=:contents where id = $id ";
+                    $sql = "UPDATE bbs SET contents=:contents where id = $PrimaryId ";
                     $stmt = $db->prepare($sql);
 
 
