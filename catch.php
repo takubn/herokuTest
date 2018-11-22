@@ -1,20 +1,3 @@
-<!-- <?php 
-    if(isset($_POST["id"])){
-        $nameId = $_POST["id"];
-        $nameContents = $_POST["contents"];
-
-        echo "idは......".$nameId;
-        echo "</br>";
-        echo "中身は......".$nameContents;
-    }    
-?> -->
-
-<!-- ｰｰｰｰｰｰｰｰｰｰｰｰここまでは動くので弄らないｰｰｰｰｰｰｰｰｰｰｰｰ -->
-
-
-
-
-
 
 <!-- --------------ver2----------- -->
 
@@ -70,5 +53,16 @@
                     }
             ?>
     
+
+     <?php  
+        echo "名前は......".$result_name;
+        echo "</br>";
+        echo "日時は......".$result_date;
+
+        echo "idは......".$PrimaryId;
+        echo "</br>";
+        echo "中身は......".$contents;
+
+?>
 <!-- --------------ver2終わり----------- -->
 
