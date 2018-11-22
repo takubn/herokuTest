@@ -92,8 +92,7 @@
 
 
                     <!-- 値を渡すテスト -->
-                  <form  action="JustInCase/edit.php" method="post">
-                    <label><input type="radio" name="id" value="<?php echo $result_id[$i] ?>"><label>
+                  <form  action="edit.php" method="post">
                     <label><input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label>
                     <input type="submit"  value="修正">
                       
