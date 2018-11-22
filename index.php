@@ -65,7 +65,7 @@
         <!-- id受け渡しテスト終了 -->
 
         <!-- 編集テスト開始 -->
-        <form action="before.edit.php">
+        <form action="preEdit.php">
           <button id="rewrite">rewrite</button>
         
         </form>
@@ -89,12 +89,6 @@
              <div class="submit">
                      <input type="submit" value="SEND" id="button-blue"/>
                      <div class="ease"></div>
-
-
-                    <!-- 値を渡すテスト -->
-                  <form  action="edit.php" method="post">
-                    <label><input type="hidden" name="id" value="<?php echo $result_id[$i] ?>"><label>
-                    <input type="submit"  value="修正">
                       
 
               </div>
