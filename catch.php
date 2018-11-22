@@ -1,6 +1,9 @@
 
 <!-- --------------ver2----------- -->
 
+<?php
+ini_set('display_errors',1);
+?>
 
     <!-- post()でidを受け取る -->
     <?php 
