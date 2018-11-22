@@ -25,7 +25,7 @@ try{
   $db = new PDO($dsn,$user,$password);
   $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-  //すべてのデータを取得。
+  //データの書き換え。
   $sql = "UPDATE bbs SET name=:name,contents=:contents where id = $id ";
   $stmt = $db->prepare($sql);
 
