@@ -15,6 +15,8 @@ ini_set('display_errors',1);
 
                     //idを数値だけにする
                     $PrimaryId = preg_replace('/[^0-9]/', '', $nameId);
+                    $PrimaryId += 10;
+                    console.log($PrimaryId);
 
                 }    
         ?>
