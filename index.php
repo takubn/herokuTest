@@ -30,7 +30,7 @@
             
             $(function(){
 
-            $('#button-blue').replaceWith('<button class="changeBy">CHANGE</button>')
+            $('#replace').replaceWith('<button class="changeBy">CHANGE</button>')
             // $('#button-blue').$replaceWith('<button value="CHANGE" id="button-blue"/>CHANGE</button>')
             });
         }
@@ -88,7 +88,7 @@
              </p>
 
              <!-- 投稿ボタン -->
-             <div class="submit">
+             <div class="submit" id="replace">
                      <input type="submit" value="SEND" id="button-blue"/>
                      <div class="ease"></div>
               </div>
