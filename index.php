@@ -30,10 +30,10 @@
             
             $(function(){
 
-            $('#changeworld').replaceWith('<p>変更だ！</p>')
-
+            $('#button-blue').$replaceWith('<button value="CHANGE" id="button-blue"/>CHANGE</button>')
             });
         }
+
 
 
         $(function(){
@@ -88,7 +88,7 @@
 
              <!-- 投稿ボタン -->
              <div class="submit">
-                     <input type="submit" value="SEND" id="button-blue"/>
+                     <input type="" value="SEND" id="button-blue"/>
                      <div class="ease"></div>
               </div>
           </form>
