@@ -40,7 +40,7 @@
         $(function(){
 
                     //指定の要素がクリックされたら発火。→変数で表現する
-                    $('#button-blue').click(function(){
+                    $('#change').click(function(){
                         
                         
                         console.log(na,con);
@@ -70,8 +70,8 @@
       </p>
 
         <!-- changeボタンの一時的な代わり-->
-          <!-- <button id="change" style="width: 150px;height: 50px;font-size: 30px;">Change!</button>
-          <div id="result"></div> -->
+          <button id="change" style="width: 150px;height: 50px;font-size: 30px;">Change!</button>
+          <div id="result"></div>
 
 
       <div id="form-main">
