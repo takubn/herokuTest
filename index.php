@@ -25,7 +25,7 @@
             var na = na.id;
             var con = con.id;
             var primary = primary.id;
-        console.log(primary);
+        console.log(con);
 
         $(function(){
 
