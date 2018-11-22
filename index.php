@@ -37,7 +37,7 @@
                         // post方式で'catch.php'に送信する。
                         $.post('catch.php',{
                             // [key名]と[value]=自分で設定してよい　でidを取得
-                            id: con,
+                            id: '1',
                             contents: $('#comment').val()
                             //コールバック関数（postで送った後の戻り値をどうするかの設定）→dataという変数で受け取る
                         },function(data){
@@ -68,14 +68,9 @@
         <!-- 編集テスト開始 -->
         <form action="preEdit.php" method="post">
           <input type="hidden" name="roopId" value="<?php echo 1 ?>">
+          <input type="hidden" name="roopId" value="<?php echo 1 ?>">
           <input type="submit"  value="修正">
         </form>
-
-
-<!-- <form  action="edit.php" method="post">
-              <input type="radio" name="id" value="<?php echo $result_id[$i] ?>">
-              <label><input type="radio" name="id" value="<?php echo $result_id[$i] ?>"><label>
-              <input type="submit"  value="修正"> -->
 
 
 
