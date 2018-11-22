@@ -52,9 +52,14 @@
                     die('エラー：'. $e->getMessage());
                     }
             
-        echo "名前は......".var_dump($result_name);
+        echo "名前は......".$result_name;
         echo "</br>";
         echo "日時は......".$result_date;
+
+        echo "idは......".$PrimaryId;
+        echo "</br>";
+        echo "中身は......".$nameContents;
+
 
         }    
     ?>
