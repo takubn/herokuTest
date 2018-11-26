@@ -45,4 +45,17 @@ function getDirect(name,content){
     }
 
 
+    function deleteBy(name){
+      var nameId = name.id;
+
  
+      if(nameId !==''){       
+          $(function(){
+            
+            //ボタンが押されたら、「SEND」ボタンを「delete」ボタンに変更する。
+          $('#button-blue').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
+          
+          });
+    }
+
+  }

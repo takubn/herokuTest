@@ -27,7 +27,7 @@
       var nameId = name.id;
 
  
-      if(con !==''){       
+      if(nameId) !==''){       
           $(function(){
             
             //ボタンが押されたら、「SEND」ボタンを「delete」ボタンに変更する。
