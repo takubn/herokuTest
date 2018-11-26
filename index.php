@@ -19,7 +19,7 @@
   <body onload="scr();">
 <!-- <body> -->
 
- <!-- idを取得するメソッド-->
+ <!-- 全体のメソッドでidを取得し、ローカル変数でidを渡す-->
 <script>
     function getId(na,con){
             var na = na.id;
@@ -36,34 +36,25 @@
             });
         }
 
-
-
         $(function(){
 
                     //指定の要素がクリックされたら発火。→変数で表現する
                     $('#change').click(function(){
-
 
                           // post方式で'catch.php'に送信する。
                           $.post('catch.php',{
                               // [key名]と[value]=自分で設定してよい　でidとコメントの変更内容を取得
                               id: con,
                               contents: $('#comment').val()
-                              //コールバック関数（postで送った後の戻り値をどうするかの設定）→dataという変数で受け取る
+                              //postに成功したときにどうするか。→再読み込み
                           },function(){
-                              //id="result"のhtml要素に挿入 再読み込み
-                              // $('#result').html(data);
                               location.reload();
                           });
                 
-                        
-                      
                     });
 
                 });
                 
-
-
         }      
 </script>
 
@@ -167,6 +158,11 @@
                 <!-- 編集ボタン -->
                 <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i);\">edit</button>"?>
                 
+                <!-- 削除ボタン　（仮） -->
+                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i);\">edit</button>"?>
+                
+
+
                   <!-- primarykeyを取得 -->
                   <?php echo "<div id=\"$i\" hidden>primaryKey</div>" ?>
 
