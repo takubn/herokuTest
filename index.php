@@ -45,6 +45,8 @@
                         
                         
                         console.log(na,con);
+                        location.reload();
+
 
                         // post方式で'catch.php'に送信する。
                         $.post('catch.php',{
@@ -58,7 +60,7 @@
                         });
 
                         
-                        alert('now!');
+                      
                     });
 
                 });
