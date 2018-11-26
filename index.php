@@ -44,9 +44,6 @@
                     $('#change').click(function(){
                         
                         
-                        $.when(
-
-
                           // post方式で'catch.php'に送信する。
                           $.post('catch.php',{
                               // [key名]と[value]=自分で設定してよい　でidとコメントの変更内容を取得
@@ -58,12 +55,12 @@
                               $('#result').html(data);
                           });
 
-                        ).done(function(){
+                    //     ).done(function(){
 
-                          location.reload();
+                    //       location.reload();
                         
                       
-                    });
+                    // });
 
                 });
 
