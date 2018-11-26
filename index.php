@@ -95,7 +95,8 @@
     <?php
     
         // 標準時間を日本に
-        date_default_timezone_set("Asia/Tokyo");
+        timezone_set("Asia/Tokyo");
+        
 
 
         $dsn = 'mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_b24bf788d9d54e3;charset=utf8';
