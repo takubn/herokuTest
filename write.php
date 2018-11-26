@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set("Asia/Tokyo");
+
 //POSTでデータを受け取る。
 $name = $_POST['name'];
 $contents = $_POST['contents'];
