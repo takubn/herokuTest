@@ -248,6 +248,15 @@ input:focus, textarea:focus {
   margin-top:-4px;
   font-weight:700;
 }
+
+#changeBy:hover{
+  background-color: rgba(0,0,0,0);
+  color: #454852;
+}
+
+
+
+
 /* 
 .ease {
   width: 0px;
