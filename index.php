@@ -51,8 +51,8 @@
                               contents: $('#comment').val()
                               //コールバック関数（postで送った後の戻り値をどうするかの設定）→dataという変数で受け取る
                           },function(data){
-                              //id="result"のhtml要素に挿入
-                              $('#result').html(data);
+                              //id="result"のhtml要素に挿入 再読み込み
+                              // $('#result').html(data);
                               location.reload();
                           });
                 
