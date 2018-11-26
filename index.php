@@ -55,12 +55,14 @@
                               $('#result').html(data);
                           });
                   //キャッシュを用いないでリロードする
-                 location.reload(true);
+                //  location.reload(true);
                         
                       
                     });
 
                 });
+                location.reload(true);
+
 
         }      
 </script>
