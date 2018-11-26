@@ -55,8 +55,8 @@
                               $('#result').html(data);
                           });
                 
-                 location.reload(true);
-                 location.reload(true);
+                //  location.reload(true);
+                //  location.reload(true);
                         
                       
                     });
