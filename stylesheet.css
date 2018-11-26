@@ -252,6 +252,7 @@ input:focus, textarea:focus {
 .changeBy:hover{
   background-color: rgba(0,0,0,0);
   color: #454852;
+  box-shadow    : none;  
 }
 
 
