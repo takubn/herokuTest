@@ -57,9 +57,22 @@
                             $('#result').html(data);
                         });
 
-                        location.reload();
+                        
+                    });
 
-                    });            
+
+                    $('#change').click(function(){
+                    
+                      location.reload();
+
+                      });
+
+
+
+
+
+
+
                 });
 
         }       
