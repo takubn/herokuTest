@@ -30,7 +30,7 @@
             
             $(function(){
 
-            $('#replace').replaceWith('<div class="changeBy id="change >CHANGE</div>')
+            $('#replace').replaceWith('<div class="changeBy" id="change" >CHANGE</div>')
             // $('#button-blue').$replaceWith('<button value="CHANGE" id="button-blue"/>CHANGE</button>')
             });
         }
