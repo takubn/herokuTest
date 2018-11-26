@@ -58,20 +58,8 @@
                         });
 
                         
+                        alert('now!');
                     });
-
-
-                    $('#change').click(function(){
-                    
-                      location.reload();
-
-                      });
-
-
-
-
-
-
 
                 });
 
