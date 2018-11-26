@@ -44,7 +44,7 @@
                     $('#change').click(function(){
 
 
-                     $when(
+                     $.when(
 
                           // post方式で'catch.php'に送信する。
                           $.post('catch.php',{
