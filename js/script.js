@@ -18,8 +18,6 @@ function getDirect(name,content){
   
               rename.value = nameText;
   
-              // //フォームの背景色を変更する
-            //   rename.style.backgroundColor = 'pink';
 
               //入力を無効にする。
                 rename.disabled = "true";
