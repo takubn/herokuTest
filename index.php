@@ -19,6 +19,42 @@
   <body onload="scr();">
 <!-- <body> -->
 
+
+
+<!-- 削除ボタン仮 -->
+<script>
+   function deleteBy(name){
+      var nameId = name.id;
+
+ 
+      if(con !==''){       
+          $(function(){
+            
+            //ボタンが押されたら、「SEND」ボタンを「delete」ボタンに変更する。
+          $('#button-blue').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
+          
+          });
+    }
+
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  <!-- 全体のメソッドでidを取得し、ローカル変数でidを渡す-->
 <script>
     function getId(na,con){
@@ -93,11 +129,6 @@
 
   <!-- DBに接続し、各種データを取得 -->
     <?php
-    
-        // 標準時間を日本に
-        
-        
-
 
         $dsn = 'mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_b24bf788d9d54e3;charset=utf8';
         $user = 'b35095427bfc9e';
