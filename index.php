@@ -95,7 +95,7 @@
     <?php
     
         // 標準時間を日本に
-        timezone_set("Asia/Tokyo");
+        
         
 
 
