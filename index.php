@@ -22,7 +22,7 @@
 
 
 <!-- 削除ボタン仮 -->
-<script>
+<!-- <script>
    function deleteBy(name){
       var nameId = name.id;
 
@@ -37,7 +37,7 @@
     }
 
   }
-</script>
+</script> -->
 
 
 
