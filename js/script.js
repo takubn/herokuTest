@@ -20,7 +20,11 @@ function getDirect(name,content){
   
               // //フォームの背景色を変更する
               rename.style.backgroundColor = 'pink';
-  
+
+              //入力を無効にする。
+                rename.disabled = "true";
+
+
   
           // フォームのIDを取得する。(コンテンツ部分)
           var recontent = document.getElementById('comment');
