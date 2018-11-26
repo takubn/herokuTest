@@ -157,7 +157,7 @@
 
                 <!-- 編集ボタン -->
                 <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i);\">edit</button>"?>
-                <br>
+
                 <!-- 削除ボタン　（仮） -->
                 <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i);\">delete</button>"?>
                 
