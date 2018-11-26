@@ -56,6 +56,21 @@ function getDirect(name,content){
           $('#button-blue').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
           
           });
-    }
+      }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
   }

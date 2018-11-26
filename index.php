@@ -17,42 +17,6 @@
       </script>
   </head>
   <body onload="scr();">
-<!-- <body> -->
-
-
-
-<!-- 削除ボタン仮 -->
-<!-- <script>
-   function deleteBy(name){
-      var nameId = name.id;
-
- 
-      if(nameId) !==''){       
-          $(function(){
-            
-            //ボタンが押されたら、「SEND」ボタンを「delete」ボタンに変更する。
-          $('#button-blue').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
-          
-          });
-    }
-
-  }
-</script> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  <!-- 全体のメソッドでidを取得し、ローカル変数でidを渡す-->
@@ -193,7 +157,7 @@
 
                 <!-- 編集ボタン -->
                 <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i);\">edit</button>"?>
-
+                <?php echo "</br>" ?>
                 <!-- 削除ボタン　（仮） -->
                 <?php echo "<button class=\"button\"  onclick=\"getDirect(name$i,contents$i),deleteBy(name$i);\">delete</button>"?>
                 
