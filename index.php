@@ -29,9 +29,10 @@
         if(con !==''){
             
             $(function(){
-
+              
+              //ボタンが押されたら、「SEND」ボタンを「CHANGE」ボタンに変更する。
             $('#button-blue').replaceWith('<div class="changeBy" id="change" >CHANGE</div>')
-            // $('#button-blue').$replaceWith('<button value="CHANGE" id="button-blue"/>CHANGE</button>')
+            
             });
         }
 
@@ -69,9 +70,6 @@
        <img src="img/logo.png" alt="">
       </p>
 
-        <!-- changeボタンの一時的な代わり-->
-          <!-- <button id="change" style="width: 150px;height: 50px;font-size: 30px;">Change!</button>
-          <div id="result"></div> -->
 
 
       <div id="form-main">
