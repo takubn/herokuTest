@@ -25,6 +25,7 @@ EDIT ON
   transition    : .3s;         /* なめらか変化 */
   box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
   border        : 2px solid #000066;    /* 枠の指定 */
+  margin-left: 10px;
 }
 .button:hover {
   box-shadow    : none;        /* カーソル時の影消去 */
@@ -274,7 +275,6 @@ input:focus, textarea:focus {
   transition: all 0.3s;
   margin-top:-4px;
   font-weight:700;
-  margin-left: 10px;
 }
 
 .deleteBy:hover{
