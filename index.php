@@ -53,10 +53,9 @@
                           },function(data){
                               //id="result"のhtml要素に挿入
                               $('#result').html(data);
+                              location.reload();
                           });
                 
-                //  location.reload(true);
-                //  location.reload(true);
                         
                       
                     });
