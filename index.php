@@ -58,7 +58,7 @@
                           });
 
                      ).done(function(){
-                       location.reload();
+                       alert('aaa');
                      });
                         
                       
