@@ -54,14 +54,14 @@
                               //id="result"のhtml要素に挿入
                               $('#result').html(data);
                           });
-                  //キャッシュを用いないでリロードする
-                //  location.reload(true);
+                
+                 location.reload(true);
                         
                       
                     });
 
                 });
-                location.reload(true);
+                
 
 
         }      
