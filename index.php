@@ -44,7 +44,7 @@
                     $('#change').click(function(){
 
 
-                     $.when(
+                 
 
                           // post方式で'catch.php'に送信する。
                           $.post('catch.php',{
@@ -57,9 +57,7 @@
                               $('#result').html(data);
                           });
 
-                     ).done(function(){
-                       alert('aaa');
-                     });
+                 
                         
                       
                     });
