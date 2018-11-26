@@ -230,6 +230,7 @@ input:focus, textarea:focus {
 /* ------------submitの代わり-------------- */
 
 .changeBy {
+  text-align: center;
   color: #454852;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   float:left;
@@ -246,7 +247,6 @@ input:focus, textarea:focus {
   transition: all 0.3s;
   margin-top:-4px;
   font-weight:700;
-  text-align: center;
 }
 /* 
 .ease {
