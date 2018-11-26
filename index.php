@@ -44,28 +44,30 @@
                     $('#change').click(function(){
                         
                         
-                        console.log(na,con);
-                        location.reload();
+                        $.when(
 
 
-                        // post方式で'catch.php'に送信する。
-                        $.post('catch.php',{
-                            // [key名]と[value]=自分で設定してよい　でidとコメントの変更内容を取得
-                            id: con,
-                            contents: $('#comment').val()
-                            //コールバック関数（postで送った後の戻り値をどうするかの設定）→dataという変数で受け取る
-                        },function(data){
-                            //id="result"のhtml要素に挿入
-                            $('#result').html(data);
-                        });
+                          // post方式で'catch.php'に送信する。
+                          $.post('catch.php',{
+                              // [key名]と[value]=自分で設定してよい　でidとコメントの変更内容を取得
+                              id: con,
+                              contents: $('#comment').val()
+                              //コールバック関数（postで送った後の戻り値をどうするかの設定）→dataという変数で受け取る
+                          },function(data){
+                              //id="result"のhtml要素に挿入
+                              $('#result').html(data);
+                          });
 
+                        ).done(function(){
+
+                          location.reload();
                         
                       
                     });
 
                 });
 
-        }       
+        };       
 </script>
 
 
