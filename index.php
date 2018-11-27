@@ -63,11 +63,11 @@
 
 <!-- 削除jsをテスト実装 -->
 
-<!-- <script>
+<script>
 
-  function deleteBy(name){
-      var nameId = name.id;
-
+  function deleteBy(id){
+      var id = id.textContent;
+      console.log(id);
  
       if(nameId !==''){       
           $(function(){
@@ -89,7 +89,7 @@
 
             //postでidを送信
             $.post('delete.php',{
-              id:nameId
+              id:id
             //成功したら、リロードする
             },function(){
               location.reload(true);
@@ -101,7 +101,7 @@
   }
 
 
-</script> -->
+</script>
 
 
 
@@ -211,7 +211,7 @@
                 <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>"?>
                 
                 <!-- 削除ボタン　（仮） -->
-                <?php echo "<button class=\"button\"  onclick=\"getDirect(name$i,contents$i),deleteBy(name$i);\">delete</button>"?>
+                <?php echo "<button class=\"button\"  onclick=\"getDirect(name$i,contents$i),deleteBy(id$i);\">delete</button>"?>
                 
 
 

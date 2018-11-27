@@ -9,10 +9,9 @@
         $id = $_POST["id"];
 
         // 数値だけに切り取る
-        $primeId = preg_replace('/[^0-9]/','',$id);
+        $primeId = intval($id);
 
-        // primalykeyとの差分を埋める
-        $primeId = $primeId*10+1;
+ 
     }
 ?>
 
@@ -28,22 +27,7 @@
         $db = new PDO($dsn,$user,$password);
         $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-        $sql = "UPDATE bbs SET delete_flg=1 where id = $PrimeId ";
-        $stmt = $db->prepare($sql);
-
-        $stmt->execute();
-
-
-
-
-
-
-
-
-
-
-
-        $sql = "INSERT　INTO　bbs(delete_flg) VALUES(1) where id = $primeId";
+        $sql = "DELETE from bbs where id = $primeId";
         $stmt = $db->prepare($sql);
         $stmt->execute();
 
