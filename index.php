@@ -69,7 +69,7 @@
       var id = id.textContent;
       console.log(id);
  
-      if(nameId !==''){       
+      if(id !==''){       
           $(function(){
             
             //ボタンが押されたら、「SEND」ボタンを「delete」ボタンに変更する。
