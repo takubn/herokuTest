@@ -44,8 +44,8 @@ function getDirect(name,content){
   
     }
 
-
-    function deleteBy(name){
+  
+  function deleteBy(name){
       var nameId = name.id;
 
  
@@ -58,19 +58,20 @@ function getDirect(name,content){
           });
       }
 
+      // post方式でidを渡す
+        $(function(){
+          //deleteボタンが押されたら、発火
+          $('#delete').click(function(){
 
+            //postでidを送信
+            $.post('delete.php',{
+              id:nameId
+            //成功したら、リロードする
+            },function(){
+              location.reload();
+            });
 
+          });
 
-
-
-
-
-
-
-
-
-
-
-
-      
+        });
   }
