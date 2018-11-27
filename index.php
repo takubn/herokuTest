@@ -202,7 +202,7 @@
                     <p class="date"><?php echo $result_date[$i] ?></p>
                     
                     <!-- id取得テスト -->
-                    <?php echo "<div class=\"white\" id=\"id$i\">$result_id[$i]</div> "?>
+                    <!-- <?php echo "<div class=\"white\" id=\"id$i\">$result_id[$i]</div> "?> -->
 
                 </div>
 
