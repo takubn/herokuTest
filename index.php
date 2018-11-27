@@ -38,11 +38,11 @@
           }
 
 
-          var answer = confirm('本当に消去しますか？');
+          
 
 
           $(function(){
-          
+          var answer = confirm('本当に消去しますか？');
           if(answer === true){
 
                       //指定の要素がクリックされたら発火。→変数で表現する
