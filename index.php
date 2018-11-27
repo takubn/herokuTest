@@ -41,8 +41,6 @@
                     //指定の要素がクリックされたら発火。→変数で表現する
                     $('#change').click(function(){
 
-                      alert('作動');
-
                           // post方式で'catch.php'に送信する。
                           $.post('catch.php',{
                               // [key名]と[value]=自分で設定してよい　でidとコメントの変更内容を取得
@@ -59,6 +57,53 @@
                 
         }      
 </script>
+
+
+
+<!-- 削除jsをテスト実装 -->
+
+<script>
+
+  function deleteBy(name){
+      var nameId = name.id;
+
+ 
+      if(nameId !==''){       
+          $(function(){
+            
+            //ボタンが押されたら、「SEND」ボタンを「delete」ボタンに変更する。
+          $('#button-blue').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
+          
+          });
+      }
+
+      // post方式でidを渡す
+        $(function(){
+
+          //deleteボタンが押されたら、発火
+          $('#delete').click(function(){
+
+            // test
+            alert('作動');
+
+            //postでidを送信
+            $.post('delete.php',{
+              id:nameId
+            //成功したら、リロードする
+            },function(){
+              location.reload(true);
+            });
+
+          });
+
+        });
+  }
+
+
+</script>
+
+
+
 
 
   <!-- 入力部分始まり -->

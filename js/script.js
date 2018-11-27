@@ -45,36 +45,39 @@ function getDirect(name,content){
     }
 
   
-  function deleteBy(name){
-      var nameId = name.id;
+
+
+  // function deleteBy(name){
+  //     var nameId = name.id;
 
  
-      if(nameId !==''){       
-          $(function(){
+  //     if(nameId !==''){       
+  //         $(function(){
             
-            //ボタンが押されたら、「SEND」ボタンを「delete」ボタンに変更する。
-          $('#button-blue').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
+  //           //ボタンが押されたら、「SEND」ボタンを「delete」ボタンに変更する。
+  //         $('#button-blue').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
           
-          });
-      }
+  //         });
+  //     }
 
-      // post方式でidを渡す
-        $(function(){
-          //deleteボタンが押されたら、発火
-          $('#delete').click(function(){
+  //     // post方式でidを渡す
+  //       $(function(){
 
-            // test
-            alert('作動');
+  //         //deleteボタンが押されたら、発火
+  //         $('#delete').click(function(){
 
-            //postでidを送信
-            $.post('delete.php',{
-              id:nameId
-            //成功したら、リロードする
-            },function(){
-              location.reload(true);
-            });
+  //           // test
+  //           alert('作動');
 
-          });
+  //           //postでidを送信
+  //           $.post('delete.php',{
+  //             id:nameId
+  //           //成功したら、リロードする
+  //           },function(){
+  //             location.reload(true);
+  //           });
 
-        });
-  }
+  //         });
+
+  //       });
+  // }
