@@ -84,8 +84,7 @@
             //deleteボタンが押されたら、発火
             $('#delete').click(function(){
 
-              // test
-              alert('作動');
+
 
               //postでidを送信
               $.post('delete.php',{
