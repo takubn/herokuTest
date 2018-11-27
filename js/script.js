@@ -63,12 +63,15 @@ function getDirect(name,content){
           //deleteボタンが押されたら、発火
           $('#delete').click(function(){
 
+            // test
+            alert('作動');
+
             //postでidを送信
             $.post('delete.php',{
               id:nameId
             //成功したら、リロードする
             },function(){
-              location.reload();
+              location.reload(true);
             });
 
           });
