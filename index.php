@@ -21,10 +21,11 @@
 
  <!-- 全体のメソッドでidを取得し、ローカル変数でidを渡す-->
 <script>
-    function getId(na,con){
+    function getId(na,con,id){
             var na = na.id;
             var con = con.id;
-        console.log(con);
+            var id = id;
+        console.log(id);
 
         if(con !==''){
             
@@ -199,15 +200,15 @@
                   <!-- 文字列として一行（投稿内容）を出力。idを自動付与する意図-->
                     <?php echo "<div class=\"white\" id=\"contents$i\">$result_contents[$i]</div> "?>
                     <p class="date"><?php echo $result_date[$i] ?></p>
-                    <!-- テスト -->
-                    <p class="date"><?php echo $result_id[$i] ?></p>
-
+                    
+                    <!-- id取得テスト -->
+                    <?php echo "<div class=\"white\" id=\"id$i\">$result_id[$i]</div> "?>
 
                 </div>
 
 
                 <!-- 編集ボタン -->
-                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i);\">edit</button>"?>
+                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>"?>
                 
                 <!-- 削除ボタン　（仮） -->
                 <?php echo "<button class=\"button\"  onclick=\"getDirect(name$i,contents$i),deleteBy(name$i);\">delete</button>"?>
