@@ -199,6 +199,10 @@
                   <!-- 文字列として一行（投稿内容）を出力。idを自動付与する意図-->
                     <?php echo "<div class=\"white\" id=\"contents$i\">$result_contents[$i]</div> "?>
                     <p class="date"><?php echo $result_date[$i] ?></p>
+                    <!-- テスト -->
+                    <p class="date"><?php echo $result_id[$i] ?></p>
+
+
                 </div>
 
 

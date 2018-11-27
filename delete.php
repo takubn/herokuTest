@@ -28,7 +28,22 @@
         $db = new PDO($dsn,$user,$password);
         $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-        $sql = "DELETE from bbs where id = $primeId";
+        $sql = "UPDATE bbs SET delete_flg=1 where id = $PrimeId ";
+        $stmt = $db->prepare($sql);
+
+        $stmt->execute();
+
+
+
+
+
+
+
+
+
+
+
+        $sql = "INSERT　INTO　bbs(delete_flg) VALUES(1) where id = $primeId";
         $stmt = $db->prepare($sql);
         $stmt->execute();
 
