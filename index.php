@@ -201,8 +201,8 @@
                     <?php echo "<div class=\"white\" id=\"contents$i\">$result_contents[$i]</div> "?>
                     <p class="date"><?php echo $result_date[$i] ?></p>
                     
-                    <!-- id取得テスト -->
-                    <!-- <?php echo "<div class=\"white\" id=\"id$i\">$result_id[$i]</div> "?> -->
+                    <!-- id取得 -->
+                    <?php echo "<div hidden id=\"id$i\">$result_id[$i]</div> "?>
 
                 </div>
 
