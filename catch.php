@@ -8,7 +8,7 @@
                 if(isset($_POST["id"])){
 
 
-                    $Id = $_POST["id"];
+                    $id = $_POST["id"];
                     $contents = $_POST["contents"];
 
                     //idを数値だけにする
@@ -50,7 +50,7 @@
 
     <!-- 変更ができているか確認のためコールバック（削除はいったんしない） -->
      <!-- <?php  
-        echo "idは......".$PrimaryId;
+        echo "idは......".$id;
         echo "</br>";
         echo "中身は......".$contents;
 ?> -->
