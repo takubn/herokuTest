@@ -45,7 +45,7 @@
                           // post方式で'catch.php'に送信する。
                           $.post('catch.php',{
                               // [key名]と[value]=自分で設定してよい　でidとコメントの変更内容を取得
-                              id: con,
+                              id: id,
                               contents: $('#comment').val()
                               //postに成功したときにどうするか。→再読み込み
                           },function(){

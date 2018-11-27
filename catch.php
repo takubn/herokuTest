@@ -8,14 +8,14 @@
                 if(isset($_POST["id"])){
 
 
-                    $nameId = $_POST["id"];
+                    $Id = $_POST["id"];
                     $contents = $_POST["contents"];
 
                     //idを数値だけにする
-                    $PrimaryId = preg_replace('/[^0-9]/', '', $nameId);
+                    // $PrimaryId = preg_replace('/[^0-9]/', '', $nameId);
                     
                     //PrimaryKeyとの差分を埋める
-                    $PrimaryId = $PrimaryId*10+1; 
+                    // $PrimaryId = $PrimaryId*10+1; 
 
                 }    
         ?>
@@ -33,7 +33,7 @@
                 
                     //PrimaryId（primalykeyとつじつま合わせ済）を引き合いにコンテンツ内容を書き換え。
 
-                    $sql = "UPDATE bbs SET contents=:contents where id = $PrimaryId ";
+                    $sql = "UPDATE bbs SET contents=:contents where id = $id ";
                     $stmt = $db->prepare($sql);
 
                     $stmt->bindParam(':contents', $contents, PDO::PARAM_STR);
