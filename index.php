@@ -24,7 +24,7 @@
     function getId(na,con,id){
             var na = na.id;
             var con = con.id;
-            var id = id;
+            var id = id.textContent;
         console.log(id);
 
         if(con !==''){
