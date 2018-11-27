@@ -62,7 +62,7 @@
 
 <!-- 削除jsをテスト実装 -->
 
-<script>
+<!-- <script>
 
   function deleteBy(name){
       var nameId = name.id;
@@ -100,7 +100,7 @@
   }
 
 
-</script>
+</script> -->
 
 
 
