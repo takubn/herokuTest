@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>dc-board</title>
 
-      <!-- 一番下まで自動スクロール -->
+<!-- 一番下まで自動スクロール -->
       <script>
         function scr(){
           var a = document.documentElement;
@@ -19,92 +19,92 @@
   <body onload="scr();">
 
 
- <!-- 全体のメソッドでidを取得し、ローカル変数でidを渡す-->
-<script>
-    function getId(na,con,id){
-            var na = na.id;
-            var con = con.id;
-            var id = id.textContent;
-        console.log(id);
+ <!-- 編集メソッド-->
+  <script>
+      function getId(na,con,id){
+              var na = na.id;
+              var con = con.id;
+              var id = id.textContent;
+          console.log(id);
 
-        if(con !==''){
-            
+          if(con !==''){
+              
+              $(function(){
+                
+                //ボタンが押されたら、「SEND」ボタンを「CHANGE」ボタンに変更する。
+              $('#button-blue').replaceWith('<div class="changeBy" id="change" >CHANGE</div>')
+              
+              });
+          }
+
+
+          var answer = confirm('本当に消去しますか？');
+
+
+          $(function(){
+          
+          if(answer === true){
+
+                      //指定の要素がクリックされたら発火。→変数で表現する
+                      $('#change').click(function(){
+
+                            // post方式で'catch.php'に送信する。
+                            $.post('catch.php',{
+                                // [key名]と[value]=自分で設定してよい　でidとコメントの変更内容を取得
+                                id: id,
+                                contents: $('#comment').val()
+                                //postに成功したときにどうするか。→再読み込み
+                            },function(){
+                                location.reload();
+                            });
+                  
+                      });
+                    }
+                  });                
+          }      
+  </script>
+
+
+
+<!-- 削除メソッド-->
+
+  <script>
+
+    function deleteBy(id){
+        var id = id.textContent;
+        console.log(id);
+  
+        if(id !==''){       
             $(function(){
               
-              //ボタンが押されたら、「SEND」ボタンを「CHANGE」ボタンに変更する。
-            $('#button-blue').replaceWith('<div class="changeBy" id="change" >CHANGE</div>')
+              //ボタンが押されたら、「SEND」ボタンを「delete」ボタンに変更する。
+            $('#button-blue').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
             
             });
         }
 
-        $(function(){
-
-                    //指定の要素がクリックされたら発火。→変数で表現する
-                    $('#change').click(function(){
-
-                          // post方式で'catch.php'に送信する。
-                          $.post('catch.php',{
-                              // [key名]と[value]=自分で設定してよい　でidとコメントの変更内容を取得
-                              id: id,
-                              contents: $('#comment').val()
-                              //postに成功したときにどうするか。→再読み込み
-                          },function(){
-                              location.reload();
-                          });
-                
-                    });
-
-                });
-                
-        }      
-</script>
-
-
-
-<!-- 削除jsをテスト実装 -->
-
-<script>
-
-  function deleteBy(id){
-      var id = id.textContent;
-      console.log(id);
- 
-      if(id !==''){       
+        // post方式でidを渡す
           $(function(){
-            
-            //ボタンが押されたら、「SEND」ボタンを「delete」ボタンに変更する。
-          $('#button-blue').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
-          
-          });
-      }
 
-      // post方式でidを渡す
-        $(function(){
+            //deleteボタンが押されたら、発火
+            $('#delete').click(function(){
 
-          //deleteボタンが押されたら、発火
-          $('#delete').click(function(){
+              // test
+              alert('作動');
 
-            // test
-            alert('作動');
+              //postでidを送信
+              $.post('delete.php',{
+                id:id
+              //成功したら、リロードする
+              },function(){
+                location.reload(true);
+              });
 
-            //postでidを送信
-            $.post('delete.php',{
-              id:id
-            //成功したら、リロードする
-            },function(){
-              location.reload(true);
             });
 
           });
-
-        });
-  }
-
-
+    }
 </script>
-
-
-
 
 
   <!-- 入力部分始まり -->
@@ -138,6 +138,9 @@
       </div>
   </div>
     <!-- 入力部分終わり -->
+
+
+
 
   <!-- DBに接続し、各種データを取得 -->
     <?php
@@ -210,13 +213,10 @@
                 <!-- 編集ボタン -->
                 <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>"?>
                 
-                <!-- 削除ボタン　（仮） -->
+                <!-- 削除ボタン　-->
                 <?php echo "<button class=\"button\"  onclick=\"getDirect(name$i,contents$i),deleteBy(id$i);\">delete</button>"?>
                 
 
-
-                  <!-- primarykeyを取得 -->
-                  <?php echo "<div id=\"$i\" hidden>primaryKey</div>" ?>
 
               </div>
 

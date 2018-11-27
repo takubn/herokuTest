@@ -38,10 +38,3 @@
         die('エラー:'.$e->getMessage());
     }
 ?>
-
-
-<!-- postでidがわたっているかテスト -->
-<?php
-echo 'idは'.$primeId.'です';
-
-?>

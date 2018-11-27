@@ -11,12 +11,6 @@
                     $id = $_POST["id"];
                     $contents = $_POST["contents"];
 
-                    //idを数値だけにする
-                    // $PrimaryId = preg_replace('/[^0-9]/', '', $nameId);
-                    
-                    //PrimaryKeyとの差分を埋める
-                    // $PrimaryId = $PrimaryId*10+1; 
-
                 }    
         ?>
     
