@@ -38,12 +38,7 @@
           }
 
 
-          
-
-
           $(function(){
-          var answer = confirm('本当に消去しますか？');
-          if(answer === true){
 
                       //指定の要素がクリックされたら発火。→変数で表現する
                       $('#change').click(function(){
@@ -59,7 +54,7 @@
                             });
                   
                       });
-                    }
+                    
                   });                
           }      
   </script>
@@ -211,10 +206,10 @@
 
 
                 <!-- 編集ボタン -->
-                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"getDirect(name$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>"?>
+                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"inputColorEdit(name$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>"?>
                 
                 <!-- 削除ボタン　-->
-                <?php echo "<button class=\"button\"  onclick=\"getDirect(name$i,contents$i),deleteBy(id$i);\">delete</button>"?>
+                <?php echo "<button class=\"button\"  onclick=\"inputColorDelete(name$i,contents$i),deleteBy(id$i);\">delete</button>"?>
                 
 
 
