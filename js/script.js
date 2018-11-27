@@ -55,7 +55,7 @@ function inputColorEdit(name,content){
           rename.value = nameText;
 
           //フォームの背景色を変更する
-          recontent.style.backgroundColor = 'red';
+          rename.style.backgroundColor = 'red';
 
           //入力を無効にする。
             rename.disabled = "true";
