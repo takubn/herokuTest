@@ -102,12 +102,10 @@
 
 
   <!-- 入力部分始まり -->
-  <div class="item-input" style="position: fixed;width: 35%;">
+  <div class="item-input" style="position: fixed;width: 35%;margin-left: 30px;">
       <p class="input-logo">
        <img src="img/logo.png" alt="">
       </p>
-
-
 
       <div id="form-main">
         <div id="form-div">
