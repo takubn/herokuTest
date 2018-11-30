@@ -38,7 +38,7 @@
                     $stmt = $db->prepare($sql);
 
                     $stmt->bindParam(':contents', $contents, PDO::PARAM_STR);
-                    $stmt->bindParam(':date', $date, PDO::PARAM_TIMESTAMP);
+                    $stmt->bindParam(':date', $date);
                     $stmt->execute();
 
                     $db = null;
