@@ -113,7 +113,7 @@
           <form class="form" id="form1" method="POST" action="write.php">
             <!-- 名前入力欄 -->
             <p class="name">
-               <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+               <input name="name" maxlength="5" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
              </p>
 
              <!-- 投稿内容欄 -->
