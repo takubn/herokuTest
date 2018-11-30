@@ -1,9 +1,3 @@
-<?php
-date_default_timezone_set("Asia/Tokyo");
-$date = date('Y/m/d H:i:s');
-var_dump($date);
-
-?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -119,7 +113,7 @@ var_dump($date);
           <form class="form" id="form1" method="POST" action="write.php">
             <!-- 名前入力欄 -->
             <p class="name">
-               <input name="name" maxlength="5" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+               <input name="name"  type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
              </p>
 
              <!-- 投稿内容欄 -->
@@ -191,10 +185,10 @@ var_dump($date);
                 <!-- 名前の表示部分 -->
                 <div class="display-name">
                   <!-- 5文字で切り捨て、それを変数に格納 -->
-                    <?php $str_name[] = mb_substr($result_name[$i],0,5,"UTF-8");  ?>
+                    <!-- <?php $str_name[] = mb_substr($result_name[$i],0,5,"UTF-8");  ?> -->
                   
                   <!-- 文字列として一行（名前）を出力。idを自動付与する意図-->
-                    <?php echo "<div class=\"white\" id=\"name$i\">$str_name[$i]</div>"?>
+                    <?php echo "<div class=\"white\" maxlength=\"5\" id=\"name$i\">$result_name[$i]</div>"?>
                 </div>
                 
                 <!-- 投稿内容の表示部分 -->
