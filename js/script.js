@@ -42,6 +42,7 @@ function inputColorEdit(name,content){
       // 引数で受け取った値(id)を変数に代入
       var name = name;
       var content = content;
+      
 
       // idから文字情報を取得し、変数に代入
       var nameText = name.textContent;
@@ -50,6 +51,8 @@ function inputColorEdit(name,content){
 
       // フォームのIDを取得する。(名前部分)
           var rename = document.getElementById('name');
+
+            // console.log(rename);
 
           //フォームの初期値に取ってきた文字情報(name部分)を挿入
           rename.value = nameText;

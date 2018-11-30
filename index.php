@@ -66,6 +66,7 @@
   <script>
 
     function deleteBy(id){
+        console.log(id);
         var id = id.textContent;
         console.log(id);
   
