@@ -11,7 +11,14 @@
                     $id = $_POST["id"];
                     $contents = $_POST["contents"];
 
-                }    
+                }
+        
+            date_default_timezone_set("Asia/Tokyo");
+            $date = date('Y/m/d H:i:s');
+                
+
+
+
         ?>
     
 
