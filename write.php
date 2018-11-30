@@ -1,6 +1,7 @@
 <?php
 
 date_default_timezone_set("Asia/Tokyo");
+$now = date('Y/m/d H:i:s');
 
 //POSTでデータを受け取る。
 $name = $_POST['name'];
@@ -24,10 +25,11 @@ try{
 $db = new PDO($dsn, $user, $password);
 $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-$sql = 'INSERT INTO bbs(name,contents) VALUES(?,?)';
+$sql = 'INSERT INTO bbs(name,contents,date) VALUES(?,?,?)';
 $stmt = $db->prepare($sql);
 $data[] = $name;
 $data[] = $contents;
+$date[] = $now;
 $stmt->execute($data);
 
 $db = null;
