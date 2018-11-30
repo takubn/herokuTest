@@ -27,11 +27,11 @@ try{
 $db = new PDO($dsn, $user, $password);
 $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-$sql = 'INSERT INTO bbs(name,contents) VALUES(?,?)';
+$sql = 'INSERT INTO bbs(name,contents,date) VALUES(?,?,?)';
 $stmt = $db->prepare($sql);
 $data[] = $name;
 $data[] = $contents;
-// $date[] = $now;
+$data[] = $now;
 $stmt->execute($data);
 
 $db = null;
