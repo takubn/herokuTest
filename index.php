@@ -185,10 +185,11 @@
                 <!-- 名前の表示部分 -->
                 <div class="display-name">
                   <!-- 5文字で切り捨て、それを変数に格納 -->
-                    <!-- <?php $str_name[] = mb_substr($result_name[$i],0,5,"UTF-8");  ?> -->
+                    <?php $str_name[] = mb_substr($result_name[$i],0,5,"UTF-8");  ?>
                   
                   <!-- 文字列として一行（名前）を出力。idを自動付与する意図-->
-                    <?php echo "<div class=\"white\" maxlength=\"5\" id=\"name$i\">$result_name[$i]</div>"?>
+                    <?php echo "<div class=\"white\"  id=\"name$i\">$str_name[$i]</div>"?>
+                    <?php echo "<div hidden class=\"white\"  id=\"pureName$i\">$result_name[$i]</div>"?>
                 </div>
                 
                 <!-- 投稿内容の表示部分 -->
@@ -204,7 +205,7 @@
 
 
                 <!-- 編集ボタン -->
-                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"inputColorEdit(name$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>"?>
+                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"inputColorEdit(pureName$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>"?>
                 
                 <!-- 削除ボタン　-->
                 <?php echo "<button class=\"button\"  onclick=\"inputColorDelete(name$i,contents$i),deleteBy(id$i);\">delete</button>"?>
