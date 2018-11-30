@@ -198,7 +198,7 @@
                     <p class="date"><?php echo $result_date[$i] ?></p>
                     
                     <!-- id取得 -->
-                    <?php echo "<div hidden id=\"$i\">$result_id[$i]</div> "?>
+                    <?php echo "<div hidden id=\"id$i\">$result_id[$i]</div> "?>
 
                 </div>
 
@@ -207,7 +207,7 @@
                 <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"inputColorEdit(name$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>"?>
                 
                 <!-- 削除ボタン　-->
-                <?php echo "<button class=\"button\"  onclick=\"inputColorDelete(name$i,contents$i),deleteBy($i);\">delete</button>"?>
+                <?php echo "<button class=\"button\"  onclick=\"inputColorDelete(name$i,contents$i),deleteBy(id$i);\">delete</button>"?>
                 
 
 
