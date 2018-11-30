@@ -198,7 +198,7 @@
                     <p class="date"><?php echo $result_date[$i] ?></p>
                     
                     <!-- id取得 -->
-                    <?php echo "<div hidden id=\"id$i\">$result_id[$i]</div> "?>
+                    <?php echo "<div hidden id=\"$i\">$result_id[$i]</div> "?>
 
                 </div>
 
