@@ -137,10 +137,13 @@
 
   <!-- DBに接続し、各種データを取得 -->
     <?php
-      require_once("conf/DSN.php");
+
+        $dsn = 'mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_b24bf788d9d54e3;charset=utf8';
+        $user = 'b35095427bfc9e';
+        $password = '5efb2b8e';
 
       try{
-        $db = new PDO(DSN,USER,PASSWORD);
+        $db = new PDO($dsn,$user,$password);
         $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
         //すべてのデータを取得。

@@ -32,7 +32,7 @@
                     $db = new PDO($dsn,$user,$password);
                     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 
-                    //PrimaryId（primalykeyとつじつま合わせ済）を引き合いにコンテンツ内容を書き換え。
+                    //PrimaryIdを引き合いにコンテンツ内容を書き換え。
 
                     $sql = "UPDATE bbs SET contents=:contents,date=:date where id = $id ";
                     $stmt = $db->prepare($sql);

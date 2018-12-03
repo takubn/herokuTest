@@ -1,0 +1,12 @@
+sudo yum install epel-release
+
+sudo rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+
+rpm -qa | grep php
+
+yum remove php-*
+
+yum -y install httpd php72 php72-php
+
+php --version
+
