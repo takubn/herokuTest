@@ -40,56 +40,11 @@
   </div>
     <!-- 入力部分終わり -->
 
-
-<!-- DBに接続し、各種データを取得 -->
-<?php
-$host = 'us-cdbr-iron-east-01.cleardb.net';
-$dbname = 'heroku_b24bf788d9d54e3;charset=utf8';
-$user = 'b35095427bfc9e';
-$password = '5efb2b8e';
-
-define('DSN',"mysql:host=$host;dbname=$dbname;charset=utf8");
-define('USER',$user);
-define('PASSWORD',$password);
-
-      try{
-        $db = new PDO(DSN,USER,PASSWORD);
-        $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-
-        //すべてのデータを取得。
-        $sql = 'SELECT * FROM bbs';
-        $stmt = $db->prepare($sql);
-        $stmt->execute();
-
-        $db = null;
-
-          while(true){
-            $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-            //取り出したデータがなければ、ループ処理終了。
-            if($result==false){
-                break;
-            }
-            // 一行ずつ変数に入れる
-            $result_name[]= $result['name'];
-            $result_contents[]= $result['contents'];
-            $result_date[]=$result['date'];
-            // primarykeysを取得
-            $result_id[]=$result['id'];
-      }
-
-          } catch(PDOException $e){
-            die('エラー：'. $e->getMessage());
-          }
-?>
-
-
-  
   <!-- 出力部分(display)始まり-->
         <div class="item-display">
 
           <!-- データベースから情報を取り出す -->
-        
+          <?php require_once("fetch.php"); ?>
 
           <!-- ループ処理のために、最大値を定義 -->
         　<?php $max = count($result_name);?>      
