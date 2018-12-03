@@ -17,7 +17,7 @@
 
       <div id="form-main">
         <div id="form-div">
-          <form class="form" id="form1" method="POST" action="write.php">
+          <form class="form" id="form1" method="POST" action="php/write.php">
             <!-- 名前入力欄 -->
             <p class="name">
                <input name="name"  type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
@@ -46,7 +46,7 @@
         <div class="item-display">
 
           <!-- データベースから情報を取り出す -->
-          <?php require_once'fetch.php'; ?>
+          <?php require_once"php/fetch.php"; ?>
 
           <!-- ループ処理のために、最大値を定義 -->
         　<?php $max = count($result_name);?>      

@@ -114,7 +114,7 @@ function inputColorDelete(name,content){
                     $('#change').click(function(){
 
                           // post方式で'update.php'に送信する。
-                          $.post('update.php',{
+                          $.post("php/update.php",{
                               // [key名]と[value]=自分で設定してよい　でidとコメントの変更内容を取得
                               id: id,
                               contents: $('#comment').val()
