@@ -11,7 +11,7 @@ $contents = $_POST['contents'];
 
 //バリデーションチェック（未入力ならindex.phpへ遷移）
 if($name == '' || $contents == ''){
-  header('Location: index.php');
+  header('Location: ../index.php');
   exit();
 }
 
@@ -34,7 +34,7 @@ $stmt->execute($data);
 $db = null;
 
 
-header('Location: index.php');
+header('Location: ../index.php');
 exit();
 
 } catch(PDOException $e){
