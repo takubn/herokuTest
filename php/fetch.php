@@ -1,6 +1,6 @@
 <!-- DBに接続し、各種データを取得 -->
 <?php
-require_once("dsn.php");
+require_once("../dsn.php");
 
       try{
         $db = new PDO(DSN,USER,PASSWORD);
