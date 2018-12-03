@@ -17,14 +17,11 @@ if($name == '' || $contents == ''){
 
 
 //データベースに接続
-$dsn = 'mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_b24bf788d9d54e3;charset=utf8';
-$user = 'b35095427bfc9e';
-$password = '5efb2b8e';
-
+require_once("conf/DSN.php");
 
 //例外処理
 try{
-$db = new PDO($dsn, $user, $password);
+$db = new PDO(DSN, USER, PASSWORD);
 $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 $sql = 'INSERT INTO bbs(name,contents,date) VALUES(?,?,?)';

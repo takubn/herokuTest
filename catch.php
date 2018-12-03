@@ -23,10 +23,8 @@
     
 
         <?php 
-            //データベースに接続開始
-            $dsn = 'mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_b24bf788d9d54e3;charset=utf8';
-            $user = 'b35095427bfc9e';
-            $password = '5efb2b8e';
+            //データベースに接続
+            require_once("conf/DSN.php");
 
                 try{
                     $db = new PDO($dsn,$user,$password);
