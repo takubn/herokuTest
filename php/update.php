@@ -24,7 +24,7 @@
 
         <?php 
             //データベースに接続
-            require_once("../conf/dsn.php");
+            require_once("dsn.php");
 
                 try{
                     $db = new PDO(DSN,USER,PASSWORD);
