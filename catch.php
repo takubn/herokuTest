@@ -27,7 +27,7 @@
             require_once("conf/DSN.php");
 
                 try{
-                    $db = new PDO($dsn,$user,$password);
+                    $db = new PDO(DSN,USER,PASSWORD);
                     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 
                     //PrimaryIdを引き合いにコンテンツ内容を書き換え。
