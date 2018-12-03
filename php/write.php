@@ -17,7 +17,7 @@ if($name == '' || $contents == ''){
 
 
 //データベースに接続
-require_once("dsn.php");
+require_once("../dsn.php");
 
 //例外処理
 try{
