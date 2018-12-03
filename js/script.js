@@ -157,7 +157,7 @@ function inputColorDelete(name,content){
 
 
             //postでidを送信
-            $.post('delete.php',{
+            $.post("php/delete.php",{
               id:id
             //成功したら、リロードする
             },function(){

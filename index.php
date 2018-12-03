@@ -9,7 +9,6 @@
   </head>
   <body onload="scr()">
 
-
   <!-- 入力部分始まり -->
   <div class="item-input" style="position: fixed;width: 35%;margin-left: 30px;">
       <p class="input-logo">
@@ -75,7 +74,6 @@
                     <?php echo "<div hidden id=\"id$i\">$result_id[$i]</div> "?>
 
                 </div>
-
 
                 <!-- 編集ボタン -->
                 <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"inputColorEdit(pureName$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>"?>
