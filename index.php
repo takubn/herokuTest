@@ -46,7 +46,7 @@
         <div class="item-display">
 
           <!-- データベースから情報を取り出す -->
-          <?php require_once"php/fetch.php"; ?>
+          <?php require_once("php/fetch.php"); ?>
 
           <!-- ループ処理のために、最大値を定義 -->
         　<?php $max = count($result_name);?>      
