@@ -42,7 +42,6 @@
 
 
 
-
   <!-- DBに接続し、各種データを取得 -->
     <?php
       require_once("conf/DSN.php");
