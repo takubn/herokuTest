@@ -7,16 +7,8 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>dc-board</title>
 
-<!-- 一番下まで自動スクロール -->
-      <script>
-        function scr(){
-          var a = document.documentElement;
-          var y = a.scrollHeight - a.clientHeight;
-          window.scroll(0, y);
-        }
-      </script>
   </head>
-  <body onload="scr();">
+  <body onload="scr()">
 
 
  <!-- 編集メソッド-->

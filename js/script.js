@@ -1,4 +1,14 @@
 
+        function scr(){
+          var a = document.documentElement;
+          var y = a.scrollHeight - a.clientHeight;
+          window.scroll(0, y);
+        }
+
+
+
+
+
 //編集ボタンを押すと入力フォームにその値が挿入されるメソッド
 function inputColorEdit(name,content){
   
