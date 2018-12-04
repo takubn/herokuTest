@@ -7,9 +7,8 @@ function scr() {
 }
 
 
-
 //入力フォームの色と値を変更するメソッド（編集）
-function inputColorEdit(name, content) {
+function changeFormEdit(name, content) {
 
   var name = name;
   var content = content;
@@ -38,7 +37,7 @@ function inputColorEdit(name, content) {
 
 
 //入力フォームの色を変更するメソッド（削除）    
-function inputColorDelete(name, content) {
+function changeFormDelete(name, content) {
 
   var name = name;
   var content = content;

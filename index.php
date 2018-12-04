@@ -74,10 +74,10 @@
                 </div>
 
                 <!-- 編集ボタン -->
-                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"inputColorEdit(pureName$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>"?>
+                <?php echo "<button class=\"button\" id=\"btn$i\" onclick=\"changeFormEdit(pureName$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>"?>
                 
                 <!-- 削除ボタン　-->
-                <?php echo "<button class=\"button\"  onclick=\"inputColorDelete(pureName$i,contents$i),deleteBy(id$i);\">delete</button>"?>
+                <?php echo "<button class=\"button\"  onclick=\"changeFormDelete(pureName$i,contents$i),deleteBy(id$i);\">delete</button>"?>
                 
               </div>
 
