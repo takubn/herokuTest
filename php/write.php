@@ -1,4 +1,7 @@
 <?php
+//DBに接続（DSN設定を読み込み）
+require_once "/app/conf/dsn.php";
+
 require_once "function.php";
 
 //エラーがあれば出力
@@ -16,9 +19,6 @@ if ($name == '' || $contents == '') {
     header('Location: ../index.php');
     exit();
 }
-
-//DBに接続（DSN設定を読み込み）
-require_once "/app/conf/dsn.php";
 
 try {
     $db = new PDO(DSN, USER, PASSWORD);

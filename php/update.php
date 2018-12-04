@@ -1,4 +1,7 @@
 <?php
+//DBに接続（DSN設定を読み込み）
+require_once "/app/conf/dsn.php";
+
 require_once "function.php";
 
 //エラーがあれば出力
@@ -13,9 +16,6 @@ if (isset($_POST["id"])) {
 
 // 現在時刻を取得
 $date = getCurrentTime();
-
-//DBに接続（DSN設定を読み込み）
-require_once "/app/conf/dsn.php";
 
 try {
     $db = new PDO(DSN, USER, PASSWORD);

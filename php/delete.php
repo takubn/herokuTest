@@ -1,13 +1,13 @@
 <?php
+//DBに接続（DSN設定を読み込み）
+require_once "/app/conf/dsn.php";
+
 //エラーがあれば出力
 ini_set('display_errors', 1);
 
 if (isset($_POST["id"])) {
     $id = $_POST["id"];
 }
-
-//DBに接続（DSN設定を読み込み）
-require_once "/app/conf/dsn.php";
 
 try {
     $db = new PDO(DSN, USER, PASSWORD);
