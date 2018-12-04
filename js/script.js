@@ -1,5 +1,5 @@
 
-//一番下までスクロールするメソッド
+//ｰｰｰｰｰｰｰｰｰｰｰｰ一番下までスクロールするメソッドｰｰｰｰｰｰｰｰｰｰｰｰ
 function scr() {
   var a = document.documentElement;
   var y = a.scrollHeight - a.clientHeight;
@@ -36,7 +36,7 @@ function changeFormEdit(name, content) {
 
 
 
-//入力フォームの色を変更するメソッド（削除）    
+//ｰｰｰｰｰｰｰｰｰｰｰｰ入力フォームの色を変更するメソッド（削除）ｰｰｰｰｰｰｰｰｰｰｰｰ    
 function changeFormDelete(name, content) {
 
   var name = name;
@@ -70,7 +70,7 @@ function changeFormDelete(name, content) {
 }
 
 
-// 編集メソッド(ボタン変更とpost送信)
+// ｰｰｰｰｰｰｰｰｰｰｰｰ編集メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰｰ
 function getId(name, contents, id) {
   var name = name.id;
   var contents = contents.id;
@@ -108,7 +108,7 @@ function getId(name, contents, id) {
 }
 
 
-// 削除メソッド(ボタン変更とpost送信)
+// ｰｰｰｰｰｰｰｰｰｰｰｰ削除メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰｰ
 function deleteBy(id) {
   var id = id.textContent;
  
