@@ -23,7 +23,7 @@ try {
         $result_name[] = $result['name'];
         $result_contents[] = $result['contents'];
         $result_date[] = $result['date'];
-        $result_id[] = $result['id'];
+        $result_Key[] = $result['id'];
     }
 
 } catch (PDOException $e) {

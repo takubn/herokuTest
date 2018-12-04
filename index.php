@@ -60,24 +60,19 @@
         <?php echo "<div hidden id=\"withoutStrName$i\">$result_name[$i]</div>" ?>
       </div>
 
-      <!-- 投稿内容の表示部分 -->
       <div class="display-contents">
-        <!-- 文字列として一行（投稿内容）を出力。idを自動付与する意図-->
+        <!-- id自動付与のため、文字列として出力-->
         <?php echo "<div class=\"white\" id=\"contents$i\">$result_contents[$i]</div> " ?>
-        <p class="date">
-          <?php echo $result_date[$i] ?>
-        </p>
-
-        <!-- id取得 -->
-        <?php echo "<div hidden id=\"id$i\">$result_id[$i]</div> " ?>
-
+        <p class="date"><?php echo $result_date[$i] ?></p>
+        <!-- PrimalyKey取得 -->
+        <?php echo "<div hidden id=\"primalyKey$i\">$result_Key[$i]</div> " ?>
       </div>
 
       <!-- 編集ボタン -->
-      <?php echo "<button class=\"buttonEdit\" id=\"btn$i\" onclick=\"changeFormEdit(withoutStrName$i,contents$i),getId(name$i,contents$i,id$i);\">edit</button>" ?>
+      <?php echo "<button class=\"buttonEdit\" id=\"btn$i\" onclick=\"changeFormEdit(withoutStrName$i,contents$i),getId(name$i,contents$i,primalyKey$i);\">edit</button>" ?>
 
       <!-- 削除ボタン　-->
-      <?php echo "<button class=\"buttonDelete\"  onclick=\"changeFormDelete(withoutStrName$i,contents$i),deleteBy(id$i);\">delete</button>" ?>
+      <?php echo "<button class=\"buttonDelete\"  onclick=\"changeFormDelete(withoutStrName$i,contents$i),deleteBy(primalyKey$i);\">delete</button>" ?>
 
     </div>
 
