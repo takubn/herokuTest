@@ -1,5 +1,5 @@
 <?php
-require_once 'function.php';
+require_once "function.php";
 
 //エラーがあれば出力
 ini_set('display_errors', 1);
