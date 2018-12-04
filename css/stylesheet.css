@@ -85,6 +85,8 @@ RERUN
 
 /* ----------name/comment------------ */
 
+
+/* 原因不明だが、hogeを置くことでname.svgが表示されるので仮置き */
 #hoge{
   background-image: url(../img/name.svg);
   background-size: 30px 30px;
@@ -98,15 +100,6 @@ RERUN
   background-position: 11px 8px;
   background-repeat: no-repeat;
 }
-
-/* #name:focus{
-  background-image: url(../img/name.svg);
-  background-size: 30px 30px;
-  background-position: 8px 5px;
-background-position: 11px 8px;
-  background-repeat: no-repeat;
-} */
-
 
 #comment{
   background-image: url(../img/comment.svg);
