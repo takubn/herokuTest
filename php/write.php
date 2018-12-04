@@ -5,7 +5,7 @@ require_once 'function.php';
 ini_set('display_errors', 1);
 
 //現在時刻を取得
-$date = getCurrentTime();
+$now = getCurrentTime();
 
 //POSTでデータを受け取る。
 $name = $_POST['name'];
