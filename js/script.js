@@ -83,7 +83,7 @@ function changeEditMode(name, contents, id) {
     $(function () {
 
       //ボタンが押されたら、「SEND」ボタンを「CHANGE」ボタンに変更する。
-      $('#button-blue').replaceWith('<div class="changeBy" id="change" >CHANGE</div>')
+      $('#button-submit').replaceWith('<div class="button-change" id="change" >CHANGE</div>')
 
     });
   }
@@ -116,7 +116,7 @@ function changeDeleteMode(id) {
     $(function () {
 
       //ボタンが押されたら、「SEND」ボタンを「DELETE」ボタンに変更する。
-      $('#button-blue').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
+      $('#button-submit').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
 
     });
   }

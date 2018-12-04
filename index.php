@@ -27,7 +27,7 @@
           </p>
           <!-- 投稿ボタン -->
           <div class="submit" id="replace">
-            <input type="submit" value="SEND" id="button-blue" />
+            <input type="submit" value="SEND" id="button-submit" />
             <div class="ease"></div>
           </div>
         </form>
@@ -53,14 +53,14 @@
           <!-- 5文字で切り捨て、それを変数に格納 -->
           <?php $str_name[] = mb_substr($result_name[$i], 0, 5, "UTF-8");?>
           <!-- id自動付与のため、文字列として出力-->
-          <?php echo "<div class=\"white\"  id=\"name$i\">$str_name[$i]</div>" ?>
+          <?php echo "<div class=\"white-char\"  id=\"name$i\">$str_name[$i]</div>" ?>
           <?php echo "<div hidden id=\"withoutStrName$i\">$result_name[$i]</div>" ?>
         </div>
 
 
         <div class="display-contents">
           <!-- id自動付与のため、文字列として出力-->
-          <?php echo "<div class=\"white\" id=\"contents$i\">$result_contents[$i]</div> " ?>
+          <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?>
           <p class="date"><?php echo $result_date[$i] ?></p>
           <!-- PrimalyKey取得 -->
           <?php echo "<div hidden id=\"primalyKey$i\">$result_Key[$i]</div> " ?>

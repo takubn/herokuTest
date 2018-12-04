@@ -3,57 +3,9 @@ EDIT ON
  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
-
-/* --------------------------manual------------------------------------------- */
-
-.edit{
-  text-align: center;
-  font-size: 40px;
-  font-style: italic;
-}
-
-.buttonEdit {
-  display       : inline-block;
-  border-radius : 5%;          /* 角丸       */
-  font-size     : 15pt;        /* 文字サイズ */
-  text-align    : center;      /* 文字位置   */
-  cursor        : pointer;     /* カーソル   */
-  padding       : 12px 12px;   /* 余白       */
-  background    : #000066;     /* 背景色     */
-  color         : #ffffff;     /* 文字色     */
-  line-height   : 1em;         /* 1行の高さ  */
-  transition    : .3s;         /* なめらか変化 */
-  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
-  border        : 2px solid #000066;    /* 枠の指定 */
-  margin-left: 10px;
-}
-.buttonEdit:hover {
-  box-shadow    : none;        /* カーソル時の影消去 */
-  color         : #000066;     /* 背景色     */
-  background    : #ffffff;     /* 文字色     */
-}
-
-.buttonDelete {
-  display       : inline-block;
-  border-radius : 5%;          /* 角丸       */
-  font-size     : 15pt;        /* 文字サイズ */
-  text-align    : center;      /* 文字位置   */
-  cursor        : pointer;     /* カーソル   */
-  padding       : 12px 12px;   /* 余白       */
-  background    : #000066;     /* 背景色     */
-  color         : #ffffff;     /* 文字色     */
-  line-height   : 1em;         /* 1行の高さ  */
-  transition    : .3s;         /* なめらか変化 */
-  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
-  border        : 2px solid #000066;    /* 枠の指定 */
-  margin-left: 10px;
-}
-.buttonDelete:hover {
-  box-shadow    : none;        /* カーソル時の影消去 */
-  color         : #000066;     /* 背景色     */
-  background    : #ffffff;     /* 文字色     */
-}
-
+/* =========================================================================
+input　部分
+=========================================================================== */
 
 
 .item-input{
@@ -61,34 +13,234 @@ EDIT ON
   width: 35%;
 }
 
-.item-display{
-background: url(../img/feedback-img.jpg) center center / cover no-repeat fixed;
-float:right;
- width:60%;
-}
-
-.date{
-  color: white;
-}
-
-
 .input-logo{
   text-align: center;
 }
 
-.white{
-  color: #FFFFFF;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 20px 0;
+
+#form-main{
+  padding-top:0px;
 }
 
-.interior{
-  color: #FFFFFF;
+/* ----------form------------ */
+
+#form-div {
+  background-color:rgba(72,72,72,0.4);
+  padding-left:35px;
+  padding-right:35px;
+  padding-top:35px;
+  padding-bottom:50px;
+  margin-bottom: 30px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+}
+
+.feedback-input {
+  color:#3c3c3c;
+  font-family: Helvetica, Arial, sans-serif;
+font-weight:500;
   font-size: 18px;
-  font-weight: bold;
-  padding: 20px 0;
- 
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  color: #3498db;
+  outline: none;
+padding: 13px 13px 13px 54px;
+}
+
+.focused{
+  color:#30aed6;
+  border:#30aed6 solid 3px;
+}
+
+@media only screen and (max-width: 580px) {
+  #form-div{
+      left: 3%;
+      margin-right: 3%;
+      width: 88%;
+      margin-left: 0;
+      padding-left: 3%;
+      padding-right: 3%;
+  }
+}
+VIEW RESOURCES 1×
+0.5×
+0.25×
+RERUN
+
+
+/* ----------name/comment------------ */
+
+#name{
+  background-image: url(../img/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#name:focus{
+  background-image: url(../img/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+
+#comment{
+  background-image: url(../img/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color:white;
+}
+
+/* ----------submitボタン------------ */
+
+
+#button-submit{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float:left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor:pointer;
+  background-color: #454852;
+  color:white;
+  font-size:24px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+margin-top:-4px;
+font-weight:700;
+}
+
+#button-submit:hover{
+  background-color: rgba(0,0,0,0);
+  color: #454852;
+}
+
+.submit:hover {
+  color: #454852;
+}
+
+.ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+
+.submit:hover .ease{
+width:100%;
+background-color:white;
+}
+
+
+
+/* =========================================================================
+js ボタン入れ替え部分
+=========================================================================== */
+
+
+/* ----------編集確定ボタン------------ */
+
+.button-change {
+  text-align: center;
+  color: #454852;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float:left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor:pointer;
+  background-color: #454852;
+  color:white;
+  font-size:24px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+.button-change:hover{
+  background-color:white;
+  color: #454852;
+  box-shadow    : none;  
+}
+
+/* ----------削除確定ボタン------------ */
+
+
+.button-delete {
+  text-align: center;
+  color: #454852;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float:left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor:pointer;
+  background-color: #454852;
+  color:white;
+  font-size:24px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+.button-delete:hover{
+  background-color:white;
+  color: #454852;
+  box-shadow    : none;  
+}
+
+
+/* =========================================================================
+display　部分
+=========================================================================== */
+
+
+.item-display{
+  background: url(../img/feedback-img.jpg) center center / cover no-repeat fixed;
+  float:right;
+   width:60%;
 }
 
 .display-box{
@@ -115,211 +267,59 @@ float:right;
   width: 65%;
 }
 
-
-#feedback-page{
-    text-align:center;
+.white-char{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 0;
 }
 
-
-#form-main{
-    padding-top:0px;
+.date{
+  color: white;
 }
 
+/* ----------編集ボタン------------ */
 
-#form-div {
-    background-color:rgba(72,72,72,0.4);
-    padding-left:35px;
-    padding-right:35px;
-    padding-top:35px;
-    padding-bottom:50px;
-    margin-bottom: 30px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
+.buttonEdit {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 15pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+  margin-left: 10px;
+}
+.buttonEdit:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
 }
 
-.feedback-input {
-    color:#3c3c3c;
-    font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-    font-size: 18px;
-    border-radius: 0;
-    line-height: 22px;
-    background-color: #fbfbfb;
-    padding: 13px 13px 13px 54px;
-    margin-bottom: 10px;
-    width:100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-  border: 3px solid rgba(0,0,0,0);
+/* ----------削除ボタン------------ */
+
+.buttonDelete {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 15pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+  margin-left: 10px;
 }
-
-.feedback-input:focus{
-    background: #fff;
-    box-shadow: 0;
-    border: 3px solid #3498db;
-    color: #3498db;
-    outline: none;
-  padding: 13px 13px 13px 54px;
+.buttonDelete:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
 }
-
-.focused{
-    color:#30aed6;
-    border:#30aed6 solid 3px;
-}
-
-/* Icons ---------------------------------- */
-#name{
-    background-image: url(../img/name.svg);
-    background-size: 30px 30px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
-}
-
-#name:focus{
-    background-image: url(../img/name.svg);
-    background-size: 30px 30px;
-    background-position: 8px 5px;
-  background-position: 11px 8px;
-    background-repeat: no-repeat;
-}
-
-
-#comment{
-    background-image: url(../img/comment.svg);
-    background-size: 30px 30px;
-    background-position: 11px 8px;
-    background-repeat: no-repeat;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    line-height: 150%;
-    resize:vertical;
-}
-
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-    background-color:white;
-}
-
-#button-blue{
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    float:left;
-    width: 100%;
-    border: #fbfbfb solid 4px;
-    cursor:pointer;
-    background-color: #454852;
-    color:white;
-    font-size:24px;
-    padding-top:22px;
-    padding-bottom:22px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-
-#button-blue:hover{
-    background-color: rgba(0,0,0,0);
-    color: #454852;
-}
-
-.submit:hover {
-    color: #454852;
-    /* 青 */
-}
-
-.ease {
-    width: 0px;
-    height: 74px;
-    background-color: #fbfbfb;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -o-transition: .3s ease;
-    -ms-transition: .3s ease;
-    transition: .3s ease;
-}
-
-
-.submit:hover .ease{
-  width:100%;
-  background-color:white;
-}
-
-
-/* ------------submitの代わり-------------- */
-
-.changeBy {
-  text-align: center;
-  color: #454852;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  float:left;
-  width: 100%;
-  border: #fbfbfb solid 4px;
-  cursor:pointer;
-  background-color: #454852;
-  color:white;
-  font-size:24px;
-  padding-top:22px;
-  padding-bottom:22px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-
-.changeBy:hover{
-  background-color:white;
-  color: #454852;
-  box-shadow    : none;  
-}
-
-
-.deleteBy {
-  text-align: center;
-  color: #454852;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  float:left;
-  width: 100%;
-  border: #fbfbfb solid 4px;
-  cursor:pointer;
-  background-color: #454852;
-  color:white;
-  font-size:24px;
-  padding-top:22px;
-  padding-bottom:22px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-
-.deleteBy:hover{
-  background-color:white;
-  color: #454852;
-  box-shadow    : none;  
-}
-
-
-
-
-@media only screen and (max-width: 580px) {
-    #form-div{
-        left: 3%;
-        margin-right: 3%;
-        width: 88%;
-        margin-left: 0;
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-}
- VIEW RESOURCES 1×
-0.5×
-0.25×
- RERUN
