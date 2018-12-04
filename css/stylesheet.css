@@ -85,6 +85,13 @@ RERUN
 
 /* ----------name/comment------------ */
 
+#hoge{
+  background-image: url(../img/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat:no-repeat;
+}
+
 #name{
   background-image: url(../img/name.svg);
   background-size: 30px 30px;
@@ -92,13 +99,13 @@ RERUN
   background-repeat: no-repeat;
 }
 
-#name:focus{
+/* #name:focus{
   background-image: url(../img/name.svg);
   background-size: 30px 30px;
   background-position: 8px 5px;
 background-position: 11px 8px;
   background-repeat: no-repeat;
-}
+} */
 
 
 #comment{
@@ -199,7 +206,7 @@ js ボタン入れ替え部分
 .button-change:hover{
   background-color:white;
   color: #454852;
-  box-shadow    : none;  
+  box-shadow    : none;
 }
 
 /* ----------削除確定ボタン------------ */
@@ -228,7 +235,7 @@ js ボタン入れ替え部分
 .button-delete:hover{
   background-color:white;
   color: #454852;
-  box-shadow    : none;  
+  box-shadow    : none;
 }
 
 
@@ -323,4 +330,3 @@ display　部分
   color         : #000066;     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
 }
-
