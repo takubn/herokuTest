@@ -18,7 +18,7 @@ if ($name == '' || $contents == '') {
 }
 
 //DBに接続（DSN設定を読み込み）
-require_once "dsn.php";
+require_once "/app/conf/dsn.php";
 
 try {
     $db = new PDO(DSN, USER, PASSWORD);
