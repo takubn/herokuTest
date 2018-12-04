@@ -116,7 +116,7 @@ function changeDeleteMode(id) {
     $(function () {
 
       //ボタンが押されたら、「SEND」ボタンを「DELETE」ボタンに変更する。
-      $('#button-submit').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
+      $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>')
 
     });
   }
