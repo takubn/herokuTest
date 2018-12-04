@@ -1,7 +1,9 @@
 <?php
 
-ini_set('display_errors',1);
+//エラーがあれば出力
+ini_set('display_errors', 1);
 
+//現在時刻を取得
 date_default_timezone_set("Asia/Tokyo");
 $now = date('Y/m/d H:i:s');
 
@@ -9,37 +11,32 @@ $now = date('Y/m/d H:i:s');
 $name = $_POST['name'];
 $contents = $_POST['contents'];
 
-//バリデーションチェック（未入力ならindex.phpへ遷移）
-if($name == '' || $contents == ''){
-  header('Location: ../index.php');
-  exit();
+//未入力ならindex.phpへ遷移
+if ($name == '' || $contents == '') {
+    header('Location: ../index.php');
+    exit();
 }
 
+//DBに接続（DSN設定を読み込み）
+require_once "dsn.php";
 
-//データベースに接続
-require_once("dsn.php");
+try {
+    $db = new PDO(DSN, USER, PASSWORD);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-//例外処理
-try{
-$db = new PDO(DSN, USER, PASSWORD);
-$db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    $sql = 'INSERT INTO bbs(name,contents,date) VALUES(?,?,?)';
+    $stmt = $db->prepare($sql);
+    $data[] = $name;
+    $data[] = $contents;
+    $data[] = $now;
+    $stmt->execute($data);
 
-$sql = 'INSERT INTO bbs(name,contents,date) VALUES(?,?,?)';
-$stmt = $db->prepare($sql);
-$data[] = $name;
-$data[] = $contents;
-$data[] = $now;
-$stmt->execute($data);
+    $db = null;
 
-$db = null;
+    header('Location: ../index.php');
+    exit();
 
-
-header('Location: ../index.php');
-exit();
-
-} catch(PDOException $e){
-  //接続エラーが起きた際に、エラー文を出す。
-  die ('エラー:' . $e->getMessage());
+} catch (PDOException $e) {
+    //接続エラーが起きた際に、エラー文を出す。
+    die('エラー:' . $e->getMessage());
 }
-
- ?>

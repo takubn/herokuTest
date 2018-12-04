@@ -1,37 +1,27 @@
-<!-- エラー文出力 -->
-<?php ini_set('display_errors',1); ?>
-
-
-<!-- idをprimekeyと同じ値にする -->
 <?php
+//エラーがあれば出力
+ini_set('display_errors', 1);
 
-    if(isset($_POST["id"])){
-        $id = $_POST["id"];
+if (isset($_POST["id"])) {
+    $id = $_POST["id"];
 
-        // 数値だけに切り取る
-        $primeId = intval($id);
+    // 数値だけに切り取る
+    // $primeId = intval($id);
+}
 
- 
-    }
-?>
+//データベースに接続
+require_once "dsn.php";
 
+try {
+    $db = new PDO(DSN, USER, PASSWORD);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-<?php 
-    //データベースに接続
-   require_once("dsn.php");
+    $sql = "DELETE from bbs where id = $id";
+    $stmt = $db->prepare($sql);
+    $stmt->execute();
 
-    try{
-        $db = new PDO(DSN,USER,PASSWORD);
-        $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    $db = null;
 
-        $sql = "DELETE from bbs where id = $primeId";
-        $stmt = $db->prepare($sql);
-        $stmt->execute();
-
-        $db = null;
-
-
-    }catch(PDOException $e){
-        die('エラー:'.$e->getMessage());
-    }
-?>
+} catch (PDOException $e) {
+    die('エラー:' . $e->getMessage());
+}
