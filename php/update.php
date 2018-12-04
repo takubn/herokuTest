@@ -15,7 +15,7 @@ if (isset($_POST["id"])) {
 $date = getCurrentTime();
 
 //DBに接続（DSN設定を読み込み）
-require_once "/conf/dsn.php";
+require_once "/app/conf/dsn.php";
 
 try {
     $db = new PDO(DSN, USER, PASSWORD);
