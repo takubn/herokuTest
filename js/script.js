@@ -37,7 +37,7 @@ function changeFormEdit(name, content) {
 
 
 //入力フォームの色を変更するメソッド（削除）    
-function changeFormDelete(name, content) {
+function inputColorDelete(name, content) {
 
   var name = name;
   var content = content;
@@ -116,7 +116,7 @@ function deleteBy(id) {
   if (id !== '') {
     $(function () {
 
-      //ボタンが押されたら、「SEND」ボタンを「delete」ボタンに変更する。
+      //ボタンが押されたら、「SEND」ボタンを「DELETE」ボタンに変更する。
       $('#button-blue').replaceWith('<div class="deleteBy" id="delete" >DELETE</div>')
 
     });
