@@ -1,57 +1,34 @@
-    <!-- エラーがあれば出力 -->
-    <?php
-        ini_set('display_errors',1);
-    ?>
+<?php
+//エラーがあれば出力
+ini_set('display_errors', 1);
 
-    <!-- post()でidと書き込み内容（変更後）を受け取る -->
-    <?php 
-                if(isset($_POST["id"])){
+if (isset($_POST["id"])) {
 
+    $id = $_POST["id"];
+    $contents = $_POST["contents"];
 
-                    $id = $_POST["id"];
-                    $contents = $_POST["contents"];
+}
 
-                }
-        
-            date_default_timezone_set("Asia/Tokyo");
-            $date = date('Y/m/d H:i:s');
-                
+// 現在時刻を取得
+date_default_timezone_set("Asia/Tokyo");
+$date = date('Y/m/d H:i:s');
 
+//DBに接続（DSN設定を読み込み）
+require_once "dsn.php";
 
+try {
+    $db = new PDO(DSN, USER, PASSWORD);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        ?>
-    
+    $sql = "UPDATE bbs SET contents=:contents,date=:date where id = $id ";
+    $stmt = $db->prepare($sql);
 
-        <?php 
-            //データベースに接続
-            require_once("dsn.php");
+    $stmt->bindParam(':contents', $contents, PDO::PARAM_STR);
+    $stmt->bindParam(':date', $date, PDO::PARAM_STR);
+    $stmt->execute();
 
-                try{
-                    $db = new PDO(DSN,USER,PASSWORD);
-                    $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                
-                    //PrimaryIdを引き合いにコンテンツ内容を書き換え。
+    $db = null;
 
-                    $sql = "UPDATE bbs SET contents=:contents,date=:date where id = $id ";
-                    $stmt = $db->prepare($sql);
-
-                    $stmt->bindParam(':contents', $contents, PDO::PARAM_STR);
-                    $stmt->bindParam(':date', $date, PDO::PARAM_STR);
-                    $stmt->execute();
-
-                    $db = null;
-
-                } catch(PDOException $e){
-                    die('エラー：'. $e->getMessage());
-                    }
-            ?>
-    
-
-
-    <!-- 変更ができているか確認のためコールバック（削除はいったんしない） -->
-     <!-- <?php  
-        echo "idは......".$id;
-        echo "</br>";
-        echo "中身は......".$contents;
-?> -->
-
+} catch (PDOException $e) {
+    die('エラー：' . $e->getMessage());
+}

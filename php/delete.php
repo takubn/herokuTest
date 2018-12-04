@@ -9,7 +9,7 @@ if (isset($_POST["id"])) {
     // $primeId = intval($id);
 }
 
-//データベースに接続
+//DBに接続（DSN設定を読み込み）
 require_once "dsn.php";
 
 try {
