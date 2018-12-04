@@ -1,4 +1,6 @@
 <?php
+require_once('function.php');
+
 //エラーがあれば出力
 ini_set('display_errors', 1);
 
@@ -10,8 +12,10 @@ if (isset($_POST["id"])) {
 }
 
 // 現在時刻を取得
-date_default_timezone_set("Asia/Tokyo");
-$date = date('Y/m/d H:i:s');
+// date_default_timezone_set("Asia/Tokyo");
+// $date = date('Y/m/d H:i:s');
+
+$date=getCurrentTime();
 
 //DBに接続（DSN設定を読み込み）
 require_once "dsn.php";
