@@ -4,9 +4,6 @@ ini_set('display_errors', 1);
 
 if (isset($_POST["id"])) {
     $id = $_POST["id"];
-
-    // 数値だけに切り取る
-    // $primeId = intval($id);
 }
 
 //DBに接続（DSN設定を読み込み）

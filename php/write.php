@@ -1,11 +1,11 @@
 <?php
+require_once 'function.php';
 
 //エラーがあれば出力
 ini_set('display_errors', 1);
 
 //現在時刻を取得
-date_default_timezone_set("Asia/Tokyo");
-$now = date('Y/m/d H:i:s');
+$date = getCurrentTime();
 
 //POSTでデータを受け取る。
 $name = $_POST['name'];
