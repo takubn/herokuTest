@@ -108,7 +108,6 @@ function getId(name, contents, id) {
 }
 
 
-
 // 削除メソッド(ボタン変更とpost送信)
 function deleteBy(id) {
   var id = id.textContent;
