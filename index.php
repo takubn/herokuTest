@@ -78,7 +78,6 @@
   </div>
   <!-- 出力部分終わり-->
 
-
-  <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
