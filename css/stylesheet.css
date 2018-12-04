@@ -62,7 +62,7 @@ EDIT ON
 }
 
 .item-display{
-background: url(img/feedback-img.jpg) center center / cover no-repeat fixed;
+background: url(../img/feedback-img.jpg) center center / cover no-repeat fixed;
 float:right;
  width:60%;
 }
@@ -171,14 +171,14 @@ float:right;
 
 /* Icons ---------------------------------- */
 #name{
-    background-image: url(img/name.svg);
+    background-image: url(../img/name.svg);
     background-size: 30px 30px;
     background-position: 11px 8px;
     background-repeat: no-repeat;
 }
 
 #name:focus{
-    background-image: url(img/name.svg);
+    background-image: url(../img/name.svg);
     background-size: 30px 30px;
     background-position: 8px 5px;
   background-position: 11px 8px;
@@ -187,7 +187,7 @@ float:right;
 
 
 #comment{
-    background-image: url(img/comment.svg);
+    background-image: url(../img/comment.svg);
     background-size: 30px 30px;
     background-position: 11px 8px;
     background-repeat: no-repeat;
