@@ -71,7 +71,7 @@ function changeFormDelete(name, content) {
 
 
 // ｰｰｰｰｰｰｰｰｰｰｰｰ編集メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰｰ
-function getId(name, contents, id) {
+function changeEditMode(name, contents, id) {
   var name = name.id;
   var contents = contents.id;
   var id = id.textContent;
@@ -109,7 +109,7 @@ function getId(name, contents, id) {
 
 
 // ｰｰｰｰｰｰｰｰｰｰｰｰ削除メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰｰ
-function deleteBy(id) {
+function changeDeleteMode(id) {
   var id = id.textContent;
  
   if (id !== '') {
