@@ -58,7 +58,7 @@ echo "</pre>";
 
 echo $bbs['name'][9];
 
-$name = "\['name']";
+$name = "['name']";
 echo $name;
 
 ?>
