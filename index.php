@@ -58,13 +58,13 @@ $max = 10;
 
         <div class="display-contents">
           <div class="white-char" id="contents<?=$i;?>"><?=$bbs['contents'][$i];?></div>
-          <p class="date"><?=$result_date[$i]?></p>
+          <p class="date"><?=$result_date[$i];?></p>
           <!-- PrimalyKey取得 -->
           <div hidden id="primalyKey<?=$i;?>"><?=$result_Key[$i];?></div>
         </div>
 
         <!-- 編集ボタン -->
-        <button class="buttonEdit" onclick="changeFormEdit(withoutStrName<?=$i?>,contents<?=$i?>),changeEditMode(name<?=$i?>,contents<?=$i?>,primalyKey<?=$i?>);">edit</button>
+        <button class="buttonEdit" onclick="changeFormEdit(withoutStrName<?=$i;?>,contents<?=$i;?>),changeEditMode(name<?=$i;?>,contents<?=$i;?>,primalyKey<?=$i;?>);">edit</button>
         <!-- 削除ボタン　-->
         <?php echo "<button class=\"buttonDelete\"  onclick=\"changeFormDelete(withoutStrName$i,contents$i),changeDeleteMode(primalyKey$i);\">delete</button>" ?>
 
