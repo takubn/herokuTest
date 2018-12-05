@@ -43,13 +43,13 @@
 //DBから情報を取得
 require_once "php/fetch.php";
 //ループ処理のために最大値を取得
-$max = count($result_name);
+$max = count($bbs['name']);
 ?>
           <!-- テスト -->
-          <?php var_dump($bbs['name'])?>
+          <?php var_dump($bbs[name])?>
           <br>
           <br>
-          <?php var_dump($bbs['name'][0])?>
+          <?php var_dump($bbs[name][0])?>
 
 
 
@@ -70,9 +70,8 @@ $max = count($result_name);
           <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?> -->
 
           <!-- テスト -->
-          <!-- <?php var_dump($result_contents)?> -->
+           <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs[name][$i]</div> " ?>
 
-          <?php $result[$i]['contents']?>
 
           <p class="date"><?php echo $result_date[$i] ?></p>
           <!-- PrimalyKey取得 -->
