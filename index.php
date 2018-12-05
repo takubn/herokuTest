@@ -69,7 +69,7 @@ $max = count($result_name);
           <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?> -->
 
           <!-- テスト -->
-          <?php var_dump($result_contents[$i])?>
+          <?php var_dump($result_contents)?>
 
 
 
