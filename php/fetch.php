@@ -28,6 +28,11 @@ try {
         var_dump($result['name']);
         var_dump($result['contents']);
 
+        $bbs['name'][] = $result['name'];
+        $bbs['contents'][] = $result['contents'];
+        $bbs['date'][] = $result['date'];
+        $bbs['id'][] = $result['id'];
+
     }
 
 } catch (PDOException $e) {
