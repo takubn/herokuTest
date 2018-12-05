@@ -20,11 +20,11 @@ try {
             break;
         }
 
-        $bbs['name'][] = $result['name'];
+        // $bbs['name'][] = $result['name'];
         // $result_contents[] = $result['contents'];
         // $result_date[] = $result['date'];
         // $result_Key[] = $result['id'];
-        var_dump($bbs['name']);
+        // var_dump($bbs['name']);
         echo '<br/>';
         var_dump($result['name']);
 
