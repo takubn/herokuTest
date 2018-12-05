@@ -46,7 +46,7 @@ require_once "php/fetch.php";
 $max = count($bbs['name']);
 ?>
           <!-- テスト -->
-          <?php var_dump($bbs)?>
+          <!-- <?php var_dump($bbs)?> -->
           <br>
           <br>
           <?php var_dump($bbs['name'])?>
