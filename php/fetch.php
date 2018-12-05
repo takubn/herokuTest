@@ -6,7 +6,7 @@ try {
     $db = new PDO(DSN, USER, PASSWORD);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = 'SELECT * FROM bbs';
+    $sql = 'SELECT * FROM bbs ORDER BY date desc LIMIT 10';
     $stmt = $db->prepare($sql);
     $stmt->execute();
 
