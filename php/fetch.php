@@ -33,7 +33,7 @@ try {
         $bbs['id'][] = $result['id'];
 
         echo '<br>';
-        var_dump($bbs['name']);
+        var_dump($bbs);
 
     }
 
