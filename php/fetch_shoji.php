@@ -21,15 +21,15 @@ try {
         }
 
 //        $result_name[] = $result['name'];
-//        $result_contents[] = $result['contents'];
-//        $result_date[] = $result['date'];
-//        $result_Key[] = $result['id'];
+        //        $result_contents[] = $result['contents'];
+        //        $result_date[] = $result['date'];
+        //        $result_Key[] = $result['id'];
         $bbs['name'][] = $result['name'];
         $bbs['contents'][] = $result['contents'];
         $bbs['date'][] = $result['date'];
-        $bbs['Key'[] = $result['id'];
+        $bbs['Key'][] = $result['id'];
 
-echo $bbs[name][1];
+        echo $bbs[name][1];
     }
 
 } catch (PDOException $e) {
