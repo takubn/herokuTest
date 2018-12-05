@@ -26,6 +26,7 @@ try {
         // $result_Key[] = $result['id'];
         var_dump($bbs['name']);
         echo '<br/>';
+        var_dump($result['name']);
 
     }
 
