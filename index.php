@@ -59,12 +59,12 @@ echo "</pre>";
           <br>
 
 <?php
-
+echo $max;
 echo $bbs['name'][9];
 
 ?>
 
-    <?php for ($i = 0; $i < 5; $i++): ?>
+    <?php for ($i = 0; $i < $max; $i++): ?>
       <div class="display-box">
 
         <div class="display-name">
