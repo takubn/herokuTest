@@ -26,12 +26,14 @@ try {
         // $result_Key[] = $result['id'];
 
         var_dump($result['name']);
-        var_dump($result['contents']);
 
         $bbs['name'][] = $result['name'];
         $bbs['contents'][] = $result['contents'];
         $bbs['date'][] = $result['date'];
         $bbs['id'][] = $result['id'];
+
+        echo '<br>';
+        var_dump($bbs['name']);
 
     }
 
