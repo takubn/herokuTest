@@ -45,6 +45,8 @@ require_once "php/fetch.php";
 //ループ処理のために最大値を取得
 $max = count($result_name);
 ?>
+          <!-- テスト -->
+          <?php var_dump($result)?>
 
     <?php for ($i = 0; $i < $max; $i++): ?>
       <div class="display-box">
@@ -54,11 +56,6 @@ $max = count($result_name);
           <?php $str_name[] = mb_substr($result_name[$i], 0, 5, "UTF-8");?>
           <!-- id自動付与のため、文字列として出力-->
           <?php echo "<div class=\"white-char\"  id=\"name$i\">$str_name[$i]</div>" ?>
-
-          <!-- テスト -->
-          <?php var_dump($result['name'])?>
-
-
           <?php echo "<div hidden id=\"withoutStrName$i\">$result_name[$i]</div>" ?>
         </div>
 
