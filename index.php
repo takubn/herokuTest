@@ -58,7 +58,7 @@ $max = 10;
 
         <div class="display-contents">
           <div class="white-char" id="contents<?=$i;?>"><?=$bbs['contents'][$i];?></div>
-          <p class="date"><?=$result_date[$i];?></p>
+          <p class="date"><?=$bbs['date'][$i];?></p>
           <!-- PrimalyKey取得 -->
           <div hidden id="primalyKey<?=$i;?>"><?=$result_Key[$i];?></div>
         </div>
