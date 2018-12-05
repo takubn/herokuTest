@@ -46,9 +46,9 @@ require_once "php/fetch.php";
 $max = count($result_name);
 ?>
           <!-- テスト -->
-          <!-- <?php var_dump($result)?>
+          <?php var_dump($result)?>
           <br/>
-          <?php var_dump($result['name'])?> -->
+          <?php var_dump($result['name'])?>
 
 
 
