@@ -42,12 +42,12 @@
     <?php
 //DBから情報を取得
 require_once "php/fetch.php";
-//ループ処理のために最大値を取得
+//ループ処理のために最大値を定義
 $max = 10;
 ?>
 
 <!-- 多次元配列テスト -->
-<!-- <?php
+<?php
 echo "<pre>";
 var_dump($bbs['name']);
 echo "</pre>";
@@ -60,7 +60,7 @@ echo $bbs['name'][9];
 
 echo $name;
 
-?> -->
+?>
 
     <?php for ($i = 0; $i < $max; $i++): ?>
       <div class="display-box">
@@ -79,7 +79,7 @@ echo $name;
           <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?>
 
           <!--多次元配列 テスト -->
-          <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs\['name'][$i]</div> " ?> -->
+          <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs\['name'][$i]</div> " ?>
 
 
           <p class="date"><?php echo $result_date[$i] ?></p>
