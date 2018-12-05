@@ -8,7 +8,7 @@ try {
     //更新された順のデータ20件を取得する。
     $sql = 'SELECT * FROM(SELECT * FROM bbs ORDER BY date desc LIMIT 20) AS latestData';
     $stmt = $db->prepare($sql);
-    $stmt->execute();'
+    $stmt->execute();
 
     $db = null;
 
