@@ -66,7 +66,9 @@ $max = 10;
         <!-- 編集ボタン -->
         <button class="buttonEdit" onclick="changeFormEdit(withoutStrName<?=$i;?>,contents<?=$i;?>),changeEditMode(name<?=$i;?>,contents<?=$i;?>,primalyKey<?=$i;?>)">edit</button>
         <!-- 削除ボタン　-->
-        <?php echo "<button class=\"buttonDelete\"  onclick=\"changeFormDelete(withoutStrName$i,contents$i),changeDeleteMode(primalyKey$i);\">delete</button>" ?>
+        <!-- <?php echo "<button class=\"buttonDelete\"  onclick=\"changeFormDelete(withoutStrName$i,contents$i),changeDeleteMode(primalyKey$i);\">delete</button>" ?> -->
+
+        <button class=buttonDelete  onclick=changeFormDelete(withoutStrName<?=$i;?>,contents<?=$i;?>),changeDeleteMode(primalyKey<?=$i;?>)>delete</button>
 
       </div>
     <?php endfor;?>
