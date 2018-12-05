@@ -46,11 +46,14 @@ require_once "php/fetch.php";
 $max = count($bbs['name']);
 ?>
           <!-- テスト -->
-          <?php var_dump($bbs[name])?>
+          <?php var_dump($bbs)?>
           <br>
           <br>
-          <?php var_dump($bbs[name][0])?>
+          <?php var_dump($bbs['name'])?>
 
+          <br>
+          <br>
+          <?php var_dump($bbs['name'][2])?>
 
 
     <?php for ($i = 0; $i < $max; $i++): ?>
@@ -70,7 +73,7 @@ $max = count($bbs['name']);
           <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?> -->
 
           <!-- テスト -->
-           <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs[$i]['name']</div> " ?>
+           <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs[\'name\'][$i]</div> " ?>
 
 
           <p class="date"><?php echo $result_date[$i] ?></p>
