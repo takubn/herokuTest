@@ -39,11 +39,12 @@
 
   <!-- 出力部分始まり-->
   <div class="item-display">
-    <?php
+
+<?php
 //DBから情報を取得
 require_once "php/fetch.php";
 //ループ処理のために最大値を定義
-$max = 10;
+$max = $bbs['name'];
 ?>
 
     <?php for ($i = 0; $i < $max; $i++): ?>
@@ -66,9 +67,7 @@ $max = 10;
         <!-- 編集ボタン -->
         <button class="buttonEdit" onclick="changeFormEdit(withoutStrName<?=$i;?>,contents<?=$i;?>),changeEditMode(name<?=$i;?>,contents<?=$i;?>,primalyKey<?=$i;?>)">edit</button>
         <!-- 削除ボタン　-->
-        <!-- <?php echo "<button class=\"buttonDelete\"  onclick=\"changeFormDelete(withoutStrName$i,contents$i),changeDeleteMode(primalyKey$i);\">delete</button>" ?> -->
-
-        <button class=buttonDelete  onclick=changeFormDelete(withoutStrName<?=$i;?>,contents<?=$i;?>),changeDeleteMode(primalyKey<?=$i;?>)>delete</button>
+        <button class=buttonDelete  onclick="changeFormDelete(withoutStrName<?=$i;?>,contents<?=$i;?>),changeDeleteMode(primalyKey<?=$i;?>)">delete</button>
 
       </div>
     <?php endfor;?>

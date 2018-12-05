@@ -5,7 +5,7 @@ require_once "/app/conf/dsn.php";
 try {
     $db = new PDO(DSN, USER, PASSWORD);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    //更新された順のデータ20件を昇順で取得する。
+    //更新された順のデータ10件を昇順で取得する。
     $sql = 'SELECT * FROM(SELECT * FROM bbs ORDER BY date desc LIMIT 10) AS latestData ORDER BY date asc';
     $stmt = $db->prepare($sql);
     $stmt->execute();
@@ -20,12 +20,7 @@ try {
             break;
         }
 
-        // $result_name[] = $result['name'];
-        // $result_contents[] = $result['contents'];
-        // $result_date[] = $result['date'];
-        // $result_Key[] = $result['id'];
-
-        //多次元連想配列テスト
+        //多次元連想配列に格納
         $bbs['name'][] = $result['name'];
         $bbs['contents'][] = $result['contents'];
         $bbs['date'][] = $result['date'];
