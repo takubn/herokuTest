@@ -25,7 +25,6 @@ try {
         // $result_date[] = $result['date'];
         // $result_Key[] = $result['id'];
 
-        echo $result['name'];
         var_dump($result['name']);
 
     }
