@@ -20,10 +20,10 @@ try {
             break;
         }
 
-        $result_name[] = $result['name'];
-        $result_contents[] = $result['contents'];
-        $result_date[] = $result['date'];
-        $result_Key[] = $result['id'];
+        // $result_name[] = $result['name'];
+        // $result_contents[] = $result['contents'];
+        // $result_date[] = $result['date'];
+        // $result_Key[] = $result['id'];
 
     }
 

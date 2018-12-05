@@ -46,9 +46,9 @@ require_once "php/fetch.php";
 $max = count($result_name);
 ?>
           <!-- テスト -->
-          <?php var_dump($result)?>
+          <!-- <?php var_dump($result)?>
           <br/>
-          <?php var_dump($result['name'])?>
+          <?php var_dump($result['name'])?> -->
 
 
 
@@ -69,9 +69,9 @@ $max = count($result_name);
           <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?> -->
 
           <!-- テスト -->
-          <?php var_dump($result_contents)?>
+          <!-- <?php var_dump($result_contents)?> -->
 
-
+          <?php $result[$i]['contents']?>
 
           <p class="date"><?php echo $result_date[$i] ?></p>
           <!-- PrimalyKey取得 -->
