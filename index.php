@@ -46,8 +46,8 @@ require_once "php/fetch.php";
 $max = 10;
 ?>
 
-<!-- テスト -->
-<?php
+<!-- 多次元配列テスト -->
+<!-- <?php
 echo "<pre>";
 var_dump($bbs['name']);
 echo "</pre>";
@@ -58,10 +58,9 @@ echo "</pre>";
 
 echo $bbs['name'][9];
 
-$name = "['name']";
 echo $name;
 
-?>
+?> -->
 
     <?php for ($i = 0; $i < $max; $i++): ?>
       <div class="display-box">
@@ -77,10 +76,10 @@ echo $name;
 
         <div class="display-contents">
           <!-- id自動付与のため、文字列として出力-->
-          <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?> -->
+          <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?>
 
-          <!-- テスト -->
-          <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs.$name.[$i]</div> " ?>
+          <!--多次元配列 テスト -->
+          <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs\['name'][$i]</div> " ?> -->
 
 
           <p class="date"><?php echo $result_date[$i] ?></p>
