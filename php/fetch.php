@@ -6,7 +6,7 @@ try {
     $db = new PDO(DSN, USER, PASSWORD);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //更新された順のデータ20件を昇順で取得する。
-    $sql = 'SELECT * FROM(SELECT * FROM bbs ORDER BY date desc LIMIT 20) AS latestData ORDER BY date asc';
+    $sql = 'SELECT * FROM(SELECT * FROM bbs ORDER BY date desc LIMIT 10) AS latestData ORDER BY date asc';
     $stmt = $db->prepare($sql);
     $stmt->execute();
 
