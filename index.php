@@ -43,23 +43,19 @@
 //DBから情報を取得
 require_once "php/fetch.php";
 //ループ処理のために最大値を取得
-$max = count($bbs['name']);
+$max = 10;
 ?>
-          <!-- テスト -->
 
-          <br>
-          <br>
+<!-- テスト -->
 <?php
 echo "<pre>";
 var_dump($bbs['name']);
 echo "</pre>";
 ?>
-
-          <br>
-          <br>
+<br><br>
 
 <?php
-echo $max;
+
 echo $bbs['name'][9];
 
 ?>
@@ -81,7 +77,7 @@ echo $bbs['name'][9];
           <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?> -->
 
           <!-- テスト -->
-          <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs[$i]</div> " ?>
+          <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs\['name'][$i]</div> " ?>
 
 
           <p class="date"><?php echo $result_date[$i] ?></p>
