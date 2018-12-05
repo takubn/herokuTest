@@ -27,7 +27,7 @@ try {
 
         // var_dump($result['name']);
 
-        $bbs['name'] = $result['name'];
+        $bbs['name'][] = $result['name'];
         $bbs['contents'][] = $result['contents'];
         $bbs['date'][] = $result['date'];
         $bbs['id'][] = $result['id'];
