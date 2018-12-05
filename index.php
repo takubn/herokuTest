@@ -79,7 +79,9 @@ echo $name;
           <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?>
 
           <!--多次元配列 テスト -->
-          <?php print_r("<div class=\"white-char\" id=\"contents$i\">$bbs/['name'][$i]</div> ")?>
+          <div class="white-char" id="contents<?php $i;?>"><?php $bbs['name'][$i];?></div>
+
+          <!-- <?php print_r("<div class=\"white-char\" id=\"contents$i\">$bbs/['name'][$i]</div> ")?> -->
 
           <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs\['name'\]\[$i\]</div> " ?>
 
