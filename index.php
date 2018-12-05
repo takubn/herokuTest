@@ -46,15 +46,23 @@ require_once "php/fetch.php";
 $max = count($bbs['name']);
 ?>
           <!-- テスト -->
-          <!-- <?php var_dump($bbs)?> -->
-          <br>
-          <br>
-          <?php var_dump($bbs['name'])?>
 
           <br>
           <br>
-          <?php var_dump($bbs['name'][2])?>
+<?php
+echo "<pre>";
+var_dump($bbs['name']);
+echo "</pre>";
+?>
 
+          <br>
+          <br>
+
+<?php
+echo "<pre>";
+var_dump($bbs['name'][9]);
+echo "</pre>";
+?>
 
     <?php for ($i = 0; $i < $max; $i++): ?>
       <div class="display-box">
