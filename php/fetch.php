@@ -20,11 +20,13 @@ try {
             break;
         }
 
-        // $result_name[] = $result['name'];
+        $bbs['name'][] = $result['name'];
         // $result_contents[] = $result['contents'];
         // $result_date[] = $result['date'];
         // $result_Key[] = $result['id'];
-        var_dump($result);
+        var_dump($bbs['name']);
+        echo '<br/>';
+
     }
 
 } catch (PDOException $e) {
