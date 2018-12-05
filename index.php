@@ -60,7 +60,7 @@ $max = 10;
           <div class="white-char" id="contents<?=$i;?>"><?=$bbs['contents'][$i];?></div>
           <p class="date"><?=$bbs['date'][$i];?></p>
           <!-- PrimalyKey取得 -->
-          <div hidden id="primalyKey<?=$i;?>"><?=$result_Key[$i];?></div>
+          <div hidden id="primalyKey<?=$i;?>"><?=$bbs['id'][$i];?></div>
         </div>
 
         <!-- 編集ボタン -->
