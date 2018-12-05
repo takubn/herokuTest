@@ -24,7 +24,7 @@ try {
         // $result_contents[] = $result['contents'];
         // $result_date[] = $result['date'];
         // $result_Key[] = $result['id'];
-        echo $result;
+        var_dump($result);
     }
 
 } catch (PDOException $e) {
