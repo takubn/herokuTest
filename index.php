@@ -48,6 +48,7 @@ $max = count($result_name);
           <!-- テスト -->
           <?php var_dump($result)?>
           <br/>
+           <br/>
           <?php var_dump($result['name'])?>
 
 

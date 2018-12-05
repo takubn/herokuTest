@@ -26,6 +26,7 @@ try {
         // $result_Key[] = $result['id'];
 
         var_dump($result['name']);
+        var_dump($result['contents']);
 
     }
 
