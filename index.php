@@ -46,7 +46,7 @@ require_once "php/fetch.php";
 $max = count($result_name);
 ?>
           <!-- テスト -->
-          <?php var_dump($result)?>
+          <?php var_dump($result_name)?>
 
     <?php for ($i = 0; $i < $max; $i++): ?>
       <div class="display-box">
