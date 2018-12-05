@@ -81,7 +81,7 @@ echo $bbs['name'][9];
           <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?> -->
 
           <!-- テスト -->
-          <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs\[\\'name\'][$i]</div> " ?>
+          <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs\[\\'name\']\[\$i]</div> " ?>
 
 
           <p class="date"><?php echo $result_date[$i] ?></p>
