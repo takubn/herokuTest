@@ -46,9 +46,10 @@ require_once "php/fetch.php";
 $max = count($result_name);
 ?>
           <!-- テスト -->
-          <!-- <?php var_dump($result)?>
+          <?php var_dump($result)?>
           <br/>
-          <?php var_dump($result['name'])?> -->
+          <?php var_dump($result['name'])?>
+
 
 
     <?php for ($i = 0; $i < $max; $i++): ?>
@@ -65,7 +66,13 @@ $max = count($result_name);
 
         <div class="display-contents">
           <!-- id自動付与のため、文字列として出力-->
-          <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?>
+          <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?> -->
+
+          <!-- テスト -->
+          <?php var_dump($result_contents[$i])?>
+
+
+
           <p class="date"><?php echo $result_date[$i] ?></p>
           <!-- PrimalyKey取得 -->
           <?php echo "<div hidden id=\"primalyKey$i\">$result_Key[$i]</div> " ?>
