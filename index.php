@@ -58,6 +58,9 @@ echo "</pre>";
 
 echo $bbs['name'][9];
 
+$name = "\['name']";
+echo $name;
+
 ?>
 
     <?php for ($i = 0; $i < $max; $i++): ?>
