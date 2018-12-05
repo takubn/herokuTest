@@ -46,56 +46,25 @@ require_once "php/fetch.php";
 $max = 10;
 ?>
 
-<!-- 多次元配列テスト -->
-<?php
-echo "<pre>";
-var_dump($bbs['name']);
-echo "</pre>";
-?>
-<br><br>
-
-<?php
-
-echo $bbs['name'][9];
-
-echo $name;
-
-?>
-
     <?php for ($i = 0; $i < $max; $i++): ?>
       <div class="display-box">
 
         <div class="display-name">
           <!-- 5文字で切り捨て、それを変数に格納 -->
-          <?php $str_name[] = mb_substr($result_name[$i], 0, 5, "UTF-8");?>
-          <!-- id自動付与のため、文字列として出力-->
-          <?php echo "<div class=\"white-char\"  id=\"name$i\">$str_name[$i]</div>" ?>
-          <?php echo "<div hidden id=\"withoutStrName$i\">$result_name[$i]</div>" ?>
+          <?php $str_name[] = mb_substr($bbs['name'][$i], 0, 5, "UTF-8");?>
+          <div class="white-char"  id="name<?=$i;?>"><?=$str_name[$i]?></div>
+          <div hidden id="withoutStrName<?=$i;?>"><?=$bbs['name'][$i];?></div>
         </div>
-
 
         <div class="display-contents">
-          <!-- id自動付与のため、文字列として出力-->
-          <?php echo "<div class=\"white-char\" id=\"contents$i\">$result_contents[$i]</div> " ?>
-
-          <!--多次元配列 テスト -->
-          <div class="white-char" id="contents<?=$i;?>"><?=$bbs['name'][$i];?></div>
-
-          <!-- <?php print_r("<div class=\"white-char\" id=\"contents$i\">$bbs/['name'][$i]</div> ")?> -->
-
-          <!-- <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs\['name'\]\[$i\]</div> " ?>
-
-          <?php echo "<div class=\"white-char\" id=\"contents$i\">$bbs\['name'\][$i]</div> " ?> -->
-
-
-          <p class="date"><?php echo $result_date[$i] ?></p>
+          <div class="white-char" id="contents<?=$i;?>"><?=$bbs['contents'][$i];?></div>
+          <p class="date"><?=$result_date[$i]?></p>
           <!-- PrimalyKey取得 -->
-          <?php echo "<div hidden id=\"primalyKey$i\">$result_Key[$i]</div> " ?>
+          <div hidden id="primalyKey<?=$i;?>"><?=$result_Key[$i];?></div>
         </div>
 
-
         <!-- 編集ボタン -->
-        <?php echo "<button class=\"buttonEdit\" onclick=\"changeFormEdit(withoutStrName$i,contents$i),changeEditMode(name$i,contents$i,primalyKey$i);\">edit</button>" ?>
+        <button class="buttonEdit" onclick="changeFormEdit(withoutStrName<?=$i?>,contents<?=$i?>),changeEditMode(name<?=$i?>,contents<?=$i?>,primalyKey<?=$i?>);">edit</button>
         <!-- 削除ボタン　-->
         <?php echo "<button class=\"buttonDelete\"  onclick=\"changeFormDelete(withoutStrName$i,contents$i),changeDeleteMode(primalyKey$i);\">delete</button>" ?>
 
