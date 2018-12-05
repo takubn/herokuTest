@@ -47,6 +47,8 @@ $max = count($result_name);
 ?>
           <!-- テスト -->
           <?php var_dump($bbs['name'])?>
+          <br>
+          <br>
           <?php var_dump($bbs['name'][0])?>
 
 
