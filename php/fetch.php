@@ -25,7 +25,7 @@ try {
         // $result_date[] = $result['date'];
         // $result_Key[] = $result['id'];
 
-        var_dump($result['name']);
+        // var_dump($result['name']);
 
         $bbs['name'][] = $result['name'];
         $bbs['contents'][] = $result['contents'];
