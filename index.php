@@ -44,10 +44,10 @@
 //DBから情報を取得
 require_once "php/fetch.php";
 //ループ処理のために最大値を定義
-$max = $bbs['name'];
+$max = count($bbs['name']);
 ?>
 
-    <?php for ($i = 0; $i < $max; $i++): ?>
+    <?php for ($i = 0; $i < 10; $i++): ?>
       <div class="display-box">
 
         <div class="display-name">
