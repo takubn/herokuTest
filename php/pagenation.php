@@ -35,8 +35,6 @@ try {
 //小数点以下を切り上げる。
     $paging_number = ceil($whole_number / 10);
 
-    echo $paging_number;
-
 } catch (PDOException $e) {
     die('エラー：' . $e->getMessage());
 }
