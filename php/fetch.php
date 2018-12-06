@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+
 //DBに接続（DSN設定を読み込み）
 require_once "/app/conf/dsn.php";
 
