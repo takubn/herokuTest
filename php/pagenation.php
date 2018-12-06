@@ -24,6 +24,10 @@ try {
     $limit_data->execute();
     $limit_data = $limit_data->fetchAll(PDO::FETCH_ASSOC);
 
+    foreach ($limit_data as $value) {
+        echo 'idは' . $value['id'] . '....!';
+    }
+
 //データ数を取得する。
     $whole_number = $db->prepare("SELECT COUNT(*) id FROM bbs");
     $whole_number->execute();
