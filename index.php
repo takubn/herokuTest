@@ -42,8 +42,9 @@
 
 
   <!-- ページネーション -->
-  <p>1</p>
-
+  <?php for ($i = 1; $i <= $paging_number; $i++): ?>
+  <a href="?page=<?=$i?>"><?=$i?></a>
+  <?php endfor;?>
 
 
 <?php

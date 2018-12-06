@@ -28,7 +28,7 @@ try {
         echo 'idは' . $value['id'] . '....!';
     }
 
-//データ数を取得する。
+//ページネーションのため、データ数を取得する。
     $whole_number = $db->prepare("SELECT COUNT(*) id FROM bbs");
     $whole_number->execute();
     $whole_number = $whole_number->fetchColumn();
