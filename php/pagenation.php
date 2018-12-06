@@ -19,14 +19,14 @@ try {
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 //SELECTするデータの初期位置を、GETで取得したパラメーターによって変更する。
-    $limit_data = $db->prepare("SELECT id FROM bbs LIMIT 10 OFFSET {$initial_position}");
+    // $limit_data = $db->prepare("SELECT id FROM bbs LIMIT 10 OFFSET {$initial_position}");
 
-    $limit_data->execute();
-    $limit_data = $limit_data->fetchAll(PDO::FETCH_ASSOC);
+    // $limit_data->execute();
+    // $limit_data = $limit_data->fetchAll(PDO::FETCH_ASSOC);
 
-    foreach ($limit_data as $value) {
-        echo 'idは' . $value['id'] . '....!';
-    }
+    // foreach ($limit_data as $value) {
+    //     echo 'idは' . $value['id'] . '....!';
+    // }
 
 //ページネーションのため、データ数を取得する。
     $whole_number = $db->prepare("SELECT COUNT(*) id FROM bbs");
