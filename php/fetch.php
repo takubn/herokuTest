@@ -14,7 +14,7 @@ try {
     $stmt = $db->prepare($sql);
     $stmt->execute();
 
-    // $db = null;
+    $db = null;
 
     while (true) {
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -30,7 +30,7 @@ try {
         $bbs['date'][] = $result['date'];
         $bbs['id'][] = $result['id'];
 
-        $db = null;
+        // $db = null;
 
     }
 
