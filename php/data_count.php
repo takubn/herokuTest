@@ -1,0 +1,18 @@
+ <?php
+//DBに接続（DSN設定を読み込み）
+require_once "/app/conf/dsn.php";
+
+try {
+    $db = new PDO(DSN, USER, PASSWORD);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+//ページネーションのため、データ数を取得する。
+    $whole_number = $db->prepare("SELECT COUNT(*) id FROM bbs");
+    $whole_number->execute();
+    $whole_number = $whole_number->fetchColumn();
+//小数点以下を切り上げる。
+    $paging_number = ceil($whole_number / 10);
+
+} catch (PDOException $e) {
+    die('エラー：' . $e->getMessage());
+}
