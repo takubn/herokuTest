@@ -40,6 +40,12 @@
   <!-- 出力部分始まり-->
   <div class="item-display">
 
+
+  <!-- ページネーション -->
+  <p>1</p>
+
+
+
 <?php
 //DBから情報を取得
 require_once "php/fetch.php";
