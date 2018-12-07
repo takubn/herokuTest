@@ -2,6 +2,9 @@
 ini_set('display_errors', 1);
 session_start();
 
+//DBに接続（DSN設定を読み込み）
+require_once "/app/conf/dsn.php";
+
 //sessionでパラメータ受け取る。
 if (isset($_SESSION['page'])) {
     $page = (int) $_SESSION['page'];
@@ -14,7 +17,7 @@ if (isset($_SESSION['page'])) {
 }
 
 //DBに接続（DSN設定を読み込み）
-require_once "/app/conf/dsn.php";
+// require_once "/app/conf/dsn.php";
 
 try {
     $db = new PDO(DSN, USER, PASSWORD);
