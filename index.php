@@ -69,7 +69,7 @@ require_once "php/fetch2.php";
 $max = count($bbs['name']);
 ?>
 
-    <?php for ($i = 0; $i < 10; $i++): ?>
+    <?php for ($i = 0; $i < $max; $i++): ?>
       <div class="display-box">
 
         <div class="display-name">
