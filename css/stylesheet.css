@@ -337,10 +337,12 @@ display　部分
 
 .pager li a{
 text-decoration: none;
-color: #000066;
+color: #fff;
 font-style: italic;
+font-weight: bold;
+
 }
 
 .pager li a:hover{
-  color:#fff;
+  color:#red;
 }
