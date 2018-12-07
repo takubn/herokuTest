@@ -51,19 +51,13 @@ ini_set('display_errors', 1);
   <a href="?page=<?=$i?>"><?=$i?></a>
   <?php endfor;?>
 
-    <!-- getに数値が入っていたら、get_test.phpに飛ばす -->
-  <?php
-// if (isset($_GET['page'])) {
-//     session_start();
-//     $_SESSION['page'] = $_GET['page'];
-// }
+  <!-- セッションに取得したパラメータを格納 -->
+  <?php require_once "php/session.php";?>
 
-require_once "php/session.php";
-?>
 
 <?php
 //DBから情報を取得
-require_once "php/fetch2.php";
+require_once "php/fetch_by_param.php";
 //ループ処理のために最大値を定義
 $max = count($bbs['name']);
 ?>
