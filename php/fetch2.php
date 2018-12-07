@@ -21,7 +21,7 @@ if (isset($_SESSION['page'])) {
 
 // $sql = "SELECT * FROM bbs ORDER BY date desc LIMIT {$initial_position},10";
 
-$sql = "SELECT * FROM(SELECT * FROM bbs ORDER BY date desc LIMIT 10 OFFSET{$initial_position}) AS latestdata ORDER BY date asc ";
+$sql = "SELECT * FROM(SELECT * FROM bbs ORDER BY date desc LIMIT {$initial_position}, 10) AS latestdata ORDER BY date asc ";
 
 $stmt = $db->prepare($sql);
 
