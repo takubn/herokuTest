@@ -30,9 +30,12 @@ $stmt->execute();
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($results as $results) {
-    echo $results['id'], '：';
-    echo $results['name'], '<br>';
-    echo $results['contents'], '<br>';
+//多次元連想配列に格納
+    $bbs['name'][] = $results['name'];
+    $bbs['contents'][] = $results['contents'];
+    $bbs['date'][] = $results['date'];
+    $bbs['id'][] = $results['id'];
+
 }
 
 //----------------------終わり----------------------------------------

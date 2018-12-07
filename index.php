@@ -64,7 +64,7 @@ if (isset($_GET['page'])) {
 
 <?php
 //DBから情報を取得
-require_once "php/fetch.php";
+require_once "php/fetch2.php";
 //ループ処理のために最大値を定義
 $max = count($bbs['name']);
 ?>
