@@ -46,13 +46,12 @@ ini_set('display_errors', 1);
 
 
   <!-- ページネーション -->
-  <?php require_once "php/data_count.php";?>
-  <?php for ($i = 1; $i <= $paging_number; $i++): ?>
   <ul class="pager">
+  <?php require_once "php/data_count.php";?>
+    <?php for ($i = 1; $i <= $paging_number; $i++): ?>
     <li><a href="?page=<?=$i?>"><?=$i?></a></li>
-  </ul>
   <?php endfor;?>
-
+  </ul>
   <!-- セッションに取得したパラメータを格納 -->
   <?php require_once "php/session.php";?>
 
