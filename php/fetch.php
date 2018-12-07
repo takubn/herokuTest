@@ -1,9 +1,12 @@
 <?php
 ini_set('display_errors', 1);
+session_start();
 
-//getでパラメータを受け取れるか。
-$getest = $_GET['page'];
-echo $getest . 'byfetch';
+//sessionでパラメータ受け取る。
+if (isset($_SESSION['page'])) {
+    $page = (int) $_SESSION['page'];
+    echo $page;
+}
 
 //DBに接続（DSN設定を読み込み）
 require_once "/app/conf/dsn.php";
