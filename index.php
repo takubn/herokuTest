@@ -48,7 +48,7 @@ ini_set('display_errors', 1);
   <!-- ページネーション -->
   <?php require_once "php/data_count.php";?>
   <?php for ($i = 1; $i <= $paging_number; $i++): ?>
-  <a href="?page=<?=$i?>"></a>
+  <a href="?page=<?=$i?>"><?=$i?></a>
   <?php endfor;?>
 
     <!-- getに数値が入っていたら、get_test.phpに飛ばす -->
