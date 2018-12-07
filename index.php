@@ -56,7 +56,6 @@ ini_set('display_errors', 1);
 if (isset($_GET['page'])) {
     session_start();
     $_SESSION['page'] = $_GET['page'];
-    echo '現在のページ数は' . $_SESSION['page'];
 }
 
 ?>
