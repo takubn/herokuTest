@@ -323,3 +323,24 @@ display　部分
   color         : #000066;     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
 }
+
+
+/* ----------ページャー------------ */
+.pager{
+  display:flex;
+  list-style: none;
+}
+.pager li{
+  /* flex:1; */
+  padding :0 10px;
+}
+
+.pager li a{
+text-decoration: none;
+color: #000066;
+font-style: italic;
+}
+
+.pager li a:hover{
+  color:#fff;
+}

@@ -48,7 +48,9 @@ ini_set('display_errors', 1);
   <!-- ページネーション -->
   <?php require_once "php/data_count.php";?>
   <?php for ($i = 1; $i <= $paging_number; $i++): ?>
-  <a href="?page=<?=$i?>"><?=$i?></a>
+  <ul class="pager">
+    <li><a href="?page=<?=$i?>"><?=$i?></a></li>
+  </ul>
   <?php endfor;?>
 
   <!-- セッションに取得したパラメータを格納 -->

@@ -10,7 +10,7 @@ try {
     $whole_number = $db->prepare("SELECT COUNT(*) id FROM bbs");
     $whole_number->execute();
     $whole_number = $whole_number->fetchColumn();
-//小数点以下を切り上げる。
+//小数点以下を切り上げる。　例：160件データがあったら、17P文のリンクを生成するための数値。（1Pは10件表示）
     $paging_number = ceil($whole_number / 10);
 
 } catch (PDOException $e) {
