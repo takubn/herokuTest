@@ -19,7 +19,7 @@ if (isset($_SESSION['page'])) {
 
 //--------------サブクエリ無し設定した開始位置からデータを取り出す。
 
-$sql = "SELECT * FROM bbs ORDER BY date desc LIMIT {$initial_position},10)";
+$sql = $db->prepare("SELECT * FROM bbs ORDER BY date desc LIMIT {$initial_position},10");
 
 $sql->execute();
 
