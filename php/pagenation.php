@@ -19,7 +19,11 @@ try {
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 SELECTするデータの初期位置を、GETで取得したパラメーターによって変更する。
-    $limit_data = $db->prepare("SELECT id FROM bbs LIMIT 10 OFFSET {$initial_position}");
+    $limit_data = $db->prepare("SELECT id FROM bbs LIMIT $initial_position, 10");
+
+// $posts = $db->prepare("SELECT id, title FROM posts LIMIT {$start}, 10");
+
+
 
     $limit_data->execute();
     $limit_data = $limit_data->fetchAll(PDO::FETCH_ASSOC);

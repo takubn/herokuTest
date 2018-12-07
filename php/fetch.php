@@ -38,9 +38,11 @@ try {
 
 //----------終わり--------------------------------------------------
 
-    //--------------設定した開始位置からデータを取り出す。-------------
+    //--------------サブクエリ無し設定した開始位置からデータを取り出す。-------------
 
-    $sql = 'SELECT * FROM(SELECT * FROM bbs ORDER BY date desc LIMIT 10 OFFSET{$initial_position}) AS latestdata ORDER BY date asc ';
+    //順番はいったん無視してテスト
+
+    $sql = 'SELECT * FROM bbs ORDER BY date desc LIMIT 10 OFFSET{$initial_position})';
 
     $stmt = $db->prepare($sql);
     $stmt->execute();
