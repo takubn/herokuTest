@@ -19,9 +19,11 @@ if (isset($_SESSION['page'])) {
 
 //--------------サブクエリ無し設定した開始位置からデータを取り出す。
 
-$sql = $db->prepare("SELECT * FROM bbs ORDER BY date desc LIMIT {$initial_position},10");
+$sql = "SELECT * FROM bbs ORDER BY date desc LIMIT {$initial_position},10)";
 
-$sql->execute();
+$stmt = $db->prepare($sql);
+
+$stmt->execute();
 
 $results = $sql->fetchAll(PDO::FETCH_ASSOC);
 
