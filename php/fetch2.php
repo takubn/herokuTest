@@ -25,7 +25,7 @@ $stmt = $db->prepare($sql);
 
 $stmt->execute();
 
-$results = $sql->fetchAll(PDO::FETCH_ASSOC);
+$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($results as $results) {
     echo $results['id'], '：';
