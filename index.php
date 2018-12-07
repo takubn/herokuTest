@@ -1,7 +1,7 @@
 <?php
 ini_set('display_errors', 1);
-
 ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -53,14 +53,13 @@ ini_set('display_errors', 1);
 
     <!-- getに数値が入っていたら、get_test.phpに飛ばす -->
   <?php
-if (isset($_GET['page'])) {
-    session_start();
-    $_SESSION['page'] = $_GET['page'];
-}
+// if (isset($_GET['page'])) {
+//     session_start();
+//     $_SESSION['page'] = $_GET['page'];
+// }
 
+require_once "php/session.php";
 ?>
-
-
 
 <?php
 //DBから情報を取得
