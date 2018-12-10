@@ -54,12 +54,11 @@
   <?php require_once "php/data_count.php";?>
 
     <!-- 「before」ボタン -->
-    <!-- <?php if ($page_before > 0): ?> -->
-    <?php if(!$page_before == ''): ?>
+    <?php if ($page_before > 0): ?>
       <li><a href="?page=<?=$page_before?>">before</a></li>
     <?php endif;?>
 
-    <!-- ページング -->
+    <!-- 「番号」ボタン -->
     <?php for ($i = 1; $i <= $paging_number; $i++): ?>
       <li><a href="?page=<?=$i?>"><?=$i?></a></li>
     <?php endfor;?>
