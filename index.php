@@ -42,16 +42,19 @@
 
   <!-- ゲットでに取得したパラメータを格納 -->
   <?php require_once "php/session.php";?>
+
   <!-- ページネーション -->
-
-
   <ul class="pager">
   <?php require_once "php/data_count.php";?>
     <?php for ($i = 1; $i <= $paging_number; $i++): ?>
     <li><a href="?page=<?=$i?>"><?=$i?></a></li>
   <?php endfor;?>
- </ul>
 
+<!-- テスト -->
+<a href="?page=<?=$page_next?>">next</a>
+<a href="?page=<?=$page_before?>">before</a>
+
+ </ul>
 
 
 <?php
