@@ -53,7 +53,7 @@
 <!-- テスト -->
  <?php require_once "php/test.php";?>
 
-<?php if ($page_next > 0): ?>
+<?php if ($page_before > 0): ?>
 
 <a href="?page=<?=$page_next?>">next</a>
 <br>
