@@ -67,6 +67,7 @@
     <!-- 「next」ボタン -->
     <?php if ($page_next <= $paging_number): ?>
       <li><a href="?page=<?=$page_next?>"><i class="fas fa-angle-double-right"></i></a></li>
+      <?php echo $page_next ?>
     <?php endif;?>
  </ul>
 
