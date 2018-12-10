@@ -158,7 +158,7 @@ function ChangeByParam() {
   // console.log(param);
 
   $(function () {
-    $("li:contains('" + paramid + "')").css('color', '#fff');
+    $("li:contains('" + paramid + "')").css('color', '#000080');
   });
 
 
