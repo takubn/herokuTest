@@ -46,16 +46,16 @@
   <!-- ゲットでに取得したパラメータを格納 -->
   <?php require_once "php/session.php";?>
   <!-- ページング（前後）用 -->
-  <?php require_once "php/to_next_before.php";?>
+  <?php require_once "php/to_next_previous.php";?>
 
 
   <!-- ページャー -->
   <ul class="pager">
   <?php require_once "php/data_count.php";?>
 
-    <!-- 「before」ボタン -->
-    <?php if ($page_before > 0): ?>
-      <li><a href="?page=<?=$page_before?>">before</a></li>
+    <!-- 「previous」ボタン -->
+    <?php if ($page_previous > 0): ?>
+      <li><a href="?page=<?=$page_previous?>">previous</a></li>
     <?php endif;?>
 
     <!-- 「番号」ボタン -->
@@ -67,7 +67,6 @@
     <?php if ($page_next <= $paging_number): ?>
       <li><a href="?page=<?=$page_next?>">next</a></li>
     <?php endif;?>
-
  </ul>
 
 <?php
