@@ -146,6 +146,11 @@ function ChangeByParam() {
 
   var pageParam = location.search.substring(1);
 
-  alert(pageParam);
+  if (pageParam) {
+
+    var pageInt = parseInt;
+    alert('pageInt');
+
+  }
 
 }
