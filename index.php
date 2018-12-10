@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <script src="js/jquery-3.3.1.min.js"></script>
   <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <title>dc-board</title>
 </head>
 
@@ -55,7 +56,7 @@
 
     <!-- 「previous」ボタン -->
     <?php if ($page_previous > 0): ?>
-      <li><a href="?page=<?=$page_previous?>">previous</a></li>
+      <li><a href="?page=<?=$page_previous?>"><i class="fas fa-stroopwafel"></i></a></li>
     <?php endif;?>
 
     <!-- 「番号」ボタン -->
