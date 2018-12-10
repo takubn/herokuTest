@@ -56,7 +56,7 @@
 
     <!-- 「previous」ボタン -->
     <?php if ($page_previous > 0): ?>
-      <li><a href="?page=<?=$page_previous?>"><i class="fas fa-stroopwafel"></i></a></li>
+      <li><a href="?page=<?=$page_previous?>"><i class="fas fa-angle-double-left"></i></a></li>
     <?php endif;?>
 
     <!-- 「番号」ボタン -->
@@ -66,7 +66,7 @@
 
     <!-- 「next」ボタン -->
     <?php if ($page_next <= $paging_number): ?>
-      <li><a href="?page=<?=$page_next?>">next</a></li>
+      <li><a href="?page=<?=$page_next?>"><i class="fas fa-angle-double-right"></i></a></li>
     <?php endif;?>
  </ul>
 
