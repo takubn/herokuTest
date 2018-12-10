@@ -154,7 +154,7 @@ function ChangeByParam() {
 
 
     var param = getElementById('paramid');
-    console.log(paramid);
+    console.log(param);
 
 
   }
