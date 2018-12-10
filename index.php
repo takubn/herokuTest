@@ -46,15 +46,17 @@
   <?php require_once "php/to_next_before.php";?>
 
 
-  <!-- ページネーション -->
+  <!-- ページャー -->
   <ul class="pager">
   <?php require_once "php/data_count.php";?>
 
     <!-- 「before」ボタン -->
-    <?php if ($page_before > 0): ?>
+    <!-- <?php if ($page_before > 0): ?> -->
+    <?php if(!($page_before  === '')): ?>
       <li><a href="?page=<?=$page_before?>">before</a></li>
     <?php endif;?>
 
+    ページング
     <?php for ($i = 1; $i <= $paging_number; $i++): ?>
       <li><a href="?page=<?=$i?>"><?=$i?></a></li>
     <?php endfor;?>
