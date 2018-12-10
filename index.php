@@ -58,7 +58,7 @@
 <?php endif;?>
 
 
-<?php if ($page_next < $paging_number): ?>
+<?php if ($page_next <= $paging_number): ?>
 <a href="?page=<?=$page_next?>">next</a>
 <?php endif;?>
 
