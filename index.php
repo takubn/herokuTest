@@ -69,7 +69,8 @@
       <li><a href="?page=<?=$page_next?>"><i class="fas fa-angle-double-right"></i></a></li>
       <?php echo $page_next ?>
       <?php echo $page_previous ?>
-
+      <br>
+      <?php echo $_SESSION['page'] ?>
     <?php endif;?>
  </ul>
 
