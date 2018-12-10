@@ -47,20 +47,23 @@
     <?php for ($i = 1; $i <= $paging_number; $i++): ?>
     <li><a href="?page=<?=$i?>"><?=$i?></a></li>
   <?php endfor;?>
+ </ul>
+  <!-- ゲットでに取得したパラメータを格納 -->
+  <?php require_once "php/session.php";?>
 
-  <!-- テスト -->
+
+<!-- テスト -->
 <?php
 if (isset($_SESSION['page'])) {
     $page = (int) $_SESSION['page'];
     echo $page;
+} else {
+    echo '何も入ってないよ';
 }
 
 ?>
 
 
-  </ul>
-  <!-- セッションに取得したパラメータを格納 -->
-  <?php require_once "php/session.php";?>
 
 
 <?php
