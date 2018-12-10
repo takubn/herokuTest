@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (isset($_SESSION['page'])) {
+if (isset($_GET['page'])) {
 
     $page_for_next_previous = (int) $_SESSION['page'];
 
