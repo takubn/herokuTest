@@ -54,10 +54,6 @@
   <ul class="pager">
   <?php require_once "php/data_count.php";?>
 
-  <!-- テスト -->
-  <?php echo $page_previous ?>
-  <?php echo $page_next ?>
-
     <!-- 「previous」ボタン -->
     <?php if ($page_previous >= 0): ?>
       <li><a href="?page=<?=$page_previous?>"><i class="fas fa-angle-double-left"></i></a></li>
