@@ -1,5 +1,5 @@
 <?php ini_set('display_errors', 1);
- ?>
+?>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -54,8 +54,7 @@
   <?php require_once "php/data_count.php";?>
 
     <!-- 「before」ボタン -->
-    <!-- <?php if ($page_before > 0): ?> -->
-    <?php if(!$page_before  == ''): ?>
+    <?php if ($page_before > 0): ?>
       <li><a href="?page=<?=$page_before?>">before</a></li>
     <?php endif;?>
 
