@@ -147,17 +147,15 @@ function ChangeByParam() {
   var pageParam = location.search.substring(1);
 
   if (pageParam) {
-    //パラメータから数値だけを切り取る。
-    // var pagenum = pageParam.match(/\d+$/)[0]
+    // パラメータから数値だけを切り取る。
+    var pagenum = pageParam.match(/\d+$/)[0]
 
-    // var paramid = "id=pager" + pagenum;
+    var paramid = "id=pager" + pagenum;
 
-
-    // var param = getElementById('paramid');
     // console.log(param);
 
     $(function () {
-      $("td:contains('" + pagePram + "')").css('background-color', 'Yellow');
+      $("td:contains('" + paramid + "')").css('background-color', 'Yellow');
     });
 
   }
