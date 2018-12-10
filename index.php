@@ -42,31 +42,29 @@
 
   <!-- ゲットでに取得したパラメータを格納 -->
   <?php require_once "php/session.php";?>
+  <!-- ページング（前後）用 -->
+  <?php require_once "php/to_next_before.php";?>
+
 
   <!-- ページネーション -->
   <ul class="pager">
   <?php require_once "php/data_count.php";?>
+
+    <!-- 「before」ボタン -->
+    <?php if ($page_before > 0): ?>
+      <li><a href="?page=<?=$page_before?>">before</a></li>
+    <?php endif;?>
+
     <?php for ($i = 1; $i <= $paging_number; $i++): ?>
-    <li><a href="?page=<?=$i?>"><?=$i?></a></li>
-  <?php endfor;?>
+      <li><a href="?page=<?=$i?>"><?=$i?></a></li>
+    <?php endfor;?>
 
-<!-- テスト -->
- <?php require_once "php/test.php";?>
-
-<?php if ($page_before > 0): ?>
-<a href="?page=<?=$page_before?>">before</a>
-<?php endif;?>
-
-
-<?php if ($page_next <= $paging_number): ?>
-<a href="?page=<?=$page_next?>">next</a>
-<?php endif;?>
-
-
-
+    <!-- 「next」ボタン -->
+    <?php if ($page_next <= $paging_number): ?>
+      <li><a href="?page=<?=$page_next?>">next</a></li>
+    <?php endif;?>
 
  </ul>
-
 
 <?php
 //DBから情報を取得
