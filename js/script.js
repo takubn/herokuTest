@@ -147,15 +147,18 @@ function ChangeByParam() {
   var pageParam = location.search.substring(1);
 
   if (pageParam) {
-    // パラメータから数値だけを切り取る。
+    //パラメータから数値だけを切り取る。
     var pagenum = pageParam.match(/\d+$/)[0]
 
     var paramid = "id=pager" + pagenum;
 
+    console.log(paramid);
+
+    // var param = getElementById('paramid');
     // console.log(param);
 
     $(function () {
-      $("td:contains('" + paramid + "')").css('background-color', 'Yellow');
+      $("li:contains('" + paramid + "')").css('background-color', 'Yellow');
     });
 
   }
