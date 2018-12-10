@@ -9,6 +9,6 @@ $page_next = $page_next + 1;
 $page_previous = $page_previous - 1;
 
 //値が入っていない場合、「0」を代入する。
-if ($page_previous === '') {
-    $page_previous = 0;
-}
+// if ($page_previous === '') {
+//     $page_previous = 0;
+// }
