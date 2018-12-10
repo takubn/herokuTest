@@ -36,7 +36,7 @@ function changeFormEdit(name, content) {
 
 
 
-//ｰｰｰｰｰｰｰｰｰｰｰｰ入力フォームの色を変更するメソッド（削除）ｰｰｰｰｰｰｰｰｰｰｰｰ    
+//ｰｰｰｰｰｰｰｰｰｰｰｰ入力フォームの色を変更するメソッド（削除）ｰｰｰｰｰｰｰｰｰｰｰｰ
 function changeFormDelete(name, content) {
 
   var name = name;
@@ -111,7 +111,7 @@ function changeEditMode(name, contents, id) {
 // ｰｰｰｰｰｰｰｰｰｰｰｰ削除メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰｰ
 function changeDeleteMode(id) {
   var id = id.textContent;
- 
+
   if (id !== '') {
     $(function () {
 
@@ -137,4 +137,15 @@ function changeDeleteMode(id) {
     });
 
   });
+}
+
+
+// ｰｰｰｰｰｰｰｰｰｰｰｰpagerの色を変更するメソッドｰｰｰｰｰｰｰｰｰｰｰｰ
+
+function ChangeByParam() {
+
+  var pageParam = location.search.substring(1);
+
+  alert(pageParam);
+
 }
