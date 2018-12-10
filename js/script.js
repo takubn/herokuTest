@@ -148,14 +148,17 @@ function ChangeByParam() {
 
   if (pageParam) {
     //パラメータから数値だけを切り取る。
-    var pagenum = pageParam.match(/\d+$/)[0]
+    // var pagenum = pageParam.match(/\d+$/)[0]
 
-    var paramid = "id=pager" + pagenum;
+    // var paramid = "id=pager" + pagenum;
 
 
-    var param = getElementById('paramid');
-    console.log(param);
+    // var param = getElementById('paramid');
+    // console.log(param);
 
+    $(function () {
+      $("td:contains('" + pagePram + "')").css('background-color', 'Yellow');
+    });
 
   }
 
