@@ -50,13 +50,12 @@
 
   <!-- テスト -->
 <?php
-$page_next = $paging_number + 1;
-$page_befor = $paging_number - 1;
+$page_next = $SESSION['page'] + 1;
+$page_before = $SESSION['page'] - 1;
 
+echo "次のページは" . $page_next;
+echo "次のページは" . $page_before;
 ?>
-
-
-<a href="?page=<?=$page_next?>">next</a>
 
 
   </ul>
