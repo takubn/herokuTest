@@ -5,7 +5,9 @@ if (isset($_GET['page'])) {
     $_SESSION['page'] = $_GET['page'];
 
     // テスト
-    $page_next = (int) $SESSION['page'] + 1;
-    $page_before = (int) $SESSION['page'] - 1;
+    $page_for_next_before = (int) $SESSION['page'];
+
+    $page_next = $page_for_next_before + 1;
+    $page_before = $page_for_next_before - 1;
 
 }
