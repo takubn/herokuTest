@@ -50,7 +50,7 @@
   <?php require_once "php/to_next_previous.php";?>
 
 
-  <!-- ページャー -->
+  <!-- ページャー全体 -->
   <ul class="pager">
   <?php require_once "php/data_count.php";?>
 
