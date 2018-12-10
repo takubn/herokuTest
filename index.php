@@ -50,9 +50,12 @@
 
   <!-- テスト -->
 <?php
-$page_next = $SESSION['page'] + 1;
-$page_before = $SESSION['page'] - 1;
+if (isset($_GET['page'])) {
+    session_start();
+    $page_next = $SESSION['page'] + 1;
+    $page_before = $SESSION['page'] - 1;
 
+}
 echo "次のページは" . $page_next;
 echo "次のページは" . $page_before;
 ?>
