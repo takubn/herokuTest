@@ -148,7 +148,7 @@ function ChangeByParam() {
 
   if (pageParam) {
 
-    var pageInt = parseInt;
+    var pageInt = parseInt(pageParam);
     alert('pageInt');
 
   }
