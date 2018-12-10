@@ -150,7 +150,7 @@ function ChangeByParam() {
     //パラメータから数値だけを切り取る。
     var pagenum = pageParam.match(/\d+$/)[0]
 
-    var paramid = "id=pager" + pagenum;
+    var paramid = "pager" + pagenum;
 
     console.log(paramid);
 
