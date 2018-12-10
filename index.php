@@ -51,9 +51,9 @@
   <?php endfor;?>
 
 <!-- テスト -->
-<!-- <a href="?page=<?=$page_next?>">next</a>
-<a href="?page=<?=$page_before?>">before</a> -->
+ <?php require_once "php/test.php";?>
 <?php echo $page_next; ?>
+<br>
 <?php echo $page_before; ?>
 
  </ul>
