@@ -54,13 +54,16 @@
  <?php require_once "php/test.php";?>
 
 <?php if ($page_before > 0): ?>
-
-<a href="?page=<?=$page_next?>">next</a>
-<br>
 <a href="?page=<?=$page_before?>">before</a>
-
-
 <?php endif;?>
+
+
+<?php if ($page_next < $paging_number): ?>
+<a href="?page=<?=$page_next?>">next</a>
+<?php endif;?>
+
+
+
 
  </ul>
 
