@@ -4,7 +4,7 @@ session_start();
 $page_next = (int) $_SESSION['page'];
 $page_previous = (int) $_SESSION['page'];
 
-if ($_SESSION['page'] === '') {
+if (!isset($_SESSION['page'])) {
     $page_next += 1;
     $page_previous += 1;
 }
