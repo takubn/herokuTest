@@ -50,7 +50,12 @@
 
   <!-- テスト -->
 <?php
-$page;?>
+if (isset($_SESSION['page'])) {
+    $page = (int) $_SESSION['page'];
+    echo $page;
+}
+
+?>
 
 
   </ul>
