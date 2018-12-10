@@ -52,7 +52,7 @@
 
     <!-- 「before」ボタン -->
     <!-- <?php if ($page_before > 0): ?> -->
-    <?php if(!$page_before  === ''): ?>
+    <?php if(!$page_before  == ''): ?>
       <li><a href="?page=<?=$page_before?>">before</a></li>
     <?php endif;?>
 
