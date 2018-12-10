@@ -148,9 +148,8 @@ function ChangeByParam() {
 
   if (pageParam) {
 
-    var pageInt = parseInt(pageParam);
-    alert('pageInt');
-
+    var pagenum = pageParam.match(/\d+$/)[0]);
+    console.log(pagenum);
   }
 
 }
