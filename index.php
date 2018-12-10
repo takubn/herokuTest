@@ -57,7 +57,6 @@
     <!-- 「previous」ボタン -->
     <?php if ($page_previous >= 1): ?>
       <li><a href="?page=<?=$page_previous?>"><i class="fas fa-angle-double-left"></i></a></li>
-      <?php echo $page_previous ?>
     <?php endif;?>
 
     <!-- 「番号」ボタン -->
@@ -69,6 +68,8 @@
     <?php if ($page_next <= $paging_number): ?>
       <li><a href="?page=<?=$page_next?>"><i class="fas fa-angle-double-right"></i></a></li>
       <?php echo $page_next ?>
+      <?php echo $page_previous ?>
+
     <?php endif;?>
  </ul>
 
