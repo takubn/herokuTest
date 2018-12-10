@@ -52,9 +52,9 @@
 
 <!-- テスト -->
  <?php require_once "php/test.php";?>
-<?php echo $page_next; ?>
+<a href="?page=<?=$page_next?>">next</a>
 <br>
-<?php echo $page_before; ?>
+<a href="?page=<?=$page_before?>">before</a>
 
  </ul>
 
