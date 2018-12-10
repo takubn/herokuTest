@@ -1,7 +1,3 @@
-<?php
-ini_set('display_errors', 1);
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -51,6 +47,18 @@ ini_set('display_errors', 1);
     <?php for ($i = 1; $i <= $paging_number; $i++): ?>
     <li><a href="?page=<?=$i?>"><?=$i?></a></li>
   <?php endfor;?>
+
+  <!-- テスト -->
+<?php
+$page_next = $paging_number + 1;
+$page_befor = $paging_number - 1;
+
+?>
+
+
+<a href="?page=<?=$page_next?>">next</a>
+
+
   </ul>
   <!-- セッションに取得したパラメータを格納 -->
   <?php require_once "php/session.php";?>
