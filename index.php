@@ -53,6 +53,8 @@
 <!-- テスト -->
 <a href="?page=<?=$page_next?>">next</a>
 <a href="?page=<?=$page_before?>">before</a>
+<?php echo $page_next; ?>
+<?php echo $page_before; ?>
 
  </ul>
 
