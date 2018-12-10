@@ -56,7 +56,7 @@
 
   <!-- テスト -->
   <?php echo $page_previous ?>
-  <?php echo $page_number ?>
+  <?php echo $page_next ?>
 
     <!-- 「previous」ボタン -->
     <?php if ($page_previous > 0): ?>
