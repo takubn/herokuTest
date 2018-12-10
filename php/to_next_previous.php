@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $page_for_next_previous = (int) $_SESSION['page'];
 
