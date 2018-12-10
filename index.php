@@ -48,11 +48,9 @@
     <li><a href="?page=<?=$i?>"><?=$i?></a></li>
   <?php endfor;?>
  </ul>
-  <!-- ゲットでに取得したパラメータを格納 -->
-  <?php require_once "php/session.php";?>
 
 
-<!-- テスト -->
+ <!-- テスト -->
 <?php
 if (isset($_SESSION['page'])) {
     $page = (int) $_SESSION['page'];
@@ -62,6 +60,11 @@ if (isset($_SESSION['page'])) {
 }
 
 ?>
+  <!-- ゲットでに取得したパラメータを格納 -->
+  <?php require_once "php/session.php";?>
+
+
+
 
 
 
