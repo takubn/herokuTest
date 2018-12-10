@@ -55,7 +55,7 @@
   <?php require_once "php/data_count.php";?>
 
     <!-- 「previous」ボタン -->
-    <?php if ($page_previous >= 0): ?>
+    <?php if (preg_match("/^[0-9]+$/", $page_previous)): ?>
       <li><a href="?page=<?=$page_previous?>"><i class="fas fa-angle-double-left"></i></a></li>
     <?php endif;?>
 
