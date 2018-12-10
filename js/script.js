@@ -153,7 +153,7 @@ function ChangeByParam() {
     var paramid = "id=pager" + pagenum;
 
 
-    // var param = getElementById('paramid');
+    var param = getElementById('paramid');
     console.log(paramid);
 
 
