@@ -146,21 +146,21 @@ function ChangeByParam() {
 
   var pageParam = location.search.substring(1);
 
-  if (pageParam) {
-    //パラメータから数値だけを切り取る。
-    var pagenum = pageParam.match(/\d+$/)[0]
 
-    var paramid = "pager" + pagenum;
+  //パラメータから数値だけを切り取る。
+  var pagenum = pageParam.match(/\d+$/)[0]
 
-    console.log(paramid);
+  var paramid = "pager" + pagenum;
 
-    // var param = getElementById('paramid');
-    // console.log(param);
+  console.log(paramid);
 
-    $(function () {
-      $("li:contains('" + paramid + "')").css('color', 'Yellow');
-    });
+  // var param = getElementById('paramid');
+  // console.log(param);
 
-  }
+  $(function () {
+    $("li:contains('" + paramid + "')").css('color', '#fff');
+  });
+
+
 
 }
