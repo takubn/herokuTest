@@ -142,7 +142,7 @@ function changeDeleteMode(id) {
 
 // ｰｰｰｰｰｰｰｰｰｰｰｰpagerの色を変更するメソッドｰｰｰｰｰｰｰｰｰｰｰｰ
 
-function ChangeByParam() {
+function changeByParam() {
 
   var pageParam = location.search.substring(1);
 
