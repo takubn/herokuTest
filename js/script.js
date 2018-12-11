@@ -146,20 +146,11 @@ function ChangeByParam() {
 
   var pageParam = location.search.substring(1);
 
-
   //パラメータから数値だけを切り取る。
-  var pagenum = pageParam.match(/\d+$/)[0]
-
-  var paramid = "pager" + pagenum;
-
-  console.log(paramid);
-
-  // var param = getElementById('paramid');
-  // console.log(param);
+  var pagenum = pageParam.match(/\d+$/)[0];
 
   $(function () {
-    console.log(paramid);
-    $("li:contains('" + paramid + "')").css('color', '#000080');
+    $("li:contains(" + pagenum + ")").css('color', 'red');
   });
 
 
