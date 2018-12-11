@@ -348,8 +348,18 @@ font-weight: bold;
 
 .paramcolor{
     font-size:30px;
+    color: #000066;
     pointer-events:none;
     font-style: italic;
     font-weight: bold;
-    color: #000066;
+}
+
+
+.gradation{
+    background: -webkit-linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
+    background: linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
+    mix-blend-mode: screen;
+    color: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
