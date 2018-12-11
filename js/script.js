@@ -162,9 +162,4 @@ function changeColorByParam() {
   });
 
 
-  //「a」タグの中からパラメータの数値と一致するcssの色を変更
-  // $(function () {
-  //   $("a:contains(" + paramNumber + ")").toggleClass("paramcolor");
-  // });
-
 }

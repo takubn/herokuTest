@@ -66,7 +66,7 @@
 
     <!-- 「番号」ボタン -->
     <?php for ($i = 1; $i <= $paging_number; $i++): ?>
-      <li id="pager<?=$i?>"><a href="?page=<?=$i?>"><?=$i?></a></li>
+      <li><a href="?page=<?=$i?>" id="pager<?=$i?>"><?=$i?></a></li>
     <?php endfor;?>
 
     <!-- 「next」ボタン -->
