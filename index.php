@@ -12,7 +12,7 @@
   <title>dc-board</title>
 </head>
 
-<body onload="moveBottom()">
+<body onload="moveBottom(),changeByParam()">
 
   <!-- 入力部分始まり -->
   <div class="item-input" style="position: fixed;width: 35%;margin-left: 30px;">
@@ -61,7 +61,7 @@
 
     <!-- 「番号」ボタン -->
     <?php for ($i = 1; $i <= $paging_number; $i++): ?>
-      <li id="pager<?=$i?>"><a href="?page=<?=$i?>" onclick="ChangeByParam()"><?=$i?></a></li>
+      <li id="pager<?=$i?>"><a href="?page=<?=$i?>"><?=$i?></a></li>
     <?php endfor;?>
 
     <!-- 「next」ボタン -->
