@@ -140,7 +140,7 @@ function changeDeleteMode(id) {
 }
 
 
-// ｰｰｰｰｰｰｰｰｰｰｰｰpagerの色を変更するメソッドｰｰｰｰｰｰｰｰｰｰｰｰ
+// ｰｰｰｰｰｰｰｰｰｰｰｰpagerの色・スタイルを変更するメソッドｰｰｰｰｰｰｰｰｰｰｰｰ
 
 function changeColorByParam() {
 
@@ -152,14 +152,10 @@ function changeColorByParam() {
 
   var paramid = "pager" + paramNumber;
 
-
-  console.log(paramid);
-
   $(function () {
-
+    //idで指定された要素にcssを追加（入れ替える）。
     $('#' + paramid).toggleClass("paramcolor");
 
   });
-
 
 }
