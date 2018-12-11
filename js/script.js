@@ -150,6 +150,7 @@ function changeByParam() {
   var pagenum = pageParam.match(/\d+$/)[0];
 
   $(function () {
+    console.log(pagenum);
     $("li:contains(" + pagenum + ")").css('color', 'red');
   });
 
