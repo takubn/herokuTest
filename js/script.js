@@ -144,19 +144,23 @@ function changeDeleteMode(id) {
 
 function changeColorByParam() {
 
-  // //パラメータを取得（？以降を取得）
-  // var param = location.search.substring(1);
+  //パラメータを取得（？以降を取得）
+  var param = location.search.substring(1);
 
-  // //パラメータから数値だけを切り取る。
-  // var paramNumber = param.match(/\d+$/)[0];
+  //パラメータから数値だけを切り取る。
+  var paramNumber = param.match(/\d+$/)[0];
 
-  var randNumber = location.search.substring(1);
+  var paramid = "pager" + paramNumber;
+
+
+  console.log(paramid);
+
 
 
 
   //「a」タグの中からパラメータの数値と一致するcssの色を変更
   $(function () {
-    $("a:contains(" + randNumber + ")").toggleClass("paramcolor");
+    $("a:contains(" + paramNumber + ")").toggleClass("paramcolor");
   });
 
 }

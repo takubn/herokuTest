@@ -56,7 +56,7 @@
   <!-- ページャー全体 -->
   <ul class="pager">
   <?php require_once "php/data_count.php";?>
-  <?php require_once "php/rand_create.php"?>;
+
 
 
     <!-- 「previous」ボタン -->
@@ -66,7 +66,7 @@
 
     <!-- 「番号」ボタン -->
     <?php for ($i = 1; $i <= $paging_number; $i++): ?>
-      <li id="pager<?=$i?>"><a href="?page=<?=$i?>?rand=<?=$rand?>"><?=$i?><p hidden><?=$rand?></p></a></li>
+      <li id="pager<?=$i?>"><a href="?page=<?=$i?>"><?=$i?></a></li>
     <?php endfor;?>
 
     <!-- 「next」ボタン -->
