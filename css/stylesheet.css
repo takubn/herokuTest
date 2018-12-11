@@ -354,5 +354,6 @@ font-weight: bold;
     color: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size:50px;
+    font-size:30px;
+    pointer-events:none;
 }
