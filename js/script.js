@@ -151,7 +151,7 @@ function changeByParam() {
 
   $(function () {
     console.log(pagenum);
-    $("li:contains(" + pagenum + ")").css('color', 'red');
+    $("a:contains(" + pagenum + ")").css('color', 'red');
   });
 
 }
