@@ -328,7 +328,7 @@ display　部分
 /* ----------ページャー------------ */
 .pager{
   display:flex;
-  list-style: none;
+  /* list-style: none; */
 }
 .pager li{
   /* flex:1; */
@@ -336,8 +336,8 @@ display　部分
 }
 
 .pager li a{
-text-decoration: none;
-color: #fff;
+/* text-decoration: none; */
+/* color: #fff; */
 font-style: italic;
 font-weight: bold;
 }
