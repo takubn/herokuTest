@@ -150,9 +150,9 @@ function changeColorByParam() {
   //パラメータから数値だけを切り取る。
   var paramNumber = param.match(/\d+$/)[0];
 
-  //「a」タグの中からパラメータの数値と一致するリンクの色を変更
+  //「a」タグの中からパラメータの数値と一致するcssの色を変更
   $(function () {
-    $("a:contains(" + paramNumber + ")").toggleClass("gradation");
+    $("a:contains(" + paramNumber + ")").toggleClass("paramcolor");
   });
 
 }
