@@ -104,7 +104,7 @@ $max = count($bbs['name']);
 
 
   <!-- テスト -->
-  <script>setTimeout(changeByParam,2000);</script>
+  <script>setTimeout(changeByParam(),2000);</script>
 
   </div>
   <!-- 出力部分終わり-->
