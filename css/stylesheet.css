@@ -329,6 +329,7 @@ display　部分
 .pager{
   display:flex;
   list-style: none;
+  align-items: center;
 }
 .pager li{
   /* flex:1; */
@@ -348,18 +349,13 @@ font-weight: bold;
 
 .paramcolor{
     font-size:30px;
-    color: #000066;
+    color: gold !important;
     pointer-events:none;
-    font-style: italic;
-    font-weight: bold;
-}
+     animation:rotate_anime 2s linear infinite;
+    }
 
 
-.gradation{
-    background: -webkit-linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
-    background: linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
-    mix-blend-mode: screen;
-    color: #ffffff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@keyframes paramcolor {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
 }
