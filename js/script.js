@@ -155,3 +155,8 @@ function changeByParam() {
   });
 
 }
+
+//テスト
+$(window).on('load', function () {
+  alert('aaa');
+});
