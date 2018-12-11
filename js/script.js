@@ -142,7 +142,23 @@ function changeDeleteMode(id) {
 
 // ｰｰｰｰｰｰｰｰｰｰｰｰpagerの色を変更するメソッドｰｰｰｰｰｰｰｰｰｰｰｰ
 
-function changeByParam() {
+// function changeByParam() {
+
+//   var pageParam = location.search.substring(1);
+
+//   //パラメータから数値だけを切り取る。
+//   var pagenum = pageParam.match(/\d+$/)[0];
+
+//   $(function () {
+//     console.log(pagenum);
+//     $("li:contains(" + pagenum + ")").css('color', 'red');
+//   });
+
+// }
+
+//テスト
+$(window).on('load', function () {
+
 
   var pageParam = location.search.substring(1);
 
@@ -154,9 +170,6 @@ function changeByParam() {
     $("li:contains(" + pagenum + ")").css('color', 'red');
   });
 
-}
 
-//テスト
-$(window).on('load', function () {
-  alert('aaa');
+
 });

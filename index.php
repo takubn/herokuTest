@@ -12,7 +12,7 @@
   <title>dc-board</title>
 </head>
 
-<body onload="moveBottom(),changeByParam()">
+<body onload="moveBottom()">
 
   <!-- 入力部分始まり -->
   <div class="item-input" style="position: fixed;width: 35%;margin-left: 30px;">
