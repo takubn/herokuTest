@@ -345,3 +345,14 @@ font-weight: bold;
 .pager li a:hover{
   color:red;
 }
+
+
+.gradation{
+    background: -webkit-linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
+    background: linear-gradient(to right, #e5033e, #b701b5, #4a02c2);
+    mix-blend-mode: screen;
+    color: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:50px;
+}

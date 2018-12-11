@@ -142,20 +142,17 @@ function changeDeleteMode(id) {
 
 // ｰｰｰｰｰｰｰｰｰｰｰｰpagerの色を変更するメソッドｰｰｰｰｰｰｰｰｰｰｰｰ
 
-function changeByParam() {
+function changeColorByParam() {
 
-  var pageParam = location.search.substring(1);
+  //パラメータを取得（？以降を取得）
+  var param = location.search.substring(1);
 
   //パラメータから数値だけを切り取る。
-  var pagenum = pageParam.match(/\d+$/)[0];
+  var paramNumber = param.match(/\d+$/)[0];
 
+  //「a」タグの中からパラメータの数値と一致するリンクの色を変更
   $(function () {
-    console.log(pagenum);
-    $("a:contains(" + pagenum + ")").css('color', 'red');
+    $("a:contains(" + paramNumber + ")").toggleClass("gradation");
   });
 
-}
-
-function time() {
-  setTimeout(changeByParam, 3000);
 }
