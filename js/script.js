@@ -154,6 +154,4 @@ function changeByParam() {
     $("li:contains(" + pagenum + ")").css('color', 'red');
   });
 
-
-
 }
