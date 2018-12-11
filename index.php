@@ -16,7 +16,7 @@
   <title>dc-board</title>
 </head>
 
-<body onload="moveBottom()">
+<body onload="moveBottom(),changeByParam()">
 
   <!-- 入力部分始まり -->
   <div class="item-input" style="position: fixed;width: 35%;margin-left: 30px;">
@@ -108,7 +108,7 @@ $max = count($bbs['name']);
 
 
   <!-- テスト -->
-  <script>changeByParam()</script>
+  <!-- <script>changeByParam()</script> -->
 
   </div>
   <!-- 出力部分終わり-->
