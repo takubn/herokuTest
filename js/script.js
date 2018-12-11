@@ -156,20 +156,6 @@ function changeByParam() {
 
 }
 
-//テスト
-// $(window).on('load', function () {
-
-
-//   var pageParam = location.search.substring(1);
-
-//   //パラメータから数値だけを切り取る。
-//   var pagenum = pageParam.match(/\d+$/)[0];
-
-//   $(function () {
-//     console.log(pagenum);
-//     $("li:contains(" + pagenum + ")").css('color', 'red');
-//   });
-
-
-
-// });
+function time() {
+  setTimeout(changeByParam, 3000);
+}
