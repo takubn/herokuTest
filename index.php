@@ -56,7 +56,7 @@
   <!-- ページャー全体 -->
   <ul class="pager">
   <?php require_once "php/data_count.php";?>
-  <?php require_once "php/get_init.php"?>;
+  <?php require_once "php/get_init.php"?>
 
 
     <!-- 「previous」ボタン -->
