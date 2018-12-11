@@ -351,11 +351,11 @@ font-weight: bold;
     font-size:30px;
     color: gold !important;
     pointer-events:none;
-     animation:rotate_anime 2s linear infinite;
+     animation:paramcolor_anime 2s linear infinite;
     }
 
 
-@keyframes paramcolor {
+@keyframes paramcolor_anime {
     0% {transform:rotate(0deg);}
     100% {transform:rotate(360deg);}
 }
