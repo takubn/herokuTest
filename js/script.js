@@ -155,7 +155,11 @@ function changeColorByParam() {
 
   console.log(paramid);
 
+  $(function () {
 
+    $('#' + paramid).toggleClass("paramcolor");
+
+  });
 
 
   //「a」タグの中からパラメータの数値と一致するcssの色を変更
