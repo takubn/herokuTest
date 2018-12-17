@@ -88,24 +88,26 @@ function changeEditMode(name, contents, id) {
     });
   }
 
-  $(function () {
+}
 
-    //「CHANGE」ボタンがクリックされたら発火。
-    $('#change').click(function () {
-      console.log(id);
-      $.post("../php/update.php", {
-        // [key]と[value]でidとコメントを送信
-        id: id,
-        contents: $('#comment').val()
-        //postに成功したら再読み込み
-      }, function () {
-        location.reload();
-      });
+$(function () {
 
+  //「CHANGE」ボタンがクリックされたら発火。
+  $('#change').click(function () {
+    console.log(id);
+    $.post("../php/update.php", {
+      // [key]と[value]でidとコメントを送信
+      id: id,
+      contents: $('#comment').val()
+      //postに成功したら再読み込み
+    }, function () {
+      location.reload();
     });
 
   });
-}
+
+});
+
 
 
 // ｰｰｰｰｰｰｰｰｰｰｰｰ削除メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰｰ
