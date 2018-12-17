@@ -90,23 +90,30 @@ function changeEditMode(name, contents, id) {
 
 }
 
-$(function () {
 
-  //「CHANGE」ボタンがクリックされたら発火。
-  $('#change').click(function () {
-    console.log(id);
-    $.post("../php/update.php", {
-      // [key]と[value]でidとコメントを送信
-      id: id,
-      contents: $('#comment').val()
-      //postに成功したら再読み込み
-    }, function () {
-      location.reload();
+function postEdit(name, contents, id) {
+  var name = name.id;
+  var contents = contents.id;
+  var id = id.textContent;
+
+  $(function () {
+
+    //「CHANGE」ボタンがクリックされたら発火。
+    $('#change').click(function () {
+      console.log(id);
+      $.post("../php/update.php", {
+        // [key]と[value]でidとコメントを送信
+        id: id,
+        contents: $('#comment').val()
+        //postに成功したら再読み込み
+      }, function () {
+        location.reload();
+      });
+
     });
 
   });
-
-});
+}
 
 
 
