@@ -74,7 +74,7 @@ function changeFormDelete(name, content) {
 function changeEditMode(name, contents, id) {
   var name = name.id;
   var contents = contents.id;
-  var id = id.textContent;
+  var idformed = id.textContent;
 
   console.log(id);
 
@@ -95,7 +95,7 @@ function changeEditMode(name, contents, id) {
 
       $.post("../php/update.php", {
         // [key]と[value]でidとコメントを送信
-        id: id,
+        id: idformed,
         contents: $('#comment').val()
         //postに成功したら再読み込み
       }, function () {
