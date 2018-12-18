@@ -127,7 +127,8 @@ function changeDeleteMode(id) {
     $(function () {
 
       //ボタンが押されたら、「SEND」ボタンを「DELETE」ボタンに変更する。
-      $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>')
+      // $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>')
+
 
       $('.buttonEdit').on('click', function () {
         $('#button-submit').replaceWith('<div class="button-delete" id="delete">DELETE</div>')
@@ -143,7 +144,7 @@ function changeDeleteMode(id) {
   $(function () {
 
     //「DELETE」ボタンがクリックされたら、発火。
-    $('#delete').off('click');
+    // $('#delete').off('click');
     $('#delete').on('click', function () {
       console.log(id);
       $.post('../php/delete.php', {
