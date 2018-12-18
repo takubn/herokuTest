@@ -109,7 +109,6 @@ $max = count($bbs['name']);
       </div>
     <?php endfor;?>
 
-
   <!-- テスト -->
   <!-- <script>changeByParam()</script> -->
 
