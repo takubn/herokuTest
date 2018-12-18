@@ -26,15 +26,16 @@ function changeFormEdit(name, content) {
   //入力を無効にする。
   rename.disabled = "true";
 
+  rename.style.backgroundColor = 'white';
 
   // フォームのIDを取得する。(contents部分)
   var recontent = document.getElementById('comment');
 
-  //入力を可能にする。
-  recontent.disabled = "false";
   recontent.value = contentText;
 
   recontent.style.backgroundColor = 'pink';
+
+  recontent.disabled = "false";
 }
 
 
