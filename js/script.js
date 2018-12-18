@@ -132,10 +132,15 @@ function changeDeleteMode(id) {
     });
   }
 
+}
+
+function postDelete(id) {
+  var id = id.textcontent;
   $(function () {
 
     //「DELETE」ボタンがクリックされたら、発火。
-    $('#delete').click(function () {
+    $('#delete').off('click');
+    $('#delete').on('click', function () {
 
       $.post('../php/delete.php', {
         // [key]と[value]でidを送信
