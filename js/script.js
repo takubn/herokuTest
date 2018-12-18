@@ -75,7 +75,7 @@ function changeFormDelete(name, content) {
 
 //「edit」ボタンが押されたら、「SEND」ボタンを「CHANGE」ボタンに変更する。
 $(function () {
-  $('.buttonEdit').off('click');
+  $('.btn-operation').off();
   $('.buttonEdit').on('click', function () {
     $('#button-submit').replaceWith('<div class="button-change" id="change" >CHANGE</div>');
   });
