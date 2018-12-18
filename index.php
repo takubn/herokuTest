@@ -16,7 +16,7 @@
   <title>dc-board</title>
 </head>
 
-<body onload="moveBottom(),changeColorByParam()">
+<body onload="moveBottom(),changeColorByParam(),showorhide()">
   <!-- 入力部分始まり -->
   <div class="item-input" style="position: fixed;width: 35%;margin-left: 30px;">
     <p class="input-logo"><img src="img/logo.png" alt="ロゴの画像"></p>

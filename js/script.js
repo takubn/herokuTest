@@ -181,14 +181,13 @@ function changeColorByParam() {
 
 // ｰｰｰｰｰｰｰｰｰｰｰｰ日時を出現・消すメソッドｰｰｰｰｰｰｰｰｰｰｰｰ
 
-$(function () {
-  var result = $.isEmptyObject('#modified');
-  if (result) {
-    $('#modified').hide();
-  } else {
-    $('#create').hide();
-  }
-
-
-
-});
+function showorhide() {
+  $(function () {
+    var result = $.isEmptyObject('#modified');
+    if (result) {
+      $('#modified').hide();
+    } else {
+      $('#create').hide();
+    }
+  });
+}
