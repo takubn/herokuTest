@@ -127,13 +127,13 @@ function changeDeleteMode(id) {
     $(function () {
 
       //ボタンが押されたら、「SEND」ボタンを「DELETE」ボタンに変更する。
-      // $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>')
+      $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>');
 
 
-      $('.buttonDelete').on('click', function () {
-        $('#button-submit').replaceWith('<div class="button-delete" id="delete">DELETE</div>');
+      // $('.buttonDelete').on('click', function () {
+      //   $('#button-submit').replaceWith('<div class="button-delete" id="delete">DELETE</div>');
 
-      });
+      // });
 
 
 
