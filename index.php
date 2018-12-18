@@ -11,7 +11,7 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="shortcut icon" href="img/favicon2.ico">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <title>dc-board</title>
 </head>
@@ -19,7 +19,7 @@
 <body onload="moveBottom(),changeColorByParam()">
   <!-- 入力部分始まり -->
   <div class="item-input" style="position: fixed;width: 35%;margin-left: 30px;">
-    <p class="input-logo"><img src="img/logo.png" alt="ロゴの画像"></p>
+    <p class="input-logo"><img src="img/dc.png" alt="ロゴの画像"></p>
     <div id="form-main">
       <div id="form-div">
         <form class="form" id="form1" method="POST" action="php/write.php">
