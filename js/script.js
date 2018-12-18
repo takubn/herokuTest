@@ -135,7 +135,7 @@ function changeDeleteMode(id) {
 }
 
 function postDelete(id) {
-  var id = id.textcontent;
+  var id = id.textContent;
   console.log(id);
   $(function () {
 
