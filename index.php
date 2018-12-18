@@ -97,6 +97,7 @@ $max = count($bbs['name']);
         <div class="display-contents">
           <div class="white-char" id="contents<?=$i;?>"><?=$bbs['contents'][$i];?></div>
           <p class="date"><?=$bbs['date'][$i];?></p>
+          <p class="date"><?=$bbs['modified'][$i];?></p>
           <!-- PrimalyKey取得 -->
           <div hidden id="primalyKey<?=$i;?>"><?=$bbs['id'][$i];?></div>
         </div>

@@ -31,7 +31,7 @@ try {
         $bbs['contents'][] = $results['contents'];
         $bbs['date'][] = $results['date'];
         $bbs['id'][] = $results['id'];
-
+        $bbs['modified'][] = $results['modified'];
     }
 
 } catch (PDOException $e) {

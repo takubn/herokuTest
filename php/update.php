@@ -15,17 +15,17 @@ if (isset($_POST["id"])) {
 }
 
 // 現在時刻を取得
-$date = getCurrentTime();
+$modified = getCurrentTime();
 
 try {
     $db = new PDO(DSN, USER, PASSWORD);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "UPDATE bbs SET contents=:contents,date=:date where id = $id ";
+    $sql = "UPDATE bbs SET contents=:contents,modified=:modified where id = $id ";
     $stmt = $db->prepare($sql);
 
     $stmt->bindParam(':contents', $contents, PDO::PARAM_STR);
-    $stmt->bindParam(':date', $date, PDO::PARAM_STR);
+    $stmt->bindParam(':modified', $modified, PDO::PARAM_STR);
     $stmt->execute();
 
     $db = null;
