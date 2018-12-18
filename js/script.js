@@ -38,7 +38,6 @@ function changeFormEdit(name, content) {
 }
 
 
-
 //ｰｰｰｰｰｰｰｰｰｰｰｰ入力フォームの色を変更するメソッド（削除）ｰｰｰｰｰｰｰｰｰｰｰｰ
 function changeFormDelete(name, content) {
 
