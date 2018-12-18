@@ -9,13 +9,6 @@ function moveBottom() {
 
 //入力フォームの色と値を変更するメソッド（編集）
 function changeFormEdit(name, content) {
-  // document.form1.reset();
-
-  var formElement = document.getElementById('form1');
-
-  console.log(formElement);
-  formElement.reset();
-
 
 
   var name = name;
@@ -37,6 +30,8 @@ function changeFormEdit(name, content) {
   // フォームのIDを取得する。(contents部分)
   var recontent = document.getElementById('comment');
 
+  //入力を可能にする。
+  recontent.disabled = "true";
   recontent.value = contentText;
 
   recontent.style.backgroundColor = 'pink';
