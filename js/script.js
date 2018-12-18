@@ -125,7 +125,6 @@ function postEdit(contents, id) {
   });
 }
 
-
 // ｰｰｰｰｰｰｰｰｰｰｰｰ削除部分ｰｰｰｰｰｰｰｰｰｰｰ
 
 // 「delete」ボタンが押されたら、「SEND」ボタンを「DELETE」ボタンに変更する。
