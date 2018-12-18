@@ -130,7 +130,7 @@ function changeDeleteMode(id) {
       // $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>')
 
 
-      $('.buttonEdit').on('click', function () {
+      $('.buttonDelete').on('click', function () {
         $('#button-submit').replaceWith('<div class="button-delete" id="delete">DELETE</div>')
 
       });
