@@ -73,24 +73,23 @@ function changeFormDelete(name, content) {
 // ｰｰｰｰｰｰｰｰｰｰｰｰ編集メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰｰ
 
 //「changeボタン」を変更する。
-function changeEditMode(name, contents, id) {
-  var name = name.id;
-  var contents = contents.id;
-  var id = id.textContent;
 
-  console.log(id);
 
-  if (contents !== '') {
 
-    $(function () {
 
-      //ボタンが押されたら、「SEND」ボタンを「CHANGE」ボタンに変更する。
-      $('#button-submit').replaceWith('<div class="button-change" id="change" >CHANGE</div>')
+$(function () {
 
-    });
-  }
+  //ボタンが押されたら、「SEND」ボタンを「CHANGE」ボタンに変更する。
+  // $('#button-submit').replaceWith('<div class="button-change" id="change" >CHANGE</div>')
+  $('.buttonEdit').on('click', function () {
+    $('#button-submit').replaceWith('<div class="button-change" id="change" >CHANGE</div>');
+  });
 
-}
+
+});
+
+
+
 
 //post送信
 function postEdit(contents, id) {
