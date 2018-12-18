@@ -91,8 +91,8 @@ function postEdit(contents, id) {
   $(function () {
 
     //「CHANGE」ボタンがクリックされたら発火。
-    $('#change').off('click');
-    $('#change').on('click', function () {
+    $('.button-change').off('click');
+    $('.button-change').on('click', function () {
       // console.log(id);
       $.post("../php/update.php", {
         // [key]と[value]でidとコメントを送信
