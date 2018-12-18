@@ -77,7 +77,7 @@ function changeFormDelete(name, content) {
 $(function () {
   // $('.buttonDelete').off('click');
   $('.buttonEdit').on('click', function () {
-    $('#button-submit').replaceWith('<input type="submit" value="SEND" id="button-submit" />');
+
     $('#button-submit').replaceWith('<div class="button-change" id="change" >CHANGE</div>');
   });
 });
@@ -116,8 +116,8 @@ function postEdit(contents, id) {
 $(function () {
   // $('.buttonEdit').off('click');
   $('.buttonDelete').on('click', function () {
-    $('#button-submit').replaceWith('<input type="submit" value="SEND" id="button-submit" />');
     $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>');
+    $('.buttonDelete').off('click');
   });
 });
 
