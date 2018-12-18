@@ -113,7 +113,7 @@ function postEdit(contents, id) {
 
 $(function () {
   $('.buttonDelete').on('click', function () {
-    $('#button-submit').replaceWith('< div class="button-delete" id="delete" >DELETE</div >');
+    $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>');
   });
 });
 
