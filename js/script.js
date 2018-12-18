@@ -37,12 +37,20 @@ function changeFormEdit(name, content) {
 
   // recontent.disabled = "false";
 
-
-  $('#comment').prep('disabled', false);
-  var result = $('#comment').prop('disabled');
-
-  console.log(result);
 }
+
+
+$(function () {
+  $('.buttonEdit').click(function () {
+    $('#comment').prep('disabled', false);
+    var result = $('#comment').prop('disabled');
+    console.log(result);
+  });
+
+
+});
+
+
 
 
 //ｰｰｰｰｰｰｰｰｰｰｰｰ入力フォームの色を変更するメソッド（削除）ｰｰｰｰｰｰｰｰｰｰｰｰ
