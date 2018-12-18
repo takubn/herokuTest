@@ -78,7 +78,7 @@ $(function () {
   // $('.buttonDelete').off('click');
   $('.buttonEdit').on('click', function () {
 
-    $('#button-submit').replaceWith("<div class='button-change' id='change' >CHANGE</div>");
+    $('#button-submit').replaceWith("<div class='button-change' id='button-submit' >CHANGE</div>");
   });
 });
 
@@ -116,7 +116,7 @@ function postEdit(contents, id) {
 $(function () {
   // $('.buttonEdit').off('click');
   $('.buttonDelete').on('click', function () {
-    $('#button-submit').replaceWith("<div class='button-delete' id='delete' >DELETE</div>");
+    $('#button-submit').replaceWith("<div class='button-delete' id='button-submit' >DELETE</div>");
   });
 });
 
