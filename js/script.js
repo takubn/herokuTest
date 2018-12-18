@@ -35,21 +35,15 @@ function changeFormEdit(name, content) {
 
   recontent.style.backgroundColor = 'pink';
 
-  // recontent.disabled = "false";
 
 }
 
-
+//content部分を入力可能に
 $(function () {
   $('.buttonEdit').click(function () {
     $('#comment').prop('disabled', false);
-    var result = $('#comment').prop('disabled');
-    console.log(result);
   });
-
-
 });
-
 
 
 
@@ -91,13 +85,10 @@ function changeFormDelete(name, content) {
   //入力を無効にする。
   recontent.disabled = "true";
 
-
-
 }
 
 
 // ｰｰｰｰｰｰｰｰｰｰｰｰ編集部分ｰｰｰｰｰｰｰｰｰｰｰｰ
-
 
 //「edit」ボタンが押されたら、「SEND」ボタンを「CHANGE」ボタンに変更する。
 $(function () {
