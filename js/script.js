@@ -43,6 +43,9 @@ function changeFormDelete(name, content) {
   var formElement = document.getElementById('form1');
 
   console.log(formElement);
+  formElement.reset();
+  console.log('これは' + formElement + 'リセットされたよ');
+
 
   var name = name;
   var content = content;
