@@ -126,8 +126,8 @@ function postDelete(id) {
   //「delete」ボタンを押したらpost送信
   $(function () {
     //「DELETE」ボタンがクリックされたら、発火。
-    $('#delete').off('click');
-    $('#delete').on('click', function () {
+    $('.button-delete').off('click');
+    $('.button-delete').on('click', function () {
       $.post('../php/delete.php', {
         // [key]と[value]でidを送信
         id: id

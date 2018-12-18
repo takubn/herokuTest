@@ -34,7 +34,7 @@
           </p>
           <!-- 投稿ボタン -->
           <div class="submit" id="replace">
-            <input type="submit" value="SEND" id="button-submit" />
+            <input type="submit" value="SEND" id="button-submit">
             <div class="ease"></div>
           </div>
         </form>
