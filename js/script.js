@@ -75,7 +75,7 @@ function changeFormDelete(name, content) {
 
 //「edit」ボタンが押されたら、「SEND」ボタンを「CHANGE」ボタンに変更する。
 $(function () {
-  $('.buttonDelete').off('click');
+  // $('.buttonDelete').off('click');
   $('.buttonEdit').on('click', function () {
     $('#button-submit').replaceWith('<div class="button-change" id="change" >CHANGE</div>');
   });
@@ -113,7 +113,7 @@ function postEdit(contents, id) {
 
 // 「delete」ボタンが押されたら、「SEND」ボタンを「DELETE」ボタンに変更する。
 $(function () {
-  $('.buttonEdit').off('click');
+  // $('.buttonEdit').off('click');
   $('.buttonDelete').on('click', function () {
     $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>');
   });
