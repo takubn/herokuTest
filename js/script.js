@@ -136,6 +136,7 @@ function changeDeleteMode(id) {
 
 function postDelete(id) {
   var id = id.textcontent;
+  console.log(id);
   $(function () {
 
     //「DELETE」ボタンがクリックされたら、発火。
