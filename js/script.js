@@ -77,6 +77,7 @@ function changeFormDelete(name, content) {
 $(function () {
   // $('.buttonDelete').off('click');
   $('.buttonEdit').on('click', function () {
+    $('.buttonDelete').off('click');
     $('#button-submit').replaceWith('<div class="button-change" id="change" >CHANGE</div>');
   });
 });
@@ -115,6 +116,7 @@ function postEdit(contents, id) {
 $(function () {
   // $('.buttonEdit').off('click');
   $('.buttonDelete').on('click', function () {
+    $('.buttonEdit').off('click');
     $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>');
   });
 });
