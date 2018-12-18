@@ -9,7 +9,7 @@ function moveBottom() {
 
 //入力フォームの色と値を変更するメソッド（編集）
 function changeFormEdit(name, content) {
-  document.form1.reset();
+  // document.form1.reset();
 
   var name = name;
   var content = content;
@@ -40,7 +40,9 @@ function changeFormEdit(name, content) {
 //ｰｰｰｰｰｰｰｰｰｰｰｰ入力フォームの色を変更するメソッド（削除）ｰｰｰｰｰｰｰｰｰｰｰｰ
 function changeFormDelete(name, content) {
 
-  document.form1.reset();
+  var formElement = getElementById('form1');
+
+  console.log(formElement);
 
   var name = name;
   var content = content;
