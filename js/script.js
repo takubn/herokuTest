@@ -102,7 +102,7 @@ function postEdit(contents, id) {
     //「CHANGE」ボタンがクリックされたら発火。
     $('#change').off('click');
     $('#change').on('click', function () {
-      console.log(id);
+      // console.log(id);
       $.post("../php/update.php", {
         // [key]と[value]でidとコメントを送信
         id: id,
@@ -122,7 +122,7 @@ function postEdit(contents, id) {
 // ｰｰｰｰｰｰｰｰｰｰｰｰ削除メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰｰ
 function changeDeleteMode(id) {
   var id = id.textContent;
-
+  console.log(id);
   if (id !== '') {
     $(function () {
 
@@ -135,6 +135,9 @@ function changeDeleteMode(id) {
 }
 
 function postDelete(id) {
+
+
+
   var id = id.textContent;
 
   $(function () {

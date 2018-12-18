@@ -83,9 +83,6 @@ $max = count($bbs['name']);
 ?>
 
 
-        <script>
-        var primalyKey =0;
-        </script>
 
     <?php for ($i = 0; $i < $max; $i++): ?>
       <div class="display-box">
