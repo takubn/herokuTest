@@ -11,6 +11,13 @@ function moveBottom() {
 function changeFormEdit(name, content) {
   // document.form1.reset();
 
+  var formElement = document.getElementById('form1');
+
+  console.log(formElement);
+  formElement.reset();
+
+
+
   var name = name;
   var content = content;
 
@@ -44,7 +51,7 @@ function changeFormDelete(name, content) {
 
   console.log(formElement);
   formElement.reset();
-  console.log('これは' + formElement + 'リセットされたよ');
+
 
 
   var name = name;
