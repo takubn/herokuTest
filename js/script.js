@@ -35,7 +35,13 @@ function changeFormEdit(name, content) {
 
   recontent.style.backgroundColor = 'pink';
 
-  recontent.disabled = "false";
+  // recontent.disabled = "false";
+
+
+  $('#comment').prep('disabled', false);
+  var result = $('#comment').prop('disabled');
+
+  console.log(result);
 }
 
 
@@ -76,6 +82,8 @@ function changeFormDelete(name, content) {
 
   //入力を無効にする。
   recontent.disabled = "true";
+
+
 
 }
 
