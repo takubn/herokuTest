@@ -136,13 +136,14 @@ function changeDeleteMode(id) {
 
 function postDelete(id) {
   var id = id.textContent;
-  console.log(id);
+
   $(function () {
+
 
     //「DELETE」ボタンがクリックされたら、発火。
     $('#delete').off('click');
     $('#delete').on('click', function () {
-
+      console.log(id);
       $.post('../php/delete.php', {
         // [key]と[value]でidを送信
         id: id
