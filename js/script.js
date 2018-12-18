@@ -42,7 +42,7 @@ function changeFormEdit(name, content) {
 
 $(function () {
   $('.buttonEdit').click(function () {
-    $('#comment').prep('disabled', false);
+    $('#comment').prop('disabled', false);
     var result = $('#comment').prop('disabled');
     console.log(result);
   });
