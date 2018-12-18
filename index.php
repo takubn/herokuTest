@@ -108,6 +108,7 @@ $max = count($bbs['name']);
         <!-- 削除ボタン　-->
         <button class="buttonDelete" onclick="changeFormDelete(withoutStrName<?=$i;?>,contents<?=$i;?>),postDelete(primalyKey<?=$i;?>)">delete</button>
 
+
       </div>
     <?php endfor;?>
 
