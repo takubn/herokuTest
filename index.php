@@ -102,9 +102,9 @@ $max = count($bbs['name']);
         </div>
 
         <!-- 編集ボタン -->
-        <button class="buttonEdit btn-operation" onclick="changeFormEdit(withoutStrName<?=$i;?>,contents<?=$i;?>),postEdit(contents<?=$i;?>,primalyKey<?=$i;?>)">edit</button>
+        <button class="buttonEdit" onclick="changeFormEdit(withoutStrName<?=$i;?>,contents<?=$i;?>),postEdit(contents<?=$i;?>,primalyKey<?=$i;?>)">edit</button>
         <!-- 削除ボタン　-->
-        <button class="buttonDelete btn-operation" onclick="changeFormDelete(withoutStrName<?=$i;?>,contents<?=$i;?>),changeDeleteMode(primalyKey<?=$i;?>)">delete</button>
+        <button class="buttonDelete" onclick="changeFormDelete(withoutStrName<?=$i;?>,contents<?=$i;?>),postDelete(primalyKey<?=$i;?>)">delete</button>
 
       </div>
     <?php endfor;?>

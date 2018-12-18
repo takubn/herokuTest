@@ -75,7 +75,7 @@ function changeFormDelete(name, content) {
 
 //「edit」ボタンが押されたら、「SEND」ボタンを「CHANGE」ボタンに変更する。
 $(function () {
-  $('.btn-operation').off();
+
   $('.buttonEdit').on('click', function () {
     $('#button-submit').replaceWith('<div class="button-change" id="change" >CHANGE</div>');
   });
@@ -109,34 +109,25 @@ function postEdit(contents, id) {
 
 
 
-// ｰｰｰｰｰｰｰｰｰｰｰｰ削除メソッド(ボタン変更とpost送信)、//(エラーがでたため、メソッドは分けずｰｰｰｰｰｰｰｰｰｰｰ
-function changeDeleteMode(id) {
+// ｰｰｰｰｰｰｰｰｰｰｰｰ削除メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰ
+
+$(function () {
+
+  $('.buttonDelete').on('click', function () {
+    $('#button-submit').replaceWith('< div class= "button-delete" id = "delete" >DELETE</div >');
+  });
+
+
+});
+
+function postDelete(id) {
   var id = id.textContent;
-  console.log(id);
-  if (id !== '') {
-    $(function () {
-
-      //ボタンが押されたら、「SEND」ボタンを「DELETE」ボタンに変更する。
-      $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>');
-
-
-      // $('.buttonDelete').on('click', function () {
-      //   $('#button-submit').replaceWith('<div class="button-delete" id="delete">DELETE</div>');
-
-      // });
-
-
-
-
-    });
-  }
 
   $(function () {
 
     //「DELETE」ボタンがクリックされたら、発火。
     $('#delete').off('click');
     $('#delete').on('click', function () {
-      console.log(id);
       $.post('../php/delete.php', {
         // [key]と[value]でidを送信
         id: id
