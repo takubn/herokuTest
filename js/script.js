@@ -132,16 +132,7 @@ function changeDeleteMode(id) {
     });
   }
 
-}
-
-function postDelete(id) {
-
-
-
-  var id = id.textContent;
-
   $(function () {
-
 
     //「DELETE」ボタンがクリックされたら、発火。
     $('#delete').off('click');
@@ -159,6 +150,8 @@ function postDelete(id) {
 
   });
 }
+
+
 
 
 // ｰｰｰｰｰｰｰｰｰｰｰｰpagerの色・スタイルを変更するメソッドｰｰｰｰｰｰｰｰｰｰｰｰ

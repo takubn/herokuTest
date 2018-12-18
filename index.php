@@ -104,7 +104,7 @@ $max = count($bbs['name']);
         <!-- 編集ボタン -->
         <button class="buttonEdit" onclick="changeFormEdit(withoutStrName<?=$i;?>,contents<?=$i;?>),changeEditMode(name<?=$i;?>,contents<?=$i;?>,primalyKey<?=$i;?>),postEdit(contents<?=$i;?>,primalyKey<?=$i;?>)">edit</button>
         <!-- 削除ボタン　-->
-        <button class=buttonDelete  onclick="changeFormDelete(withoutStrName<?=$i;?>,contents<?=$i;?>),changeDeleteMode(primalyKey<?=$i;?>),postDelete(primalykey<?=$i;?>)">delete</button>
+        <button class=buttonDelete  onclick="changeFormDelete(withoutStrName<?=$i;?>,contents<?=$i;?>),changeDeleteMode(primalyKey<?=$i;?>)">delete</button>
 
       </div>
     <?php endfor;?>
