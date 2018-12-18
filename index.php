@@ -97,11 +97,9 @@ $max = count($bbs['name']);
         <div class="display-contents">
           <div class="white-char" id="contents<?=$i;?>"><?=$bbs['contents'][$i];?></div>
           <p class="date">作成日時：<?=$bbs['date'][$i];?></p>
-
           <?php if (isset($bbs['modified'][$i])): ?>
             <?="<i class=\"fas fa-edit\"></i>"?>
           <?php endif;?>
-
           <!-- PrimalyKey取得 -->
           <div hidden id="primalyKey<?=$i;?>"><?=$bbs['id'][$i];?></div>
         </div>

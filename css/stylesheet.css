@@ -276,6 +276,12 @@ display　部分
 
 .date{
   color: white;
+  display:inline-block;
+}
+
+
+.fa-edit{
+  color:white;
 }
 
 /* ----------編集ボタン------------ */
