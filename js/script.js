@@ -119,7 +119,7 @@ function postEdit(contents, id) {
 
 
 
-// ｰｰｰｰｰｰｰｰｰｰｰｰ削除メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰｰ
+// ｰｰｰｰｰｰｰｰｰｰｰｰ削除メソッド(ボタン変更とpost送信)、//(エラーがでたため、メソッドは分けずｰｰｰｰｰｰｰｰｰｰｰ
 function changeDeleteMode(id) {
   var id = id.textContent;
   console.log(id);
