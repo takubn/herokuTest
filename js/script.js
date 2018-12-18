@@ -31,7 +31,7 @@ function changeFormEdit(name, content) {
   var recontent = document.getElementById('comment');
 
   //入力を可能にする。
-  recontent.disabled = "true";
+  recontent.disabled = "false";
   recontent.value = contentText;
 
   recontent.style.backgroundColor = 'pink';
