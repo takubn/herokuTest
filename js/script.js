@@ -71,6 +71,8 @@ function changeFormDelete(name, content) {
 
 
 // ｰｰｰｰｰｰｰｰｰｰｰｰ編集メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰｰ
+
+//「changeボタン」を変更する。
 function changeEditMode(name, contents, id) {
   var name = name.id;
   var contents = contents.id;
@@ -90,9 +92,8 @@ function changeEditMode(name, contents, id) {
 
 }
 
-
-function postEdit(name, contents, id) {
-  var name = name.id;
+//post送信
+function postEdit(contents, id) {
   var contents = contents.id;
   var id = id.textContent;
 
