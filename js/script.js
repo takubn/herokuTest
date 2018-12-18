@@ -112,16 +112,9 @@ function postEdit(contents, id) {
 // ｰｰｰｰｰｰｰｰｰｰｰｰ削除メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰ
 
 $(function () {
-
-  //ボタンが押されたら、「SEND」ボタンを「DELETE」ボタンに変更する。
-  // $('#button-submit').replaceWith('<div class="button-delete" id="delete" >DELETE</div>');
-
-
   $('.buttonDelete').on('click', function () {
     $('#button-submit').replaceWith('< div class="button-delete" id="delete" >DELETE</div >');
   });
-
-
 });
 
 function postDelete(id) {
