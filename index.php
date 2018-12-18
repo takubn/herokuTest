@@ -16,7 +16,7 @@
   <title>dc-board</title>
 </head>
 
-<body onload="moveBottom(),changeColorByParam(),showorhide()">
+<body onload="moveBottom(),changeColorByParam()">
   <!-- 入力部分始まり -->
   <div class="item-input" style="position: fixed;width: 35%;margin-left: 30px;">
     <p class="input-logo"><img src="img/logo.png" alt="ロゴの画像"></p>
@@ -96,9 +96,12 @@ $max = count($bbs['name']);
 
         <div class="display-contents">
           <div class="white-char" id="contents<?=$i;?>"><?=$bbs['contents'][$i];?></div>
-          <p class="date" id="create">作成日時：<?=$bbs['date'][$i];?></p>
+          <p class="date">作成日時：<?=$bbs['date'][$i];?></p>
 
-          <p class="date" id="modified">更新日時：<?=$bbs['modified'][$i];?></p>
+          <?php if (isset($bbs['modified'][$i])): ?>
+            <?="<i class=\"fas fa-edit\"></i>"?>
+          <?php endif;?>
+
           <!-- PrimalyKey取得 -->
           <div hidden id="primalyKey<?=$i;?>"><?=$bbs['id'][$i];?></div>
         </div>
