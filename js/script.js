@@ -9,6 +9,7 @@ function moveBottom() {
 
 //入力フォームの色と値を変更するメソッド（編集）
 function changeFormEdit(name, content) {
+  document.form1.reset();
 
   var name = name;
   var content = content;
@@ -38,6 +39,8 @@ function changeFormEdit(name, content) {
 
 //ｰｰｰｰｰｰｰｰｰｰｰｰ入力フォームの色を変更するメソッド（削除）ｰｰｰｰｰｰｰｰｰｰｰｰ
 function changeFormDelete(name, content) {
+
+  document.form1.reset();
 
   var name = name;
   var content = content;
@@ -70,7 +73,7 @@ function changeFormDelete(name, content) {
 }
 
 
-// ｰｰｰｰｰｰｰｰｰｰｰｰ編集メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰｰ
+// ｰｰｰｰｰｰｰｰｰｰｰｰ編集部分ｰｰｰｰｰｰｰｰｰｰｰｰ
 
 
 //「edit」ボタンが押されたら、「SEND」ボタンを「CHANGE」ボタンに変更する。
@@ -83,7 +86,7 @@ $(function () {
 });
 
 
-//「change」ボタンを押したらpost送信
+//post送信
 function postEdit(contents, id) {
   var contents = contents.id;
   var id = id.textContent;
@@ -109,8 +112,7 @@ function postEdit(contents, id) {
 }
 
 
-
-// ｰｰｰｰｰｰｰｰｰｰｰｰ削除メソッド(ボタン変更とpost送信)ｰｰｰｰｰｰｰｰｰｰｰ
+// ｰｰｰｰｰｰｰｰｰｰｰｰ削除部分ｰｰｰｰｰｰｰｰｰｰｰ
 
 // 「delete」ボタンが押されたら、「SEND」ボタンを「DELETE」ボタンに変更する。
 $(function () {
@@ -120,6 +122,7 @@ $(function () {
   });
 });
 
+//post送信
 function postDelete(id) {
   var id = id.textContent;
 
@@ -140,8 +143,6 @@ function postDelete(id) {
 
   });
 }
-
-
 
 
 // ｰｰｰｰｰｰｰｰｰｰｰｰpagerの色・スタイルを変更するメソッドｰｰｰｰｰｰｰｰｰｰｰｰ
