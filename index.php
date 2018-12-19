@@ -74,6 +74,7 @@
       <li><a href="?page=<?=$page_next?>"><i class="fas fa-angle-double-right"></i></a></li>
     <?php endif;?>
  </ul>
+<p><?=$whole_number?>件</p>
 
 <?php
 //DBから情報を取得
