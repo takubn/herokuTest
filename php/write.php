@@ -1,6 +1,6 @@
 <?php
 //DBに接続（DSN設定を読み込み）
-require_once "./conf/dsn.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/herokuTest/conf/dsn.php";
 
 require_once "function.php";
 
