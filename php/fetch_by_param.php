@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 session_start();
 
 //DBに接続（DSN設定を読み込み）
-require_once $_SERVER['DOCUMENT_ROOT'] . "/herokuTest/conf/dsn.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/conf/dsn.php";
 try {
     $db = new PDO(DSN, USER, PASSWORD);
 
