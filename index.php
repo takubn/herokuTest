@@ -73,6 +73,7 @@
     <?php if ($page_next <= $paging_number): ?>
       <li><a href="?page=<?=$page_next?>"><i class="fas fa-angle-double-right"></i></a></li>
     <?php endif;?>
+    <li><p class="countpagenum"><?=$whole_number?>件</p></li>
  </ul>
 
 <?php

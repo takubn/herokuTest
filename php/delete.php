@@ -13,7 +13,7 @@ try {
     $db = new PDO(DSN, USER, PASSWORD);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "DELETE from bbs where id = $id";
+    $sql = //ここにIDを条件にしてBBSテーブルから削除する。
     $stmt = $db->prepare($sql);
     $stmt->execute();
 

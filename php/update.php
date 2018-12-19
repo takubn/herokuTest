@@ -21,7 +21,7 @@ try {
     $db = new PDO(DSN, USER, PASSWORD);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "UPDATE bbs SET contents=:contents,modified=:modified where id = $id ";
+    $sql = //Update文を記述。
     $stmt = $db->prepare($sql);
 
     $stmt->bindParam(':contents', $contents, PDO::PARAM_STR);

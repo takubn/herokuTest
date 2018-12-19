@@ -355,6 +355,14 @@ display: inline-block;
   color:red;
 }
 
+.countpagenum{
+color: #fff;
+font-style: italic;
+font-weight: bold;
+display: inline-block;
+
+}
+
 .paramcolor{
 font-size:30px;
 color: gold !important;

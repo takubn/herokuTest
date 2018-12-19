@@ -7,7 +7,7 @@ try {
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 //ページネーションのため、データ数を取得する。
-    $whole_number = $db->prepare("SELECT COUNT(*) id FROM bbs");
+    $whole_number = $db->prepare(/** データ数を取得するSELECT文を記述する。*/);
     $whole_number->execute();
     $whole_number = $whole_number->fetchColumn();
 //小数点以下を切り上げる。　例：160件データがあったら、17P文のリンクを生成するための数値。（1Pは10件表示）

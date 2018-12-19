@@ -24,7 +24,7 @@ try {
     $db = new PDO(DSN, USER, PASSWORD);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = 'INSERT INTO bbs(name,contents,date) VALUES(?,?,?)';
+    $sql = //insert文を記述する。
     $stmt = $db->prepare($sql);
     $data[] = $name;
     $data[] = $contents;
